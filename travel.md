@@ -44,9 +44,9 @@ Updated regularly as I travel the world 52 weeks a year.
   - [Wifi Cafes & Restaurants](#wifi-cafes--restaurants)
   - [Wifi Speeds](#wifi-speeds)
 - [Mobile Internet Access](#mobile-internet-access)
-  - [Conserve Mobile Data - Pre-Download Offline Google Maps & Spotify Playlists](#conserve-mobile-data---pre-download-offline-google-maps--spotify-playlists)
   - [EU Roaming](#eu-roaming)
-  - [Digital e-Sims](#digital-e-sims)
+  - [Mobile e-Sims](#mobile-e-sims)
+  - [Conserve Mobile Data - Pre-Download Offline Google Maps, Translate & Spotify Playlists](#conserve-mobile-data---pre-download-offline-google-maps-translate--spotify-playlists)
   - [International Calls using VoIP over the Internet](#international-calls-using-voip-over-the-internet)
 - [ATMs and Foreign Cash Withdrawals](#atms-and-foreign-cash-withdrawals)
 - [Restaurants & Dining Out](#restaurants--dining-out)
@@ -681,22 +681,9 @@ Use the airport wifi to set up one of your e-sims using the lists below, or sims
 On rare occasion I wasn't able to get airport wifi working, and that could be a problem so it's better to sort the e-sim
 on the wifi of your departing airport before you take off than arrive at the other end.
 
-### Conserve Mobile Data - Pre-Download Offline Google Maps & Spotify Playlists
-
-Most of my data usage was caused by Google Maps and Spotify
-(you can see this on iPhone under `Settings` -> `Mobile Service` further down the page).
-
-Pre-cache your usage when on Wifi to avoid using up too much precious mobile e-sim data:
-
-- Google Maps - download an offline map for your city or area under settings -  you need to keep Google Maps open until
-  the download is complete
-- Spotify - click the downloaded option on your playlists - by default this will only download on wifi
-
-Give both time to complete and check their progress before setting out and leaving your wifi connection behind.
-
 ### EU Roaming
 
-If you're not an EU resident or don't have an EU sim, skip to the next section [Rest of World](#rest-of-world).
+If you're not an EU resident or don't have an EU sim, skip to the next section [Mobile e-Sims](#mobile-e-sims).
 
 I've used my UK sim from [Smarty](https://smarty.co.uk) across all the EU countries I visited as it permits use of your
 plan's bundled service within EU countries at no extra charge, and the monthly contract is cheap as chips.
@@ -738,7 +725,7 @@ Going from EU to non-EU was a bit of a jarring experience.
 
 There may be something to the EU integration project after all.
 
-### Digital e-Sims
+### Mobile e-Sims
 
 You can buy data plans for a certain number of days.
 
@@ -781,6 +768,20 @@ Not tried these:
 
 Google [travel e-sims](https://www.google.com/search?q=travel+e-sims)
 and add the country you are travelling to for more options.
+
+### Conserve Mobile Data - Pre-Download Offline Google Maps, Translate & Spotify Playlists
+
+Most of my data usage was caused by Google Maps and Spotify
+(you can see this on iPhone under `Settings` -> `Mobile Service` further down the page).
+
+Pre-cache your usage when on Wifi to avoid using up too much precious mobile e-sim data:
+
+- Google Maps - download an offline map for your city or area under settings -  you need to keep Google Maps open until
+  the download is complete
+- Spotify - click the downloaded option on your playlists - by default this will only download on wifi
+- Google Translate - download the language (the icon to the left of each language on the language selection drop down)
+
+Give each time to complete and check their progress before setting out and leaving your wifi connection behind.
 
 ### International Calls using VoIP over the Internet
 
@@ -3781,6 +3782,19 @@ It is also possible to sleep under the stars by special arrangement, but apparen
 [Wadi Rum Village](https://maps.app.goo.gl/aG3DosxCrydMmgeNA) is a small community of buildings.
 
 Unfortunately, even here you will find a bit of street litter of cigarette packets and plastic bottles.
+
+- [Enjoy rum Resturant](https://maps.app.goo.gl/eeFHgFQ9wco95sxf7) - 7 JD cash only for 1/4 chicken on a bed of 3 types
+  of rice, a side plain yogurt pot, and a small vegetable soup which was very tasty, accompanied by 2 quarters pieces of
+  flat pita.
+  It has negative Google reviews from tourists who say they got ripped off for 30 JD,
+  but since the Rum Castle restaurant I'd intended to go to, as well as the Falafel takeaway, were both closed,
+  I had to chance it - just ask and fix the price up front to 7 JD.
+  Wifi 18/5Mbit/s
+
+TODO:
+
+- [Rum Castle Resthouse](https://maps.app.goo.gl/hih2zWL474ZSZ82TA) - not open at 3pm Monday
+- [Falafel Restaurant](https://maps.app.goo.gl/54DiPSr4hBUM8SPG7) - not open at 3pm Monday
 
 #### Aqaba
 
