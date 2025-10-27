@@ -44,9 +44,9 @@ Updated regularly as I travel the world 52 weeks a year.
   - [Wifi Cafes & Restaurants](#wifi-cafes--restaurants)
   - [Wifi Speeds](#wifi-speeds)
 - [Mobile Internet Access](#mobile-internet-access)
+  - [Conserve Mobile Data - Pre-Download Offline Google Maps & Spotify Playlists](#conserve-mobile-data---pre-download-offline-google-maps--spotify-playlists)
   - [EU Roaming](#eu-roaming)
-  - [Rest of World](#rest-of-world)
-    - [Digital e-sims](#digital-e-sims)
+  - [Digital e-Sims](#digital-e-sims)
   - [International Calls using VoIP over the Internet](#international-calls-using-voip-over-the-internet)
 - [ATMs and Foreign Cash Withdrawals](#atms-and-foreign-cash-withdrawals)
 - [Restaurants & Dining Out](#restaurants--dining-out)
@@ -196,11 +196,14 @@ Updated regularly as I travel the world 52 weeks a year.
     - [The Dead Sea](#the-dead-sea)
       - [Travelling to the Dead Sea](#travelling-to-the-dead-sea)
       - [Dead Sea Resorts - There Are No Good Public Beaches](#dead-sea-resorts---there-are-no-good-public-beaches)
-    - [Petra and Wadi Musa](#petra-and-wadi-musa)
+    - [Petra & Wadi Musa](#petra--wadi-musa)
       - [Travelling to Petra](#travelling-to-petra)
       - [Petra Attractions](#petra-attractions)
       - [Restaurants in Wadi Musa](#restaurants-in-wadi-musa)
     - [Wadi Rum](#wadi-rum)
+      - [Travel & Accommodation in Wadi Rum](#travel--accommodation-in-wadi-rum)
+      - [Attractions in Wadi Rum Desert](#attractions-in-wadi-rum-desert)
+      - [Wadi Rum Village](#wadi-rum-village)
     - [Aqaba](#aqaba)
   - [Laos](#laos)
     - [Taxis in Laos](#taxis-in-laos)
@@ -678,6 +681,19 @@ Use the airport wifi to set up one of your e-sims using the lists below, or sims
 On rare occasion I wasn't able to get airport wifi working, and that could be a problem so it's better to sort the e-sim
 on the wifi of your departing airport before you take off than arrive at the other end.
 
+### Conserve Mobile Data - Pre-Download Offline Google Maps & Spotify Playlists
+
+Most of my data usage was caused by Google Maps and Spotify
+(you can see this on iPhone under `Settings` -> `Mobile Service` further down the page).
+
+Pre-cache your usage when on Wifi to avoid using up too much precious mobile e-sim data:
+
+- Google Maps - download an offline map for your city or area under settings -  you need to keep Google Maps open until
+  the download is complete
+- Spotify - click the downloaded option on your playlists - by default this will only download on wifi
+
+Give both time to complete and check their progress before setting out and leaving your wifi connection behind.
+
 ### EU Roaming
 
 If you're not an EU resident or don't have an EU sim, skip to the next section [Rest of World](#rest-of-world).
@@ -722,14 +738,9 @@ Going from EU to non-EU was a bit of a jarring experience.
 
 There may be something to the EU integration project after all.
 
-### Rest of World
-
-#### Digital e-sims
+### Digital e-Sims
 
 You can buy data plans for a certain number of days.
-
-Google [travel e-sims](https://www.google.com/search?q=travel+e-sims)
-and add the country you are travelling to for more options.
 
 Follow the installation instructions and make sure to enable `Data Roaming`
 under the e-sim settings otherwise the internet won't connect.
@@ -767,6 +778,9 @@ Not tried these:
   The e-sims above usually work out cheaper.
   Get Silent Link as a backup non-expiring balance in case the airport wifi doesn't work to get your e-sim above set up
   or the e-sim loses reception provider and you need GPS for navigation or emergencies
+
+Google [travel e-sims](https://www.google.com/search?q=travel+e-sims)
+and add the country you are travelling to for more options.
 
 ### International Calls using VoIP over the Internet
 
@@ -1828,6 +1842,8 @@ Not Recommended:
   which is of course one of the worst things you can drink
 
 ### Bulgaria
+
+Not cheap any more, almost Western prices.
 
 #### Motorway Tolls - Vignettes in Bulgaria
 
@@ -3592,7 +3608,7 @@ Not Recommended:
 - [Family's Beach](https://maps.app.goo.gl/4SKnoFsrZsZCzsUU9) - looked permanently closed and abandoned
 - Any of the _"public beaches"_ - see note above
 
-#### Petra and Wadi Musa
+#### Petra & Wadi Musa
 
 <!--
 
@@ -3662,13 +3678,14 @@ The nearby town Wadi Musa itself is quite small,
 and the restaurants on
 [Tourism St](https://maps.app.goo.gl/geaNCD1SibVbkykAA) as you might imagine are tourist prices for mediocre food.
 
-- [Downtown- Wadi Mousa](https://maps.app.goo.gl/vTSThzGFEUhcJXEb8) - a good selection of restaurants and dessert places
+- [Downtown- Wadi Mousa](https://maps.app.goo.gl/vTSThzGFEUhcJXEb8) - where locals go to eat rather than Tourism St -
+  a good selection of restaurants and dessert places
   - [Juniper Falafel Restaurant](https://maps.app.goo.gl/dUdsx3yfVsSmcyKi9) - cheap good quality local food
-  - [Hashem affouri sweets](https://maps.app.goo.gl/y4FJiLRVUjwj4BhF7) - moosse cake (small round looks like cheesecake
+  - [Hashem affouri sweets](https://maps.app.goo.gl/y4FJiLRVUjwj4BhF7) - mousse cake (small round looks like cheesecake
     on my Insta) for a mere 1 JD
   - [Berry Cake](https://maps.app.goo.gl/1ppWGfYdv3wrYJuZA) - fresh orange juice or cheesecake for 2 JD
-- [Banseok in Petra](https://maps.app.goo.gl/poafpNsSUBFGKvYZ7) - a long long walk uphill out of town, you will want to
-  take a taxi, but otherwise decent Korean,
+- [Banseok in Petra](https://maps.app.goo.gl/poafpNsSUBFGKvYZ7) - a long 45+ minute walk uphill out of town, you will
+  want to take a taxi, but otherwise decent Korean,
   much needed if you're tired of kebab and falafel if you've been in the middle east too long.
   The beef bibimbap was a good size but didn't have much beef,
   but it came with an unexpected lot of side dishes included.
@@ -3678,6 +3695,11 @@ and the restaurants on
 Not Recommended:
 
 - Anywhere on [Tourism St](https://maps.app.goo.gl/geaNCD1SibVbkykAA)
+- [Falafel Time](https://maps.app.goo.gl/zYkcVBCWUu4zkFWd9) - the "camel burger" for 5 JD did not taste like camel but
+  rather falafel with sugar added, and the patty had a crumbly dry texture not like meat but falafel - I would not try
+  this again - either this was fake or the camel cubes below were fake, or both.
+  The local receptionist at my accommodation told me that any camel would be 100% fake.
+  At least the fries were good and crispy unlike at Mr Falafel below, and it wasn't such a rip off
 - [Mr Falafel](https://maps.app.goo.gl/NvoP2cAcMZD9UdUa9) - a blogger recommended this, but it was overrated. 12JD for
   "camel" cubes which were overcooked, tough and charred.
   The fries were soggy and the orange juice was smaller than quoted size, full of pips, blended pips and skin.
@@ -3685,16 +3707,80 @@ Not Recommended:
   which could buy you a prime steak in an upmarket hotel restaurant in Amman,
   to put how bad value for money this place is in perspective
 
+TODO:
+
+- [Petra sky terrace restaurant](https://maps.app.goo.gl/VKSXV9Rd7gJNtkPVA)
+- [My Mom's Recipe Restaurant](https://maps.app.goo.gl/HkUhGSHna16JvPxE6)
+- [Palm Court Restaurant & Cafe](https://maps.app.goo.gl/y4p7EeCQbnFpLyzU8)
+- [Nashmiah restaurant](https://maps.app.goo.gl/Mj2xThd5djY12fMx7)
+- [Snack House Restaurant](https://maps.app.goo.gl/8r99wGQwPQ4TooNa7)
+- [Zawaya restaurant](https://maps.app.goo.gl/wfEkcmnT5vrY16Ws9)
+- [Sajiat Al janoob](https://maps.app.goo.gl/AGCnBXLNEFjvPHHh9)
+- [Taste Mandi & Madhbi Restaurant](https://maps.app.goo.gl/f66eqfB1LRBUsgJDA)
+- [Elan restaurant](https://maps.app.goo.gl/L4jA2D5e6wVpHPqc8)
+- [Sana'a Yemen Restaurant](https://maps.app.goo.gl/Y6wno8UBQbHiAEJt6)
+- [Aloush Restaurant](https://maps.app.goo.gl/tMouQW9MSikgVZ4t6)
+- [Yummy Bites](https://maps.app.goo.gl/KqytNr3YsybwS9qe8)
+- [Jordan Heritage Restaurant Petra](https://maps.app.goo.gl/7bAPpgwvB7WwemX4A)
+- [Reem Beladi Restaurant](https://maps.app.goo.gl/HoVAPZrYjSQ3JFkL6)
+
 #### Wadi Rum
 
-Desert nature reserve.
+Red-rock desert protected area, used to film Lawrence of Arabia and The Martian.
 
-You can get there via a Jett bus from Aqaba:
+Some of the views of the mountain ranges are amazing, especially at sunset.
+
+I was quite skeptical of going to a desert, but it is worth it for a one day jeep tour and to stay overnight.
+
+If you only want to do a half day jeep tour, make sure it is in the afternoon for the sunset, rather than the morning.
+
+At night you will see the sky full of stars due to the clear cloudless sky and less light pollution than urban areas.
+
+For food, you will be mostly relying on your guide camp to feed you and provide bottled water. Your jeep should have a
+cool box full of small water bottles.
+
+##### Travel & Accommodation in Wadi Rum
+
+- Jett bus from Aqaba:
 
 <https://www.jett.com.jo/>
 
-or via a travel package from Petra which is what I did where they drive you from Petra to your desert tour and then
-night time accommodation.
+- Minibus from Petra - 10 JD - pre-arranged to pick you up from your accommodation in Petra
+  and drive you to [Wadi Rum Visitor Center](https://maps.app.goo.gl/YwArSg5QLip8RjHH6) or
+  [Wadi Rum Village](https://maps.app.goo.gl/mMmoQBZBoaZwQz1U6)
+  (about 10 minutes drive apart), where your desert camp provider will often arrange to pick you up
+
+My accommodation in Petra arranged this minibus for me, included as part of a desert tour and camp accommodation
+package through them, which probably wasn't optimal but just made the planning easier.
+
+I stayed at Bedouin Lifestyle camp.
+The bungalos have keys to lock your valuables inside.
+The tents are more like converted corrugated sheds and have loops on their sliding doors to use your own padlock on -
+you should have your own medium sized padlock on you as per the hostel section near the beginning of this page.
+
+If I was to go again,
+I would rent a car and then pick the desert package and accommodation more specifically to ensure it's the best.
+
+There are permanent tents in the desert camps which have communal showers,
+and there are en-suite bungalos for additional cost.
+It is also possible to sleep under the stars by special arrangement, but apparently this is more expensive.
+
+##### Attractions in Wadi Rum Desert
+
+- [Big Red Sand Dune](https://maps.app.goo.gl/5mAANbaXFk7vWodY8)
+- [Little Bridge](https://maps.app.goo.gl/Pu4r74aK1GWc9rHC7) - careful with this climb, bring trainers with good grip
+- [Lawrence’s Spring](https://maps.app.goo.gl/hTFMvbu6a8BBdUXk8)
+- [Lawrence’s House](https://maps.app.goo.gl/9D7WdFghcwWpNKgL8)
+- [Mushroom Rock](https://maps.app.goo.gl/igMPPuf6fk5aWCft5)
+- [Khazali Canyon](https://maps.app.goo.gl/9xLEL6WKRZN8kHHEA)
+- [Umm Rashid Canyon](https://maps.app.goo.gl/RrDESoaU6UxRdeRo7)
+- [Abu Khasaba Canyon](https://maps.app.goo.gl/Jx448ADKvH6f8X9D6)
+
+##### Wadi Rum Village
+
+[Wadi Rum Village](https://maps.app.goo.gl/aG3DosxCrydMmgeNA) is a small community of buildings.
+
+Unfortunately, even here you will find a bit of street litter of cigarette packets and plastic bottles.
 
 #### Aqaba
 
@@ -4716,6 +4802,8 @@ In the capital, the malls were relatively sparse since a lot of the poorer local
 Kidnappings of the children of the rich is also a problem, with gated communities having their own security forces.
 
 ### Romania
+
+Not cheap any more, almost Western prices.
 
 #### Taxis in Romania
 
