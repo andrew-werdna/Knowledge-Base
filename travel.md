@@ -188,6 +188,7 @@ Updated regularly as I travel the world 52 weeks a year.
     - [Venice](#venice)
   - [Jordan](#jordan)
     - [Jordan Visa & Jordan Pass](#jordan-visa--jordan-pass)
+    - [Cash & "Visa" in Jordan](#cash--visa-in-jordan)
     - [Jordan Taxi Apps](#jordan-taxi-apps)
     - [Beware Dating Apps Are Full of Scammers in Jordan](#beware-dating-apps-are-full-of-scammers-in-jordan)
     - [Amman](#amman)
@@ -3346,6 +3347,13 @@ However, since historical attractions will set you back nearly the same amount a
 The difference between the 3 different Jordan Passes is whether you want to spend 1, 2 or 3 consecutive days visiting
 Petra.
 
+#### Cash & "Visa" in Jordan
+
+Although many places do accept cards, quite a few don't so you will need to withdraw cash from an ATM otherwise you
+will likely be caught out at some point.
+
+Locals tend to say "Visa" when they mean card payment, your Mastercard will work fine too.
+
 #### Jordan Taxi Apps
 
 - [Uber](https://www.uber.com/jo/en/) - reliable and more accurately priced than Careem, at least in Jordan in my
@@ -3793,13 +3801,28 @@ Unfortunately, even here you will find a bit of street litter of cigarette packe
 
 TODO:
 
-- [Rum Castle Resthouse](https://maps.app.goo.gl/hih2zWL474ZSZ82TA) - not open at 3pm Monday
+- [Rum Castle Resthouse](https://maps.app.goo.gl/hih2zWL474ZSZ82TA) - not open at 3pm Monday, fridges were empty,
+  not sure if permanently closed down
 - [Falafel Restaurant](https://maps.app.goo.gl/54DiPSr4hBUM8SPG7) - not open at 3pm Monday
 
 #### Aqaba
 
 City on the Red Sea, known for snorkelling and scuba diving.
 
+- [Aurjwan Cafe & Restaurant] - good menu and moderate prices,
+  in a well air conditioned cafe lounge with indoor and outdoor seating, 5 big screen TVs on 3 of the walls playing
+  football.
+  The outdoor seating is covered during the day time as it's too hot and not shaded.
+  The fish and "chips" was good - 3 medium sized pieces of nicely battered fish, 2 large lemons, and the homemade
+  "chips" were like deep fried crisps rather than the fries expected.
+  The banana split was great too - and came topped with strawberry slices and nuts -
+  of the 3 scoops of ice cream, the chocolate was my favourite, a rich flavour of chocolate,
+  followed by the vanilla, but next time I'd go with the strawberry instead of the mango sorbet.
+  I'm going to try to have this banana split again.
+  Wifi 382/177 Mbit/s
+- [Flame](https://maps.app.goo.gl/zP1pSkaUTHQ5cmPv9) - good fast food burger restaurant.
+  The smokey burger double was surprisingly good, and came with a lot of fries and a soft drink
+  (I asked for water instead) for 6.25 JD. No wifi unfortunately
 - [Firefly Burger](https://maps.app.goo.gl/5XRz6wZXLqzrxxyQA) - same chain as the one described in the Amman section
 
 ### Laos
@@ -4673,9 +4696,31 @@ Tourist hotspot.
 
 *"F\*ck Warsaw, go to Krakow!"*, one of my Polish colleagues told me. He was right.
 
+There are lots of coffee shops but few restaurants that stood out to me,
+as usual tourist restaurants will be more expensive and of less impressive quality.
+
+- [Czarna Kaczka / Black Duck](https://maps.app.goo.gl/Ycgm9oBHHpDfAhem9) - decent restaurant
+- [Busz](https://maps.app.goo.gl/izdAfUVvP7cK4Ccm8) - busy coffee shop
+- [B.O.H.O Coffee&Bar](https://maps.app.goo.gl/yewJswg71qJYsbZT6)
+- [Pierwszy Lokal na Stolarskiej po lewej stronie, idąc od Małego Rynku](https://maps.app.goo.gl/NouzQS43hFPR6uLV7) -
+  busy coffee shop
+
+TODO:
+
+- [Padre Restaurant](https://maps.app.goo.gl/AzjizkX1eWaunozw6) - 4.7
+- [Kluska na Placu](https://maps.app.goo.gl/85J5BhYKN9NkFc8b6) - 4.7
+- [Old Town Restaurant and Wine Bar](https://maps.app.goo.gl/LNzkBpBMJ51UyPcy8) - 4.7
+- [Fiorentina](https://maps.app.goo.gl/kDCSctFiJ7cNS8Nw7) - 4.6
+- [Stodoła](https://maps.app.goo.gl/ccyCB1fzyUqjJ8zR8) - 4.5
+- [Pod Aniołami Restaurant](https://maps.app.goo.gl/2HPrdVJFTXq3qoYn8) - 4.5
+- [Miód Malina](https://maps.app.goo.gl/jhHraxVuVfGZExvA9) - 4.5
+
 #### Łódź
 
 Medium sized city, mall and restaurants, but lacks the historical centre attraction of other Polish cities.
+
+- [Manufaktura](https://maps.app.goo.gl/V1t63UoBryMrEUfK6) - mall, outside there are restaurants in a large pedestrian
+  area
 
 #### Nowy Sącz
 
