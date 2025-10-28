@@ -76,6 +76,7 @@ heavyweight IDEs like [IntelliJ](intellij.md).
     - [Inspect Package Contents Before Installing](#inspect-package-contents-before-installing)
     - [List Installed Packages](#list-installed-packages)
   - [Launchctl](#launchctl)
+  - [Start At Login](#start-at-login)
   - [Disk Management](#disk-management)
     - [CLI Disk Management](#cli-disk-management)
     - [List disks](#list-disks)
@@ -1114,6 +1115,59 @@ Launch scripts are found in the following locations:
 [Blog post](https://paul.annesley.cc/2012/09/mac-os-x-launchd-is-cool/) on cool things launchd can do, like watching and
 executing on files that are dropped into directories.
 
+### Start At Login
+
+See which apps are configured to start at login:
+
+```shell
+osascript -e 'tell application "System Events" to get the name of every login item'
+```
+
+You should see a selection of apps:
+
+```text
+Google Drive, ProtonVPN, WhatsApp, Stats, Terminal, SanDiskSecurityHelper, Flux, Hammerspoon
+```
+
+Add an app to start at login:
+
+```shell
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Hammerspoon.app", hidden:false}'
+```
+
+Ignore this quirky output:
+
+```text
+login item UNKNOWN
+```
+
+This does work,
+which you can verify by running the above `osascript` command again to see it's in the list of login items.
+
+You can also see this in the Mac UI of `Settings Settings` -> `General` -> `Login Items` (Ventura / Sonoma):
+
+```shell
+open "x-apple.systempreferences:com.apple.LoginItems-Settings.extension"
+```
+
+or `System Preferences` -> `Users & Groups` -> `Login Items` (Monterey / Big Sur):
+
+```shell
+open "x-apple.systempreferences:com.apple.preference.users?LoginItems"
+```
+
+To add it if not already added:
+
+```shell
+osascript <<EOF
+tell application "System Events"
+    if not (exists login item "Hammerspoon") then
+        make login item at end with properties {path:"/Applications/Hammerspoon.app", hidden:false}
+    end if
+end tell
+EOF
+```
+
 ### Disk Management
 
 Using graphical Disk Utility is easiest:
@@ -1483,9 +1537,37 @@ See the instructions on the [audio](audio.md#shazam-songs-while-using-headphones
 
 This is allows you to script event handler actions using Lua.
 
-See the Audio page's section
-[Automatically Switch to Using Multi-Output Device when Connecting Headphones](audio.md#automatically-switch-to-using-multi-output-device-when-connecting-headphones)
-for an example of using this.
+```shell
+brew install hammerspoon --cask
+```
+
+Then create a `~/.hammerspoon/init.lua` to register your event handlers.
+
+See
+[HariSekhon/DevOps-Bash-tools - configs/.hammerspoon/init.lua](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/configs/.hammerspoon/init.lua)
+for my use case mentioned in this knowledge base's Audio page section
+[Automatically Switch to Using Multi-Output Device when Connecting Headphones](audio.md#automatically-switch-to-using-multi-output-device-when-connecting-headphones).
+
+```shell
+mkdir ~/.hammerspoon
+```
+
+```shell
+wget -O ~/.hammerspoon/init.lua \
+  https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/configs/.hammerspoon/init.lua
+```
+
+Finally, start Hammerspoon, you should see its icon in the menu bar.
+
+```shell
+open -a Hammerspoon
+```
+
+Set Hammerspoon to start at login (you can tick this in the Hammerspoon Preferences UI) or just run this:
+
+```shell
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Hammerspoon.app", hidden:false}'
+```
 
 ## KeyChain Access
 
