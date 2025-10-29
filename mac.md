@@ -1544,7 +1544,7 @@ brew install hammerspoon --cask
 Then create a `~/.hammerspoon/init.lua` to register your event handlers.
 
 See
-[HariSekhon/DevOps-Bash-tools - configs/.hammerspoon/init.lua](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/configs/.hammerspoon/init.lua)
+[:octocat: HariSekhon/DevOps-Bash-tools - configs/.hammerspoon/init.lua](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/configs/.hammerspoon/init.lua)
 for my use case mentioned in this knowledge base's Audio page section
 [Automatically Switch to Using Multi-Output Device when Connecting Headphones](audio.md#automatically-switch-to-using-multi-output-device-when-connecting-headphones).
 
@@ -1567,6 +1567,16 @@ Set Hammerspoon to start at login (you can tick this in the Hammerspoon Preferen
 
 ```shell
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Hammerspoon.app", hidden:false}'
+```
+
+Optionally allow pop-up desktop notifications from Hammerspoon
+so that your code can notify you when it's done something for you
+(I recommend Banners that automatically disappear without having to click them).
+
+`System Settings` -> `Notifications` ->`Hammerspoon`:
+
+```shell
+open "x-apple.systempreferences:com.apple.Notifications-Settings.extension?bundleId=org.hammerspoon.Hammerspoon"
 ```
 
 ## KeyChain Access
