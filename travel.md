@@ -3893,11 +3893,19 @@ Restaurants:
   benches.
   I didn't rate the Mexican seafood as that good though.
   The fried seafood sandwich was better
-- [Juice Corner by Lacosta](https://maps.app.goo.gl/qNX7yFnXcZRbkdN66)
+- [Juice Corner by Lacosta](https://maps.app.goo.gl/qNX7yFnXcZRbkdN66) - high quality fresh squeezed juice bar with a
+  great menu, reasonable prices and good selection of juices and fresh pure juice mixes as well.
+  A plain orange juice is 2 JD + taxes, so a little cheaper than the neighbouring restaurants which are typically 3 JD.
+  The juice mixes are typically 2.5-3 JD + taxes.
+  Wifi is by the parent Lacoste Hotel tested at an impressive 286/212 Mbit/s
 - [Lacosta Bakery & Cafe](https://maps.app.goo.gl/vsiJcdi78Nmcob6B8) - upmarket expensive coffee shop with treats like
   cookies and croissants filled with banana or strawberry and chocolate.
-  Wifi 75/94 Mbit/s
+  Wifi same as above but tested at 75/94 Mbit/s
 - [Firefly Burger](https://maps.app.goo.gl/5XRz6wZXLqzrxxyQA) - same chain as the one described in the Amman section
+- [Albaba Spices](https://maps.app.goo.gl/9VqbRBQsbfnBYyyq7) - 2-3 JD for 200-300g for spices, a great selection of
+  mixed spices and teas, most notably the pomegranate tea mix,
+  which they gave sample of as well as tastes of their various spice mixes which were very good.
+  If you're intending to cook anything whether here or back home, you may want to get some of these mixes
 
 Attractions:
 
