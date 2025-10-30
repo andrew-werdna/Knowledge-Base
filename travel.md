@@ -213,6 +213,9 @@ Updated regularly as I travel the world 52 weeks a year.
     - [Luang Prabang](#luang-prabang)
   - [Latvia](#latvia)
     - [Riga](#riga)
+  - [Lebanon](#lebanon)
+    - [Beirut](#beirut)
+      - [Taxis in Beirut](#taxis-in-beirut)
   - [Lithuania](#lithuania)
     - [Vilnius](#vilnius)
   - [Malaysia](#malaysia)
@@ -1078,7 +1081,7 @@ get a [PO Box](https://www.royalmail.com/receiving/po-box) to collect on return 
 
 ## Countries
 
-Number of Countries: 47
+Number of Countries: 48
 
 - Countries in 2024: 18
   - UAE, France, Belgium, Germany, Poland, Lithuania, Latvia, Estonia, Sweden, Slovakia, Hungary, Serbia, Morocco,
@@ -3332,6 +3335,8 @@ Pristina
 I've used Saily and aloSim apps for e-sims in Jordan.
 The Airalo 3GB one is only 3 days, not 7 days like with the other providers, so watch out that one is too short.
 
+The plugs are UK (type "G") plugs, but take a travel adapter just in case there are a variety of plugs.
+
 #### Jordan Visa & Jordan Pass
 
 **Buy a Jordan Pass before you enter Jordan to avoid the visa entry fee**
@@ -3346,6 +3351,9 @@ However, since historical attractions will set you back nearly the same amount a
 
 The difference between the 3 different Jordan Passes is whether you want to spend 1, 2 or 3 consecutive days visiting
 Petra.
+
+Carry your passport with you as ID may be requested upon entry to sites,
+especially at Petra if using the multi-day petra pass.
 
 #### Cash & "Visa" in Jordan
 
@@ -3639,12 +3647,14 @@ in the room but works better in the lobby.
 
 -->
 
-The ancient archaelogical site of one of the 7 Wonders of the World -
+The ancient archaeological site of one of the 7 Wonders of the World -
 [The Treasury](https://share.google/a7U2bQY9ldd2p6V38)
 where they carved the building straight out of the mountain rock.
 
 Entry to Petra is around 50JD (€60) for a single day, so as per the section above, it's usually better to buy a Jordan
 Pass which can cover 1, 2 or 3 consecutive days for negligible increase in price of 5JD per extra day.
+
+**Carry your passport as ID may be requested, especially on the 2nd day if using a multi-day petra jordan pass.**
 
 ##### Travelling to Petra
 
@@ -3659,6 +3669,8 @@ Select Amman Daily Tours from the drop-down:
 Otherwise you'll need a rental car or a very expensive taxi ride. Most people use the Jett bus.
 
 ##### Petra Attractions
+
+**Carry your passport as ID may be requested, especially on the 2nd day if using a multi-day petra jordan pass.**
 
 You can do Petra in one day, but you'll be worn out, it's easier to do it over 2 days.
 
@@ -3819,6 +3831,21 @@ TODO:
 
 City on the Red Sea, known for snorkelling and scuba diving.
 
+Aqaba isn't big so you can explore it in one day, then spend one day snorkelling and another day scuba diving - a
+3-4 night stay isn't enough, plus whatever rest days you want around travelling.
+
+<!--
+
+The Extra Traveller hostel was nice, good facility and the owner is super friendly and accommodating.
+
+-->
+
+- [Bakar & Sweets World Al janob](https://maps.app.goo.gl/onfk16d9E49Cn3m1A) - the best local bakery of breads and
+  treats, shown to me by a local, open 24 hours a day!
+  You can see them making these large flatbreads in front of you,
+  and there is a 3 level conveyor belt of round pitas coming down, as well as selection of baklava and similar treats
+  ready to pick up.
+  I love the yellow "cake" bread
 - [Aurjwan Cafe & Restaurant](for 6.25 JD) - good menu and moderate prices,
   in a well air conditioned cafe lounge with indoor and outdoor seating, 5 big screen TVs on 3 of the walls playing
   football.
@@ -3841,10 +3868,21 @@ City on the Red Sea, known for snorkelling and scuba diving.
   benches.
   I didn't rate the Mexican seafood as that good though.
   The fried seafood sandwich was better
+- [Juice Corner by Lacosta](https://maps.app.goo.gl/qNX7yFnXcZRbkdN66)
 - [Lacosta Bakery & Cafe](https://maps.app.goo.gl/vsiJcdi78Nmcob6B8) - upmarket expensive coffee shop with treats like
   cookies and croissants filled with banana or strawberry and chocolate.
   Wifi 75/94 Mbit/s
 - [Firefly Burger](https://maps.app.goo.gl/5XRz6wZXLqzrxxyQA) - same chain as the one described in the Amman section
+
+Attractions:
+
+- [Al-Ghandour Beach](https://maps.app.goo.gl/57LYms5XXEVsvAdd6)
+  - [Aqaba Cornishe](https://maps.app.goo.gl/r17BRpi2YWaHr6vT9) - park by the beach
+- [Aqaba Fort](https://maps.app.goo.gl/USVSfkd8enTxuTmF9)
+- [Sharif Hussein bin Ali Mosque](https://maps.app.goo.gl/5MFtv7R2MDSXwBJVA)
+- [Arab Revolt Plaza](https://maps.app.goo.gl/rKkUtxNUwBKRCS6Q7)
+- [Fish market](https://maps.app.goo.gl/Vz5rQKMXk3VRuCmm9) - at sunset when fishermen are returning with their hauls
+  there are gangs of cats waiting for small fish scraps, the little moochers 🥰
 
 Not recommended:
 
@@ -3978,6 +4016,15 @@ You will run out of things to do.
   charge €9 for entry to the tower though. Capitalism applies even to the church it seems
 - [Dzintari Forest Park](https://maps.app.goo.gl/xLusynMkirWyvyUm7) - managed forest with a high tower for view
 - [Dzintari Beach](https://maps.app.goo.gl/h8uuFn2PGAtiSzmd8) - surprisingly nice beach in the summer
+
+### Lebanon
+
+#### Beirut
+
+##### Taxis in Beirut
+
+- [Bolt](https://bolt.eu/en/)
+- [Uber](https://www.uber.com/)
 
 ### Lithuania
 
@@ -5503,7 +5550,7 @@ TODO:
 
 This city state is one of the most developed places in Asia and one of the most expensive cities in the world.
 
-This is another former British colony, like UAE, that has retained English speaking and English 3-pin plugs.
+This is another former British colony, like UAE, that has retained English speaking and UK 3-pin (type "G") plugs.
 
 The food is more expensive and less good than the rest of Asia, and the hotels are expensive too.
 
