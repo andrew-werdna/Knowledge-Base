@@ -58,3 +58,40 @@ else
     timestamp "Updating country count from $num_countries_in_markdown to $num_countries"
     sed -i "s/^\(Number of Countries:\)[[:space:]]*[[:digit:]][[:digit:]]*[[:space:]]*$/\\1 $num_countries/" "$travel_md"
 fi
+
+if [[ "$USER" =~ hari|sekhon ]]; then
+    if type -P curl_with_cookies.sh &>/dev/null &&
+       type -P pycookiecheat &>/dev/null; then
+        nomads_csv=~/Downloads/"$(date '+%F')-harisekhon-trips-on-nomad-list.csv"
+        curl_with_cookies.sh https://nomads.com/@harisekhon.csv > "$nomads_csv"
+        total_countries=""
+        for year in {2024..2099}; do
+            countries="$(
+                awk -F, "/\"$year/{print \$5}" "$nomads_csv" |
+                sed '
+                    /United Kingdom/d;
+                    s/"//g;
+                ' |
+                sort -u
+            )"
+            num_countries="$(
+                sed '/^[[:space:]]*$/d' <<< "$countries" |
+                wc -l |
+                sed 's/[[:space:]]//g;'
+            )"
+            if [ "$num_countries" = 0 ]; then
+                break
+            fi
+            sed -i "s/\(Countries in $year: \).*/\\1$num_countries/" "$travel_md"
+            total_countries+="
+$countries"
+        done
+        num_total_countries="$(
+            sed '/^[[:space:]]*$/d' <<< "$total_countries" |
+            sort -u |
+            wc -l |
+            sed 's/[[:space:]]//g;'
+        )"
+        sed -i "s/\(Unique Countries since Emigrating from the UK in 2024: \).*/\\1$num_total_countries/" "$travel_md"
+    fi
+fi

@@ -1089,11 +1089,11 @@ Number of Countries: 48
   - not counting my extensive month long
     [Tour of England and Wales](https://medium.com/@harisekhon/the-uk-decline-what-i-learnt-from-my-uk-tour-2024-84347efced9b)
     (the latter was borderline a different country, there are actually Welsh signs I can't read)
-- Countries in 2025: 25
+- Countries in 2025: 27
   - Vietnam (continued), Cambodia, Laos, Bali (Indonesia), Malayasia, Singapore, Taiwan, Serbia, Bulgaria, Romania,
-    Hungary, Slovakia, Austria, Czechia, Poland, Slovenia, Croatia, Montenegro, Albania, North Macedonia, Bosnia and
-    Herzegovina, Ukraine, Moldova, Tunisia, Jordan
-- Unique Countries since Emigrating from the UK in 2024: 37
+    Hungary, Slovakia, Austria, Czechia, Poland, Germany, Slovenia, Croatia, Montenegro, Albania, North Macedonia, Bosnia and
+    Herzegovina, Ukraine, Moldova, Tunisia, Jordan, Lebanon
+- Unique Countries since Emigrating from the UK in 2024: 38
 
 Below are specific tips for each country, especially my favourite restaurants.
 
@@ -3672,6 +3672,8 @@ Otherwise you'll need a rental car or a very expensive taxi ride. Most people us
 
 **Carry your passport as ID may be requested, especially on the 2nd day if using a multi-day petra jordan pass.**
 
+**Take at least 1L of water per person and a lunch box.**
+
 You can do Petra in one day, but you'll be worn out, it's easier to do it over 2 days.
 
 You may want to go very early in the morning before the midday sun, Petra opens at 6:30am.
@@ -3765,6 +3767,8 @@ At night you will see the sky full of stars due to the clear cloudless sky and l
 
 For food, you will be mostly relying on your guide camp to feed you and provide bottled water. Your jeep should have a
 cool box full of small water bottles.
+
+**Make sure you take trainers with good grips as climbing the bridge will be dangerous otherwise.**
 
 ##### Travel & Accommodation in Wadi Rum
 
