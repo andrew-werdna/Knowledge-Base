@@ -3363,6 +3363,9 @@ Locals tend to say "Visa" when they mean card payment, your Mastercard will work
   I've also had drivers be unreliable and then have to contest the cancellation charges when they don't arrive
 - [Jeeny](https://www.jeeny.me/en/) - expected a mobile number from one of the middle eastern countries, couldn't use it
 
+Unfortunately these aren't allowed to operate in Aqaba or Petra / Wadi Musa so there you'd have to haggle with the local
+taxi drivers.
+
 #### Beware Dating Apps Are Full of Scammers in Jordan
 
 Scammers litter the dating apps in Jordan.
@@ -3377,7 +3380,8 @@ He said he met her on Bumble, but local hotels and hostels warn that this is com
 
 The capital of Jordan.
 
-There are quite a few historic sites dating back to Roman times.
+There are a couple of few historic sites dating back to Roman times -
+the Roman forum, and the Citadel with the ruins of the Temple of Hercules.
 
 Amman has also lots of good restaurants at reasonable prices, especially around
 [Rainbow Street](https://maps.app.goo.gl/Dcj9De8Tso5D4SMdA) and
@@ -3392,6 +3396,8 @@ the hills.
 The city is not great for walking, you can't even walk north from the Taj Mall because it is just dual carriageways.
 
 The roads are also surprisingly dirty (that black dust as opposed to litter) similar to parts of London.
+
+Overall, you don't need more than 2-3 nights in Amman.
 
 ##### Bus from Airport to Amman
 
@@ -3774,6 +3780,10 @@ There are permanent tents in the desert camps which have communal showers,
 and there are en-suite bungalos for additional cost.
 It is also possible to sleep under the stars by special arrangement, but apparently this is more expensive.
 
+It's ideal to go for 2 nights, arrive the night before, do a full day jeep tour the next day,
+then stay overnight again before leaving so that you are resting properly instead of travelling to / from Wadi Rum on
+the same day as the full jeep tour which is more tiring.
+
 ##### Attractions in Wadi Rum Desert
 
 - [Big Red Sand Dune](https://maps.app.goo.gl/5mAANbaXFk7vWodY8)
@@ -3809,7 +3819,7 @@ TODO:
 
 City on the Red Sea, known for snorkelling and scuba diving.
 
-- [Aurjwan Cafe & Restaurant] - good menu and moderate prices,
+- [Aurjwan Cafe & Restaurant](for 6.25 JD) - good menu and moderate prices,
   in a well air conditioned cafe lounge with indoor and outdoor seating, 5 big screen TVs on 3 of the walls playing
   football.
   The outdoor seating is covered during the day time as it's too hot and not shaded.
@@ -3821,11 +3831,16 @@ City on the Red Sea, known for snorkelling and scuba diving.
   I'm going to try to have this banana split again.
   Wifi 382/177 Mbit/s
 - [Flame](https://maps.app.goo.gl/zP1pSkaUTHQ5cmPv9) - good fast food burger restaurant.
-  The smokey burger double was surprisingly good, and came with a lot of fries and a soft drink
-  (I asked for water instead) for 6.25 JD.
-  The special burger was too much due to the large slab of deep fried cheese, the second half of which I pulled out.
+  The smokey burger double was surprisingly good, and came with a lot of skinny fries and a soft drink
+  for 6.25 JD (I asked for water instead).
+  The special burger was too much due to the large think slab of deep fried cheese, the second half of which I pulled
+  out, rather than ate.
   Go with the classic burger instead of the special if you're even remotely health conscious.
   No wifi unfortunately (it's only for the pay register)
+- [Sayd Al-Bahr – Seafood Food Truck](https://maps.app.goo.gl/pAWxBeXxV9unGT6E8) - affordable seafood street food with
+  benches.
+  I didn't rate the Mexican seafood as that good though.
+  The fried seafood sandwich was better
 - [Lacosta Bakery & Cafe](https://maps.app.goo.gl/vsiJcdi78Nmcob6B8) - upmarket expensive coffee shop with treats like
   cookies and croissants filled with banana or strawberry and chocolate.
   Wifi 75/94 Mbit/s
