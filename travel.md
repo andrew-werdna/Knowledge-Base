@@ -3889,10 +3889,21 @@ Restaurants:
   out, rather than ate.
   Go with the classic burger instead of the special if you're even remotely health conscious.
   No wifi unfortunately (it's only for the pay register)
+- [Route65](https://maps.app.goo.gl/SiY6xpgv3gSk6qNU8) - popular gentrified burger restaurant, they quoted a long 25
+  minute wait for the burger and fries, but it was only 12 minutes.
+  The 65 burger was pretty basic, with a slice of pastrami, but not enough salad, fairly average fast food style burger.
+  The curly fries were decent, crispy, but are an additional surcharge on the meal price.
+  Wifi 118/82 Mbit/s
 - [Sayd Al-Bahr – Seafood Food Truck](https://maps.app.goo.gl/pAWxBeXxV9unGT6E8) - affordable seafood street food with
   benches.
   I didn't rate the Mexican seafood as that good though.
   The fried seafood sandwich was better
+- [Buzz St](https://maps.app.goo.gl/AosyXZmNTD43kZDRA) - several highly rated gentrified coffee shops
+  - [Watermelon Juice Corner](https://maps.app.goo.gl/Ug9Gddk5KKbehxoF7) - excellent menu of fresh juices, juice mixes,
+    but several of the mix drinks are not intuitive, with some being just three letter acronyms.
+    The LPG (lemon, pineapple, ginger) was much too heavily weighted to lemon, don't get that one again.
+    The "cocktails" are non-alcoholic but with vanilla ice cream scoop!
+    Has wifi
 - [Juice Corner by Lacosta](https://maps.app.goo.gl/qNX7yFnXcZRbkdN66) - high quality fresh squeezed juice bar with a
   great menu, reasonable prices and good selection of juices and fresh pure juice mixes as well.
   A plain orange juice is 2 JD + taxes, so a little cheaper than the neighbouring restaurants which are typically 3 JD.
@@ -3901,6 +3912,7 @@ Restaurants:
 - [Lacosta Bakery & Cafe](https://maps.app.goo.gl/vsiJcdi78Nmcob6B8) - upmarket expensive coffee shop with treats like
   cookies and croissants filled with banana or strawberry and chocolate.
   Wifi same as above but tested at 75/94 Mbit/s
+- [Fruit Salad Aqaba](https://maps.app.goo.gl/ovVDrdVF3Y2XYtjf7) - same fresh juice & fruit chain as in Amman section
 - [Firefly Burger](https://maps.app.goo.gl/5XRz6wZXLqzrxxyQA) - same chain as the one described in the Amman section
 - [Albaba Spices](https://maps.app.goo.gl/9VqbRBQsbfnBYyyq7) - 2-3 JD for 200-300g for spices, a great selection of
   mixed spices and teas, most notably the pomegranate tea mix,
@@ -3916,6 +3928,27 @@ Attractions:
 - [Arab Revolt Plaza](https://maps.app.goo.gl/rKkUtxNUwBKRCS6Q7)
 - [Fish market](https://maps.app.goo.gl/Vz5rQKMXk3VRuCmm9) - at sunset when fishermen are returning with their hauls
   there are gangs of cats waiting for small fish scraps, the little moochers 🥰
+
+TODO:
+
+- [Captains restaurant](https://maps.app.goo.gl/HPawt9UGciw9SkbH9) - 4.5 steak and seafood, relatively pricey
+- [Fokhara Restaurant By Lacosta](https://maps.app.goo.gl/sobGTBtebN4hnLKYA) - 4.9, good menu and prices
+- [Dar Al Khatyar Restaurant](https://maps.app.goo.gl/HvcJFEN1DUcyVbS86) - 4.9
+- [Alzephere Restaurant](https://maps.app.goo.gl/VLdBa2NxTLPH8d1v5) - 4.8 seafood restaurant
+- [MILK'N](https://maps.app.goo.gl/WKsBzLwDZX96ebWL7) - 4.7 ice cream and fresh juices
+- [Buzz St](https://maps.app.goo.gl/uQ6PTLa3k5B8friB9):
+  - [Maria Speciality Coffee House](https://maps.app.goo.gl/cGvsXNndmoDv4iBw8) - 5.0
+  - [Khubza & Seneya](https://maps.app.goo.gl/3RHnqGAe6bjedf8S6) - 4.8
+  - [Marouf Cafe - Al Aqaba (Movienpick)](https://maps.app.goo.gl/pzuG2axNdaB2wkw88) - 4.5
+- [Comma Coffee Aqaba](https://maps.app.goo.gl/etDby6AxTYKjE6HMA) - 4.9
+- [Kava coffee & more](https://maps.app.goo.gl/jMxaye9KrQw9gT4E7) - 4.8
+- [Lablue Cafe](https://maps.app.goo.gl/3xL9wt2kwmeUidjF7) - 4.8
+- [Shrimpester Aqaba – Fish & More](https://maps.app.goo.gl/qhouPX9hvctKUWWg7) - 4.9
+- [Mansaf Nashmi](https://maps.app.goo.gl/JXjQgzZeNDwNpkiU8) - 4.8
+- [Baba Za'atar](https://maps.app.goo.gl/bf4UcgRYFTZa82rXA) - 4.5, local food serving manakesh (levantine bread with
+  toppings) and pizza
+- [Julia’s Restaurant](https://maps.app.goo.gl/W3gSARsBuf429gyU6) - 4.5 Italian, if you need a break from Jordanian food
+- [Waffle & Crepe](https://maps.app.goo.gl/SGA8Sx3bgbKGMDFd6) - 4.3
 
 Not recommended:
 
