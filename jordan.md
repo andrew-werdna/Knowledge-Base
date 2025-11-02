@@ -14,13 +14,16 @@
   - [Dead Sea Resorts - There Are No Good Public Beaches](#dead-sea-resorts---there-are-no-good-public-beaches)
 - [Petra & Wadi Musa](#petra--wadi-musa)
   - [Travelling to Petra](#travelling-to-petra)
-  - [Petra Attractions](#petra-attractions)
+  - [Attractions in Petra](#attractions-in-petra)
   - [Restaurants in Wadi Musa](#restaurants-in-wadi-musa)
 - [Wadi Rum](#wadi-rum)
   - [Travel & Accommodation in Wadi Rum](#travel--accommodation-in-wadi-rum)
   - [Attractions in Wadi Rum Desert](#attractions-in-wadi-rum-desert)
   - [Wadi Rum Village](#wadi-rum-village)
 - [Aqaba](#aqaba)
+  - [Travel to Aqaba](#travel-to-aqaba)
+  - [Attractions in Aqaba](#attractions-in-aqaba)
+  - [Restaurants in Aqaba](#restaurants-in-aqaba)
 
 <!-- INDEX_END -->
 
@@ -360,7 +363,7 @@ Select Amman Daily Tours from the drop-down:
 
 Otherwise you'll need a rental car or a very expensive taxi ride. Most people use the Jett bus.
 
-### Petra Attractions
+### Attractions in Petra
 
 **Carry your passport as ID may be requested, especially on the 2nd day if using a multi-day petra jordan pass.**
 
@@ -532,7 +535,7 @@ Aqaba isn't big so you can explore it in one day, then spend one day snorkelling
 
 You can get to Aqaba either via plane since it has an airport, or just a Jett bus:
 
-https://www.jett.com.jo/
+<https://www.jett.com.jo/>
 
 <!--
 
@@ -540,7 +543,23 @@ The Extra Traveller hostel was nice, good facility and the owner is super friend
 
 -->
 
-Restaurants:
+### Travel to Aqaba
+
+You can get to Aqaba by plane as there is a local airport, or by Jett bus from Amman:
+
+<https://www.jett.com.jo/>
+
+### Attractions in Aqaba
+
+- [Al-Ghandour Beach](https://maps.app.goo.gl/57LYms5XXEVsvAdd6)
+  - [Aqaba Cornishe](https://maps.app.goo.gl/r17BRpi2YWaHr6vT9) - park by the beach
+- [Aqaba Fort](https://maps.app.goo.gl/USVSfkd8enTxuTmF9)
+- [Sharif Hussein bin Ali Mosque](https://maps.app.goo.gl/5MFtv7R2MDSXwBJVA)
+- [Arab Revolt Plaza](https://maps.app.goo.gl/rKkUtxNUwBKRCS6Q7)
+- [Fish market](https://maps.app.goo.gl/Vz5rQKMXk3VRuCmm9) - at sunset when fishermen are returning with their hauls
+  there are gangs of cats waiting for small fish scraps, the little moochers 🥰
+
+### Restaurants in Aqaba
 
 - [Bakar & Sweets World Al janob](https://maps.app.goo.gl/onfk16d9E49Cn3m1A) - the best local bakery of breads and
   treats, shown to me by a local, open 24 hours a day!
@@ -608,16 +627,6 @@ Restaurants:
   mixed spices and teas, most notably the pomegranate tea mix,
   which they gave sample of as well as tastes of their various spice mixes which were very good.
   If you're intending to cook anything whether here or back home, you may want to get some of these mixes
-
-Attractions:
-
-- [Al-Ghandour Beach](https://maps.app.goo.gl/57LYms5XXEVsvAdd6)
-  - [Aqaba Cornishe](https://maps.app.goo.gl/r17BRpi2YWaHr6vT9) - park by the beach
-- [Aqaba Fort](https://maps.app.goo.gl/USVSfkd8enTxuTmF9)
-- [Sharif Hussein bin Ali Mosque](https://maps.app.goo.gl/5MFtv7R2MDSXwBJVA)
-- [Arab Revolt Plaza](https://maps.app.goo.gl/rKkUtxNUwBKRCS6Q7)
-- [Fish market](https://maps.app.goo.gl/Vz5rQKMXk3VRuCmm9) - at sunset when fishermen are returning with their hauls
-  there are gangs of cats waiting for small fish scraps, the little moochers 🥰
 
 TODO:
 
