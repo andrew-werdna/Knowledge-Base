@@ -67,12 +67,14 @@ if [[ "$USER" =~ hari|sekhon ]]; then
             wc -l |
             sed 's/[[:space:]]//g;'
         )"
+        timestamp "Country Count from Nomads: $num_total_countries"
         timestamp "Counting Cities"
         num_total_cities="$(
             sed '/^[[:space:]]*$/d' <<< "$total_cities" |
             wc -l |
             sed 's/[[:space:]]//g;'
         )"
+        timestamp "City Count from Nomads: $num_total_cities"
         sed -i "
             s/\(Countries: \).*/\\1$num_total_countries/;
             s/\(Cities: \).*/\\1$num_total_cities/;
@@ -98,12 +100,14 @@ if [[ "$USER" =~ hari|sekhon ]]; then
                 wc -l |
                 sed 's/[[:space:]]//g;'
             )"
+            timestamp "Country Count for $year from Nomads: $num_countries"
             timestamp "Counting Cities for year: $year"
             num_cities="$(
                 sed '/^[[:space:]]*$/d' <<< "$cities" |
                 wc -l |
                 sed 's/[[:space:]]//g;'
             )"
+            timestamp "City Count for $year from Nomads: $num_cities"
             if [ "$num_countries" = 0 ]; then
                 break
             fi
@@ -126,6 +130,7 @@ $cities"
             wc -l |
             sed 's/[[:space:]]//g;'
         )"
+        timestamp "Country Count on Nomads since 2024: $num_countries_since_2024"
         timestamp "Counting Cities since 2024"
         num_cities_since_2024="$(
             sed '/^[[:space:]]*$/d' <<< "$cities_since_2024" |
@@ -133,6 +138,7 @@ $cities"
             wc -l |
             sed 's/[[:space:]]//g;'
         )"
+        timestamp "City Count on Nomads since 2024: $num_cities_since_2024"
         timestamp "Updating $travel_md"
         sed -i "
             s/\(Unique Countries since Emigrating from the UK in 2024: \).*/\\1$num_countries_since_2024/;
@@ -143,26 +149,30 @@ $cities"
     fi
 fi
 
-timestamp "Parsing Countries from $travel_md"
-countries="$(sed -n '/## Countries/,$p' "$travel_md" | grep '^###[[:space:]]')"
-
-timestamp "Counting Countries from $travel_md"
-countries="$(sed -n '/## Countries/,$p' "$travel_md" | grep '^###[[:space:]]')"
-num_countries="$(wc -l <<< "$countries" | sed 's/[[:space:]]*//g')"
-
-timestamp "Parsing country counter in $travel_md"
-num_countries_in_markdown="$(awk '/^Countries:[[:space:]]*[[:digit:]]+$/ {print $2}' "$travel_md")"
-
-if ! is_int "$num_countries_in_markdown"; then
-    die "FAILED to parse country count from $travel_md"
-fi
-
-if [ "$num_countries_in_markdown" = "$num_countries" ]; then
-    timestamp "Country count $num_countries is already up to date"
-else
-    timestamp "Updating country count from $num_countries_in_markdown to $num_countries"
-    sed -i "
-        s/^\(Countries:\)[[:space:]]*[[:digit:]][[:digit:]]*[[:space:]]*$/\\1 $num_countries/;
-        s|\(Total%20Countries-\)[[:digit:]]*|\\1$num_countries|;
-    " "$travel_md"
-fi
+exit 0
+##################################################
+# No longer used since splitting to multiple pages
+#
+#timestamp "Parsing Countries from $travel_md"
+#countries="$(sed -n '/## Countries/,$p' "$travel_md" | grep '^###[[:space:]]')"
+#
+#timestamp "Counting Countries from $travel_md"
+#countries="$(sed -n '/## Countries/,$p' "$travel_md" | grep '^###[[:space:]]')"
+#num_countries="$(wc -l <<< "$countries" | sed 's/[[:space:]]*//g')"
+#
+#timestamp "Parsing country counter in $travel_md"
+#num_countries_in_markdown="$(awk '/^Countries:[[:space:]]*[[:digit:]]+$/ {print $2}' "$travel_md")"
+#
+#if ! is_int "$num_countries_in_markdown"; then
+#    die "FAILED to parse country count from $travel_md"
+#fi
+#
+#if [ "$num_countries_in_markdown" = "$num_countries" ]; then
+#    timestamp "Country count $num_countries is already up to date"
+#else
+#    timestamp "Updating country count from $num_countries_in_markdown to $num_countries"
+#    sed -i "
+#        s/^\(Countries:\)[[:space:]]*[[:digit:]][[:digit:]]*[[:space:]]*$/\\1 $num_countries/;
+#        s|\(Total%20Countries-\)[[:digit:]]*|\\1$num_countries|;
+#    " "$travel_md"
+#fi
