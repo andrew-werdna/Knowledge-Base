@@ -71,13 +71,22 @@ taxi drivers.
 
 ## Beware Dating Apps Are Full of Scammers in Jordan
 
-Scammers litter the dating apps in Jordan.
-They arrange dates to shisha bars that overcharge hundreds and then demand payment.
+There are literally signs on the walls of local accommodations to not use dating apps because they are full of scammers.
+
+If you speak to locals, normal girls from good families do not use dating apps,
+as it is not a hook up culture but a family dating for marriage culture.
+
+Scammers match and then arrange dates to "coffee" or "juice bars" that turn out to be shisha bars that overcharge
+hundreds of JD through a combination of very expensive drinks, cover charges etc, and then demand payment.
 
 I met a german guy who fell for one such scam and ended up losing 550 JD (€666).
 To put this into context, in Jordan you can eat street food for 1 JD or have a steak in a high end hotel restaurant for
-15 JD.
-He said he met her on Bumble, but local hotels and hostels warn that this is common on dating apps.
+15 JD - so this sort of charge is outrageous - you couldn't rack this up even at 5 star hotel restaurants.
+He said he met her on Bumble, and that after running up an unexpectedly huge bill, two guys from the establishment
+escorted him to the ATM to enforce payment in cash.
+The bar was also not even on Google Maps
+(for obvious reasons in hindsight as people would give it 1 star scam reviews
+and then subsequent people would not enter it).
 
 ## Amman
 
@@ -586,7 +595,7 @@ You can get to Aqaba by plane as there is a local airport, or by Jett bus from A
     I told them the next day they need to put more pineapple for sweetness instead of lemon which made it too sour.
     The "cocktails" are non-alcoholic but with vanilla ice cream scoop!
     Has wifi
-- [Aurjwan Cafe & Restaurant](for 6.25 JD) - good menu and moderate prices,
+- [Aurjwan Cafe & Restaurant](https://maps.app.goo.gl/zPZ1xEhVMkxPa7Xm7) - good menu and moderate prices,
   in a well air conditioned cafe lounge with indoor and outdoor seating, 5 big screen TVs on 3 of the walls playing
   football.
   The outdoor seating is covered during the day time as it's too hot and not shaded.
@@ -621,6 +630,8 @@ You can get to Aqaba by plane as there is a local airport, or by Jett bus from A
   The 65 burger was pretty basic, with a slice of pastrami, but not enough salad, fairly average fast food style burger.
   The curly fries were decent, crispy, but are an additional surcharge on the meal price.
   Wifi 118/82 Mbit/s
+- [Captains restaurant](https://maps.app.goo.gl/HPawt9UGciw9SkbH9) - steak and seafood, relatively pricey and
+  their fried fish while large is not as good as the crispy tempura at Aurjwan Cafe & Restaurant above
 - [Fruit Salad Aqaba](https://maps.app.goo.gl/ovVDrdVF3Y2XYtjf7) - same fresh juice & fruit chain as in Amman section
 - [Firefly Burger](https://maps.app.goo.gl/5XRz6wZXLqzrxxyQA) - same chain as the one described in the Amman section
 - [Albaba Spices](https://maps.app.goo.gl/9VqbRBQsbfnBYyyq7) - 2-3 JD for 200-300g for spices, a great selection of
@@ -630,7 +641,6 @@ You can get to Aqaba by plane as there is a local airport, or by Jett bus from A
 
 TODO:
 
-- [Captains restaurant](https://maps.app.goo.gl/HPawt9UGciw9SkbH9) - 4.5 steak and seafood, relatively pricey
 - [Fokhara Restaurant By Lacosta](https://maps.app.goo.gl/sobGTBtebN4hnLKYA) - 4.9, good menu of arabic food and
   reasonable prices
 - [Dar Al Khatyar Restaurant](https://maps.app.goo.gl/HvcJFEN1DUcyVbS86) - 4.9
