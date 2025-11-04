@@ -58,6 +58,15 @@ will likely be caught out at some point.
 
 Locals tend to say "Visa" when they mean card payment, your Mastercard will work fine too.
 
+Most ATMs will charge you 5 JD access fee which is a rip off.
+
+I recommend using Jordan-Kuwait bank which didn't charge the 5 JD access fee.
+This was recommended to me by a local in Aqaba.
+They charged in US dollars instead of the amount withdrawn in JD, with a slight 2% foreign exchange markup compared to
+the amount my currency converter app expected,
+but it's still much cheaper than the other ATMs if you're withdrawing 100-150 JD (you don't need that much cash in
+Jordan as it's not that expensive and most places do take cards).
+
 ## Jordan Taxi Apps
 
 - [Uber](https://www.uber.com/jo/en/) - reliable and more accurately priced than Careem, at least in Jordan in my
