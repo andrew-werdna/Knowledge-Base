@@ -7,19 +7,31 @@
 - [Browser Fingerprinting](#browser-fingerprinting)
 - [I2P](#i2p)
 - [Commands](#commands)
-  - [Show routing table](#show-routing-table)
+  - [Ping](#ping)
+  - [Routing](#routing)
+    - [Show Routing Table](#show-routing-table)
+    - [Show Linux Routing Table](#show-linux-routing-table)
+    - [Add Static Route](#add-static-route)
   - [DNS lookup](#dns-lookup)
-  - [Add static route](#add-static-route)
-  - [Show your public IP](#show-your-public-ip)
-  - [Linux - show your local IP Tables software firewall rules](#linux---show-your-local-ip-tables-software-firewall-rules)
+  - [Public IP](#public-ip)
+  - [Country Phone Calling Code](#country-phone-calling-code)
+  - [Software Firewall](#software-firewall)
+    - [iptables](#iptables)
+  - [Packet Tracing](#packet-tracing)
   - [Network Speed Test](#network-speed-test)
     - [Local Network Speed Test](#local-network-speed-test)
     - [Internet Network Speed Test](#internet-network-speed-test)
+      - [Network Quality](#network-quality)
       - [Speedtest.net](#speedtestnet)
       - [SpeedTest.net App](#speedtestnet-app)
       - [SpeedTest.net CLI](#speedtestnet-cli)
       - [Fast.com](#fastcom)
 - [3rd Party Tools](#3rd-party-tools)
+  - [Stats](#stats)
+  - [Pingr](#pingr)
+- [Troubleshooting](#troubleshooting)
+  - [Wifi Issues](#wifi-issues)
+    - [Wifi Capture Portal Not Loading](#wifi-capture-portal-not-loading)
 - [Diagrams](#diagrams)
   - [Network - Layer 2 - Local - ARP](#network---layer-2---local---arp)
   - [Network - Layer 3 - Remote - IP](#network---layer-3---remote---ip)
@@ -65,22 +77,56 @@ Anonymous internet network layer to route traffic through.
 
 ## Commands
 
+### Ping
+
+Check networking connectivity between devices using ping.
+
+Eg. check tiny basic ICMP packets can reach the well known public IP address of 4.2.2.1
+to see if your router is passing traffic to the internet and back successfully:
+
 ```shell
 ping 4.2.2.1
 ```
 
-### Show routing table
+### Routing
 
-On Linux:
+#### Show Routing Table
+
+This works on Mac, Windows and Linux:
+
+```shell
+netstat -rn
+```
+
+#### Show Linux Routing Table
+
+Only works on Linux:
 
 ```shell
 route -n
 ```
 
-On Windows or Mac:
+#### Add Static Route
 
 ```shell
-netstat -rn
+route add ...
+```
+
+```shell
+ip route ...
+```
+
+Check the man pages for
+[route](https://linux.die.net/man/8/route) and
+[ip-route](https://man7.org/linux/man-pages/man8/ip-route.8.html)
+for details:
+
+```shell
+man route
+```
+
+```shell
+man ip-route
 ```
 
 ### DNS lookup
@@ -93,38 +139,83 @@ On Linux or Mac:
 host google.com
 ```
 
+or more detailed:
+
+```shell
+dig google.com
+```
+
 On Windows:
 
 ```shell
 nslookup google.com
 ```
 
-### Add static route
-
-[man route](https://linux.die.net/man/8/route)
+You can check your DNS requests are actually being sent using tcpdump:
 
 ```shell
-route add ...
+sudo tcpdump -i en0 -n port 53
 ```
 
-[man ip-route](https://man7.org/linux/man-pages/man8/ip-route.8.html)
+For explanation of tcpdump see the [Packet Tracing](#packet-tracing) section below.
 
-```shell
-ip route ...
-```
+### Public IP
 
-### Show your public IP
-
-...that you are NAT'd through as well as geolocation and other details:
+Find the public IP you appear as after NAT translation
 
 ```shell
 curl ifconfig.co
 ```
 
-### Linux - show your local IP Tables software firewall rules
+For geolocation and other details:
+
+```shell
+curl ifconfig.co/json
+```
+
+### Country Phone Calling Code
+
+```shell
+curl -s https://ipwho.is/ | jq -r '.calling_code'
+```
+
+### Software Firewall
+
+#### iptables
+
+On Linux, show your local IP Tables software firewall rules:
 
 ```shell
 iptables -nL -line-numbers
+```
+
+### Packet Tracing
+
+To trace packets your network interface can see, use the `tcpdump` command:
+
+```shell
+sudo tcpdump -i en0 -n
+```
+
+Here `en0` is my [Mac](mac.md)'s Wifi network interface.
+
+| Switches | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| `-n`     | do to not resolve IP addresses                                              |
+| `-v`     | verbose mode to see protocol and flags (eg. to debug TCP syn/ack responses) |
+
+Add a "pcap filter" to only show the select type of traffic you're looking for.
+
+Example - to see only DNS traffic on port 53 (tcp or udp):
+
+```shell
+sudo tcpdump -i en0 -nnv port 53
+```
+
+For full pcap-filter syntax, check the [pcap-filter man page](https://man7.org/linux/man-pages/man7/pcap-filter.7.html):
+
+```shell
+man pcap-filter
 ```
 
 ### Network Speed Test
@@ -146,6 +237,22 @@ iperf -c "$ip"  # of above machine
 ```
 
 #### Internet Network Speed Test
+
+##### Network Quality
+
+Built-in available in macOS Monterey or later:
+
+```shell
+networkquality
+```
+
+```text
+==== SUMMARY ====
+Uplink capacity: 68.173 Mbps
+Downlink capacity: 77.023 Mbps
+Responsiveness: Low (322.581 milliseconds | 186 RPM)
+Idle Latency: 204.167 milliseconds | 294 RPM
+```
 
 ##### Speedtest.net
 
@@ -325,6 +432,31 @@ Optionally use `--json` switch to output in [JSON](json.md) format.
 - [nethogs](https://github.com/raboof/nethogs) - top for Network Process
 - [nethogs-qt](http://slist.lilotux.net/linux/nethogs-qt/index_en.html) Qt-based GUI
 - [gnethogs](https://github.com/mbfoss/gnethogs) - GTK-based GUI (work-in-progress)
+
+### Stats
+
+See the [Mac](mac.md) page's [Stats Bar](mac.md#stats-bar) section.
+
+### Pingr
+
+See the [Mac](mac.md) page's [Pingr](mac.md#pingr) section.
+
+## Troubleshooting
+
+### Wifi Issues
+
+#### Wifi Capture Portal Not Loading
+
+Try forcing it by opening this site which doesn't use SSL,
+therefore allowing the captcha portal to intercept and redirect to itself:
+
+<http://neverssl.com>
+
+Check you haven't set explicit hardcoded DNS servers in your network settings
+(eg. public DNS) as this causes some local captcha portal DNS lookups to fail.
+
+For more details, you can see the Mac page's troubleshooting section
+[Wifi Capture Portal Not Loading](mac.md#wifi-capture-portal-not-loading).
 
 ## Diagrams
 

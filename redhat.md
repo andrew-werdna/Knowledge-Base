@@ -10,6 +10,9 @@
   - [RHEL 8 modules](#rhel-8-modules)
   - [RHSCL - Redhat Software Collections](#rhscl---redhat-software-collections)
   - [Pulp](#pulp)
+- [Docker](#docker)
+  - [Testing Upgrades in Docker with Fedora Linux](#testing-upgrades-in-docker-with-fedora-linux)
+  - [Testing Upgrades in Docker with Rocky Linux](#testing-upgrades-in-docker-with-rocky-linux)
 - [Kickstart - Automated Installations](#kickstart---automated-installations)
   - [Kickstart Template](#kickstart-template)
   - [HashiCorp Packer + Kickstart Config](#hashicorp-packer--kickstart-config)
@@ -433,6 +436,63 @@ Gives developers newer Python/Perl/MySQL bundles.
 
 Repository management
 
+## Docker
+
+Since CentOS is dead, you'll need to run either the fast moving Fedora
+or a RHEL clone like Rocky Linux or Alma Linux or similar.
+
+### Testing Upgrades in Docker with Fedora Linux
+
+Run an older Fedora version:
+
+```shell
+docker run -it --rm fedora:39 bash
+```
+<!--
+
+Upgrade the package repo to point to a newer version:
+
+```shell
+sed -i 's/39/40/g' /etc/yum.repos.d/*.repo
+```
+
+-->
+
+You do not need to modify the `/etc/yum.repos.d/*.repo`.
+
+Check what updates are available:
+
+```shell
+dnf check-update
+```
+
+Proceed to test whatever upgrade commands you want.
+
+### Testing Upgrades in Docker with Rocky Linux
+
+Run an older Rocky Linux version such as 8:
+
+```shell
+docker run -it --rm rockylinux:8 bash
+```
+
+<!-- Not needed
+
+Switch to a newer Rocky Linux release:
+
+```shell
+dnf install -y rocky-release &&
+dnf config-manager --set-enabled appstream baseos
+```
+
+-->
+
+```shell
+dnf check-update
+```
+
+Proceed to test whatever upgrade commands you want.
+
 ## Kickstart - Automated Installations
 
 All Redhat derived systems can be automatically installed using a Kickstart configuration file which can be bundled into
@@ -473,7 +533,7 @@ Or you can use this template with some additional tips:
 
 [HariSekhon/Templates - anaconda-ks.cfg](https://github.com/HariSekhon/Templates/blob/master/anaconda-ks.cfg)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Templates)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Templates)
 
 or the real kickstart config used in the Packer repo below.
 
@@ -492,7 +552,7 @@ Real-world Kickstart config used by Packer build:
 
 [HariSekhon/Packer-templates - rocky-x86_64.vbox.pkr.hcl](https://github.com/HariSekhon/Packer-templates/blob/master/rocky-x86_64.vbox.pkr.hcl)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Packer&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Packer)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Packer&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Packer)
 
 ## Memes
 

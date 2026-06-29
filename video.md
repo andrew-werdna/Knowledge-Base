@@ -2,25 +2,74 @@
 
 <!-- INDEX_START -->
 
-- [Buffer Videos](#buffer-videos)
+- [Best Video Players](#best-video-players)
+- [Buffer Streaming Videos in Browser](#buffer-streaming-videos-in-browser)
   - [Faststream](#faststream)
-- [Download Videos](#download-videos)
-  - [yt-dlp](#yt-dlp)
-  - [Download Single Video](#download-single-video)
-  - [Download Video Not Inferred from Web Page](#download-video-not-inferred-from-web-page)
-  - [Download All Videos from YouTube Channel](#download-all-videos-from-youtube-channel)
-  - [Stacher7 - GUI for yt-dlp](#stacher7---gui-for-yt-dlp)
+- [Download Videos from Social Media](#download-videos-from-social-media)
+  - [YouTube Downloader- yt-dlp](#youtube-downloader--yt-dlp)
 - [Inspect Video File Metadata](#inspect-video-file-metadata)
   - [Get the resolution and other details like codec for a video file](#get-the-resolution-and-other-details-like-codec-for-a-video-file)
 - [Downscale Video to 720p mp4](#downscale-video-to-720p-mp4)
 - [Clip Video](#clip-video)
   - [Clip Video Interactively using QuickTime Player](#clip-video-interactively-using-quicktime-player)
-  - [Clip Video on Command Line using `ffmpeg`](#clip-video-on-command-line-using-ffmpeg)
+  - [Clip Video on Command Line using FFmpeg](#clip-video-on-command-line-using-ffmpeg)
 - [Transcode mkv into standard mp4 for smart TVs to play](#transcode-mkv-into-standard-mp4-for-smart-tvs-to-play)
 
 <!-- INDEX_END -->
 
-## Buffer Videos
+## Best Video Players
+
+- [VLC](https://www.videolan.org/) - the open source champion forever, very mature with lots of features and built-in
+  codec support for nearly every video format out there - it plays just about anything
+- [MPlayer](http://www.mplayerhq.hu/) - another good open source media player, can sometimes play partially broken files
+  better than VLC which may crash / exit the file if it's incomplete, and better for triggering off the command line
+- [MPV](https://mpv.io/) - excellent open source video player based on MPlayer with more features and [Lua](lua.md)
+  scripting capabilities to customize its behaviours.
+  See the [MPV](mpv.md) page for more details
+
+```shell
+brew install vlc
+```
+
+```shell
+brew install mplayer
+```
+
+```shell
+brew install mpv
+```
+
+From the command line, `mpv` and `mplayer` are better than VLC:
+
+```shell
+mpv "$file"
+```
+
+```shell
+mplayer "$file"
+```
+
+Compared to:
+
+```shell
+"/Applications/VLC.app/Contents/MacOS/VLC" "$file"
+```
+
+If you want a short `vlc` command, try this:
+
+```shell
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+```
+
+then you can do:
+
+```shell
+vlc "$file"
+```
+
+This is already included in the alaises in the [DevOps-Bash-tools](devops-bash-tools.md) repo.
+
+## Buffer Streaming Videos in Browser
 
 ### Faststream
 
@@ -30,117 +79,13 @@ Install the extension and then just click the extension when on a web page.
 
 It'll replace the video placer with a custom one that buffers.
 
-## Download Videos
+## Download Videos from Social Media
 
-### yt-dlp
+### YouTube Downloader- yt-dlp
 
-Install `yt-dlp` to download, and ffmpeg for conversions:
+Works for various social media including YouTube, Facebook and Twitter / X.
 
-```shell
-brew install yt-dlp ffmpeg
-```
-
-There's a long list of extractors for different sites:
-
-```shell
-yt-dlp --list-extractors
-```
-
-but it even works on even sites for which there aren't special extractors.
-
-Show available download formats:
-
-```shell
-yt-dlp -F "$url"
-```
-
-You can then choose the format quality you want:
-
-```shell
-yt-dlp -f "$format_id" "$url"
-```
-
-If you get an error like this:
-
-```shell
-ERROR: [youtube] ...: Sign in to confirm you’re not a bot.
-```
-
-You can add this switch with your browser to use its cookies:
-
-```text
---cookies-from-browser chrome
-```
-
-### Download Single Video
-
-Use script from
-[DevOps-Bash-tools](devops-bash-tools.md) repo
-to simplify downloading with maximum quality and compatibility, with continue and no overwrite settings.
-
-This script has symlinks for X/Twitter and Facebook too as it can download from those sites and should also work for all
-those listed by the above command of `yt-dlp --list-extractors`:
-
-```shell
-youtube_download_video.sh "$url"
-```
-
-These are just symlinks for convenience:
-
-```shell
-x_download_video.sh "$url"
-```
-
-```shell
-twitter_download_video.sh "$url"
-```
-
-```shell
-facebook_download_video.sh "$url"
-```
-
-The script will even attempt to install `yt-dlp` and `ffmpeg` prerequisites if not already installed.
-
-If you get an error like this:
-
-```shell
-ERROR: [youtube] ...: Sign in to confirm you’re not a bot.
-```
-
-then export this:
-
-```shell
-export YT_DLP_COOKIES_FROM_BROWSER=chrome
-```
-
-and re-run the script, which will then use the switch `--cookies-from-browser chrome`.
-
-### Download Video Not Inferred from Web Page
-
-The `yt-dlp` tool works really well for extracting the video from many different web pages, but
-if it fails to parse the page, there is a workaround:
-
-1. Open Chrome Developer Tools or similar network request tracing
-2. Click to play the video
-3. Record the `m3u8` url from the Network section
-4. Pass the `m3u8` url to the script - since `yt-dlp` will infer the filename from the m3u8 filename, you'll likely want
-   to pass a second argument to the script for the real filename eg. `Some Video.mp4`
-
-```shell
-youtube_download_video.sh "https://.../index.m3u8" "Some Video.mp4"
-```
-
-### Download All Videos from YouTube Channel
-
-Using [DevOps-Bash-tools](devops-bash-tools.md) repo:
-
-```shell
-youtube_download_channel.sh "$url"
-```
-
-### Stacher7 - GUI for yt-dlp
-
-<https://stacher.io/>
+See the [YouTube Downloader](yt-dlp.md) page for details.
 
 ## Inspect Video File Metadata
 
@@ -215,7 +160,7 @@ open -a "QuickTime Player" "$file"
 Then press shortcut `Cmd` + `T`
 or click `Edit` -> `Trim` to bring up a slider to drag and then save the resulting clip as a new file.
 
-### Clip Video on Command Line using `ffmpeg`
+### Clip Video on Command Line using FFmpeg
 
 Create a clip from a video file using `ffmpeg` args:
 

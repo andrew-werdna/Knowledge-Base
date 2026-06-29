@@ -21,14 +21,14 @@ is one of the few use cases for that).
 - [Binaries Debugging](#binaries-debugging)
 - [Commands](#commands)
 - [Tips & Tricks](#tips--tricks)
+  - [Shell One Liners](#shell-one-liners)
+  - [Pass Process Output as a File Handle](#pass-process-output-as-a-file-handle)
   - [Fifos](#fifos)
-  - [Number Lines](#number-lines)
-  - [Squeeze Out Multiple Blank Lines](#squeeze-out-multiple-blank-lines)
   - [Miscellaneous Bash Bangs](#miscellaneous-bash-bangs)
   - [Flush Stdout Immediately](#flush-stdout-immediately)
   - [Native Regex Capture](#native-regex-capture)
   - [Readline Support - `rlwrap`](#readline-support---rlwrap)
-  - [Copy to Both Clipboard and Stdout simultaneously](#copy-to-both-clipboard-and-stdout-simultaneously)
+  - [Wait for a Terminal prompt from inside a while loop](#wait-for-a-terminal-prompt-from-inside-a-while-loop)
 - [Debugging](#debugging)
   - [Shell executing tracing](#shell-executing-tracing)
   - [Fail on any error exit code](#fail-on-any-error-exit-code)
@@ -91,7 +91,7 @@ screenrc`, `.tmux.conf` etc.
 
 [:octocat: HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
 
 This is more than the manuals above, you could study this repo for years, or just run its scripts today to save you
 the time.
@@ -176,6 +176,12 @@ Environment variables to keep in mind:
 
 ## Tips & Tricks
 
+### Shell One Liners
+
+See the [Shell One Liners](shell-one-liners.md) page.
+
+### Pass Process Output as a File Handle
+
 Treat a process as a file handle to read from:
 
 ```shell
@@ -222,35 +228,12 @@ in another shell:
 cat /tmp/test.fifo
 ```
 
-In practice, I can't recall finding a need for this since the 2000s. There usually better solutions.
+In practice, I can't recall finding a need for this since the 2000s. There are usually better solutions.
 
 FIFOs have no real security though and rely on file permissions to stop somebody or some other program writing unexpected
 input into the listening program, which may not be coded defensively enough. In practice people just use temporary files
 between processes not started in the same shell if they really have to. Situations which require long-running IPC would
 probably be better done in a real programming language.
-
-### Number Lines
-
-```shell
-cat -n
-```
-
-```shell
-less -N
-```
-
-```shell
-nl
-```
-
-### Squeeze Out Multiple Blank Lines
-
-Useful to remove multiple blank lines between paragraphs in text replacements like
-[shorten_text_selection.scpt](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/applescript/shorten_text_selection.scpt).
-
-```shell
-cat -s
-```
 
 This is much easier than screwing around with complex sed magic or awk blocks.
 
@@ -331,17 +314,45 @@ essentially giving you command history.
 This is usually available in the `rlwrap` package on [RHEL](redhat.md) and [Debian](debian.md)-based Linux systems
 and [brew](brew.md) on Mac.
 
-### Copy to Both Clipboard and Stdout simultaneously
-
-`tee` to both a command to copy to clipboard as well as stdout.
-
-Use `/dev/stdout` for further pipeline processing, not `/dev/tty`, as the latter outputs directly to the terminal.
-
-The `copy_to_clipboard.sh` script from [DevOps-Bash-tools](devops-bash-tools.md) works on both Linux and Mac:
+### Wait for a Terminal prompt from inside a while loop
 
 ```shell
-echo test | tee >("copy_to_clipboard.sh") /dev/stdout
+echo "
+entry1
+entry2
+" |
+while read -r line; do
+    echo "Processing: $line"
+    echo "Press enter to process next entry"
+    read -r < /dev/tty
+done
 ```
+
+If you're calling a script like `git_diff_commit.sh` from somewhere that doesn't allocate a tty,
+such as a hotkey in [IntelliJ](intellij.md), then this is the workaround to the workaround:
+
+First duplicate the `/dev/stdin` file descriptor `0` to a new file descriptor `3`,
+then `read` from file descriptor 3 instead of 0 which the while loop consumes.
+
+You have to print the prompt yourself and can't use `read -p` to do this because `read` won't print when using redirects
+due to POSIX behaviour.
+
+```shell
+exec 3<&0
+
+echo "
+entry 1
+entry 2
+" |
+while read -r line; do
+    echo "Processing: $line"
+    echo "Press enter to process next entry"
+    read -r <&3  # not eaten by while loop
+ done
+```
+
+You can see the real world use case in `git_diff_commit.sh` which prompts to confirm before committing each file in a
+loop, allowing the user to review the printed `git diff` first.
 
 ## Debugging
 
@@ -398,6 +409,9 @@ In [DevOps-Bash-tools](devops-bash-tools.md) this a function called `cleanshell`
 
 ## Other Cool Resources
 
+- [explainshell.com](https://explainshell.com) - explains a bash shell statement
+- [ShellDorado](http://www.shelldorado.com/)
+- [CommandLineFu](https://www.commandlinefu.com/)
 - [Greg's Wiki - Wooledge.org](https://mywiki.wooledge.org) - the grumpy old greycat guy on IRC in the 2000s would
   often send noobs to his classic resource
   - [Bash Guide](https://mywiki.wooledge.org/BashGuide)
@@ -405,10 +419,10 @@ In [DevOps-Bash-tools](devops-bash-tools.md) this a function called `cleanshell`
   - [Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls)
   - [Bash Programming](https://mywiki.wooledge.org/BashProgramming)
   - [Bash Reference Sheet](https://mywiki.wooledge.org/BashSheet)
-- [Shelldorado](http://www.shelldorado.com/)
-- [explainshell.com](https://explainshell.com) - explains a bash shell statement
-- [Reddit - r/bash](https://www.reddit.com/r/bash/)
 - [ShellCheck](https://www.shellcheck.net/) - online version of the popular `shellcheck` command line tool to find bugs and improvements to make in shell code
+- [Reddit - r/bash](https://www.reddit.com/r/bash/)
+- [DevOps-Bash-tools](devops-bash-tools.md)
+- [Shell One Liners](shell-one-liners.md)
 
 ## Style Guide
 

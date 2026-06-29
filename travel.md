@@ -1,18 +1,20 @@
-# Travel
+# Travel Tips
 
 [![Nomads Profile](https://img.shields.io/badge/Nomads%20Profile-HariSekhon-blue?logo=nomad&logoColor=white)](https://nomads.com/@harisekhon)
 [![GitHub stars](https://img.shields.io/github/stars/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/stargazers)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/commits/main)
 
-[![Total Countries](https://img.shields.io/badge/Total%20Countries-48-blue)](https://nomads.com/@harisekhon)
-[![Countries in 2024](https://img.shields.io/badge/in%202024-19-blue)](https://nomads.com/@harisekhon)
-[![Countries in 2025](https://img.shields.io/badge/in%202025-28-blue)](https://nomads.com/@harisekhon)
-[![Unique Countries 2024+](https://img.shields.io/badge/Unique%20Countries%202024+-39-blue)](https://nomads.com/@harisekhon)
+[![Total Countries](https://img.shields.io/badge/Total%20Countries-74-blue)](https://nomads.com/@harisekhon)
+[![Countries in 2024](https://img.shields.io/badge/in%202024-20-blue)](https://nomads.com/@harisekhon)
+[![Countries in 2025](https://img.shields.io/badge/in%202025-35-blue)](https://nomads.com/@harisekhon)
+[![Countries in 2026](https://img.shields.io/badge/in%202026-30-blue)](https://nomads.com/@harisekhon)
+[![Unique Countries 2024+](https://img.shields.io/badge/Unique%20Countries%202024+-67-blue)](https://nomads.com/@harisekhon)
 
-[![Total Cities](https://img.shields.io/badge/Total%20Cities-162-blue)](https://nomads.com/@harisekhon)
-[![Cities in 2024](https://img.shields.io/badge/in%202024-68-blue)](https://nomads.com/@harisekhon)
-[![Cities in 2025](https://img.shields.io/badge/in%202025-75-blue)](https://nomads.com/@harisekhon)
-[![Unique Cities 2024+](https://img.shields.io/badge/Unique%20Cities%202024+-137-blue)](https://nomads.com/@harisekhon)
+[![Total Cities](https://img.shields.io/badge/Total%20Cities-274-blue)](https://nomads.com/@harisekhon)
+[![Cities in 2024](https://img.shields.io/badge/in%202024-70-blue)](https://nomads.com/@harisekhon)
+[![Cities in 2025](https://img.shields.io/badge/in%202025-89-blue)](https://nomads.com/@harisekhon)
+[![Cities in 2026](https://img.shields.io/badge/in%202026-103-blue)](https://nomads.com/@harisekhon)
+[![Unique Cities 2024+](https://img.shields.io/badge/Unique%20Cities%202024+-249-blue)](https://nomads.com/@harisekhon)
 
 Short links to this page:
 
@@ -31,16 +33,39 @@ Updated regularly as I travel the world 52 weeks a year.
 <!-- INDEX_START -->
 
 - [Countries](#countries)
+  - [Beware - Visiting Countries that result in US ESTA Travel Ban](#beware---visiting-countries-that-result-in-us-esta-travel-ban)
+  - [Europe](#europe)
+  - [Asia](#asia)
+  - [Middle East & Africa](#middle-east--africa)
+  - [North America](#north-america)
+  - [Caribbean](#caribbean)
+  - [Central & South America](#central--south-america)
+    - [Central America](#central-america)
+    - [South America](#south-america)
 - [Booking Sites](#booking-sites)
+- [Travel Checklist](#travel-checklist)
+  - [Important](#important)
+  - [Optional](#optional)
+  - [Jumbo Passports](#jumbo-passports)
 - [Flights](#flights)
+  - [Flight Tips](#flight-tips)
+    - [Book Ahead](#book-ahead)
+    - [Cheaper Tickets via Transit Hubs](#cheaper-tickets-via-transit-hubs)
+    - [Cheaper Tickets via Date Shifting](#cheaper-tickets-via-date-shifting)
+    - [Latin American Flights Are Expensive](#latin-american-flights-are-expensive)
+    - [Baggage Fees](#baggage-fees)
   - [Flight Booking Sites](#flight-booking-sites)
   - [Flight Deals from the US](#flight-deals-from-the-us)
   - [Flight Gotchas](#flight-gotchas)
+    - [Return / Onwards Flights Required for Check-In](#return--onwards-flights-required-for-check-in)
     - [Luggage](#luggage)
     - [Transfer Flight Timings](#transfer-flight-timings)
     - [Self Transfer](#self-transfer)
     - [Change Airport](#change-airport)
-- [Hotels vs Hostels vs Airbnb](#hotels-vs-hostels-vs-airbnb)
+    - [Charging Your Devices on Flights](#charging-your-devices-on-flights)
+- [Accommodation - Hotels vs Hostels vs Airbnb](#accommodation---hotels-vs-hostels-vs-airbnb)
+  - [Tourist Taxes](#tourist-taxes)
+    - [Tourist Tax Hall of Shame](#tourist-tax-hall-of-shame)
   - [Internet - Hotel vs Airbnb](#internet---hotel-vs-airbnb)
   - [Parking - Hotel, Hostel & Airbnb](#parking---hotel-hostel--airbnb)
   - [Hostel Tips](#hostel-tips)
@@ -64,12 +89,15 @@ Updated regularly as I travel the world 52 weeks a year.
 - [Translation](#translation)
 - [Seasons - Timing Matters](#seasons---timing-matters)
 - [Mosquito Repellent](#mosquito-repellent)
+- [Clothing](#clothing)
 - [Health Insurance](#health-insurance)
 - [Beware Foreign Police & Customs](#beware-foreign-police--customs)
   - [Carry Your Official Documents Everywhere For When You _Are_ Stopped](#carry-your-official-documents-everywhere-for-when-you-_are_-stopped)
   - [Don't Speed](#dont-speed)
   - [Do Not Even Jaywalk](#do-not-even-jaywalk)
 - [Driving](#driving)
+  - [Land Border Delays](#land-border-delays)
+  - [Ferries](#ferries)
   - [Car Insurance](#car-insurance)
   - [International Driving Insurance](#international-driving-insurance)
     - [Temporary Car Insurance Cover](#temporary-car-insurance-cover)
@@ -78,84 +106,213 @@ Updated regularly as I travel the world 52 weeks a year.
   - [EU Motorway Tolls](#eu-motorway-tolls)
   - [Do Not Speed](#do-not-speed)
   - [Parking](#parking)
-- [EU Schengen Visa Calculator](#eu-schengen-visa-calculator)
+- [Travel Days Planning](#travel-days-planning)
+  - [Spreadsheet to Auto-Recalculate Dates](#spreadsheet-to-auto-recalculate-dates)
+  - [Digital Nomadding](#digital-nomadding)
+  - [EU Schengen Visa Calculator](#eu-schengen-visa-calculator)
 - [Emigration](#emigration)
   - [Taxes](#taxes)
   - [Mail Redirection](#mail-redirection)
+  - [Car Migration](#car-migration)
 
 <!-- INDEX_END -->
 
 ## Countries
 
-Countries: 48
+Countries: 74
 
-Cities: 162
+Cities: 274
 
-- Countries in 2024: 19
-  - Cities in 2024: 68
-  - UAE, France, Belgium, Germany, Poland, Lithuania, Latvia, Estonia, Sweden, Slovakia, Hungary, Serbia, Morocco,
-    Moldova, Turkey, Georgia, Thailand, Vietnam
-  - not counting my extensive month long
+- Countries in 2024: 20
+  - Cities in 2024: 70
+  - Countries: UAE, France, Belgium, Netherlands, Germany, Poland, Lithuania, Latvia, Estonia, Sweden, Slovakia, Hungary, Serbia,
+    Morocco, Moldova, Turkey, Georgia, Thailand, Vietnam
+  - plus my extensive month long
     [Tour of England and Wales](https://medium.com/@harisekhon/the-uk-decline-what-i-learnt-from-my-uk-tour-2024-84347efced9b)
     (the latter was borderline a different country, there are actually Welsh signs I can't read)
-- Countries in 2025: 28
-  - Cities in 2025: 75
-  - Vietnam (continued), Cambodia, Laos, Bali (Indonesia), Malayasia, Singapore, Taiwan, Serbia, Bulgaria, Romania,
-    Hungary, Slovakia, Austria, Czechia, Poland, Germany, Slovenia, Croatia, Montenegro, Albania, North Macedonia, Bosnia and
-    Herzegovina, Ukraine, Moldova, Tunisia, Jordan, Lebanon
-- Unique Countries since Emigrating from the UK in 2024: 39
-  - Unique Cities since Emigrating from the UK in 2024: 137
+- Countries in 2025: 35
+  - Cities in 2025: 89
+  - Countries: Vietnam (continued), Cambodia, Laos, Bali (Indonesia), Malayasia, Singapore, Taiwan, Serbia, Bulgaria,
+    Romania, Hungary, Slovakia, Austria, Czechia, Poland, Germany, UK, Slovenia, Croatia, Montenegro, Albania,
+    North Macedonia, Bosnia & Herzegovina, Ukraine, Moldova, Tunisia, Jordan, Lebanon, Spain, Mexico, Guatemala,
+    El Salvador, Costa Rica, Panama, Colombia
+- Countries in 2026: 30
+  - Cities in 2026: 103
+  - Countries: Colombia (continued), Ecuador, Peru, Bolivia, Chile, Argentina, Uruguay, Brazil, Paraguay, Curacao,
+    Dominican Republic, Jamaica, Puerto Rico, Spain, Malta, Serbia, Hungary, Slovakia, Czechia, Germany, Belgium,
+    France, UK, Luxembourg, Switzerland, Liechtenstein, Italy, Monaco, Andorra, Portugal
+- Unique Countries since Emigrating from the UK in 2024: 67
+  - Unique Cities since Emigrating from the UK in 2024: 249
 
 Country pages with specific tips for each country:
 
-- [Albania](albania.md) ⭐
-- [Austria](austria.md)
-- [Belgium](belgium.md)
-- [Bosnia](bosnia.md)
-- [Bulgaria](bulgaria.md)
-- [Cambodia](cambodia.md)
-- [Canada](canada.md)
-- [Croatia](croatia.md)
-- [Cyprus](cyprus.md)
-- [Czechia / Czech Republic](czechia.md) ⭐
-- [Denmark](denmark.md)
-- [Estonia](estonia.md)
-- [France](france.md)
-- [Georgia](georgia.md)
-- [Germany](germany.md)
-- [Hungary](hungary.md)
-- [Indonesia](indonesia.md)
-- [Italy](italy.md)
-- [Jordan](jordan.md) ⭐
-- [Laos](laos.md)
-- [Latvia](latvia.md)
-- [Lebanon](lebanon.md)
-- [Lithuania](lithuania.md)
-- [Malaysia](malaysia.md)
-- [Moldova](moldova.md)
-- [Montenegro](montenegro.md)
-- [Morocco](morocco.md)
-- [Netherlands](netherlands.md)
-- [North Macedonia](north-macedonia.md)
-- [Norway](norway.md)
-- [Poland](poland.md) ⭐
-- [Philippines](philippines.md)
-- [Romania](romania.md)
-- [Serbia](serbia.md) ⭐
-- [Singapore](singapore.md)
-- [Slovakia](slovakia.md)
-- [Slovenia](slovenia.md)
-- [South Africa](south-africa.md)
-- [Sweden](sweden.md)
-- [Taiwan](taiwan.md)
-- [Thailand](thailand.md) ⭐
-- [Tunisia](tunisia.md)
-- [Turkey](turkey.md)
-- [UAE](uae.md) ⭐
-- [Ukraine](ukraine.md)
-- [United Kingdom](uk.md)
-- [USA](usa.md)
-- [Vietnam](vietnam.md) ⭐
+(a ⭐ next to a country represents it's one of my preferred ones)
+
+### Beware - Visiting Countries that result in US ESTA Travel Ban
+
+Travelling to any of the following countries will result in you being banned from a US ESTA to enter the USA:
+
+- Iraq
+- Iran
+- Libya
+- North Korea
+- Somalia
+- Sudan
+- Syria
+- Yemen
+
+Once that happens you will need to apply a a full US visa to enter any US territory,
+even Puerto Rico, even for a transit connecting flight -
+which severely limits your long distance flights which often require stopovers in US cities.
+
+The cost of a full US visa application is closer to \$200 instead of \$40 for the ESTA.
+
+From the US Gov website:
+
+[Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html#:~:text=Visa%20Waiver%20Program%20Improvement%20and,Iraq%2C%20Sudan%2C%20or%20Syria.)
+
+### Europe
+
+- [Albania](travel/albania.md) ⭐
+- [Andorra](travel/andorra.md) ⭐
+- [Austria](travel/austria.md)
+- [Belgium](travel/belgium.md)
+- [Bosnia](travel/bosnia.md)
+- [Bulgaria](travel/bulgaria.md)
+- [Croatia](travel/croatia.md)
+- [Cyprus](travel/cyprus.md)
+- [Czechia](travel/czechia.md) ⭐
+- [Denmark](travel/denmark.md)
+- [Estonia](travel/estonia.md)
+- [France](travel/france.md)
+- [Georgia](travel/georgia.md)
+- [Germany](travel/germany.md)
+- [Hungary](travel/hungary.md)
+- [Italy](travel/italy.md) ⭐
+- [Latvia](travel/latvia.md)
+- [Lithuania](travel/lithuania.md)
+- [Luxembourg](travel/luxembourg.md)
+- [Liechtenstein](travel/liechtenstein.md)
+- [Malta](travel/malta.md) ⭐
+- [Monaco](travel/monaco.md)
+- [Moldova](travel/moldova.md)
+- [Montenegro](travel/montenegro.md)
+- [Netherlands](travel/netherlands.md)
+- [North Macedonia](travel/north-macedonia.md)
+- [Norway](travel/norway.md)
+- [Poland](travel/poland.md) ⭐
+- [Portugal](travel/portugal.md)
+- [Romania](travel/romania.md)
+- [Serbia](travel/serbia.md) ⭐
+- [Slovakia](travel/slovakia.md)
+- [Slovenia](travel/slovenia.md)
+- [Spain](travel/spain.md) ⭐
+- [Sweden](travel/sweden.md)
+- [Ukraine](travel/ukraine.md)
+- [United Kingdom](travel/uk.md) ⭐
+
+<!--
+
+- [Portugal](travel/portugal.md)
+
+-->
+
+### Asia
+
+- [Cambodia](travel/cambodia.md)
+- [Indonesia](travel/indonesia.md) (Bali) ⭐
+- [Laos](travel/laos.md)
+- [Malaysia](travel/malaysia.md) ⭐
+- [Philippines](travel/philippines.md)
+- [Singapore](travel/singapore.md)
+- [Taiwan](travel/taiwan.md)
+- [Thailand](travel/thailand.md) ⭐
+- [Vietnam](travel/vietnam.md) ⭐
+
+### Middle East & Africa
+
+The Middle East is a mixed bag and varies greatly depending on the specific country.
+
+I have little interest in sub-saharan Africa as it is the worst civilization continent by a million miles -
+see my learnings from my time working in South Africa on its page below for shocking details.
+
+- [Jordan](travel/jordan.md) ⭐
+- [Lebanon](travel/lebanon.md)
+- [Morocco](travel/morocco.md)
+- [South Africa](travel/south-africa.md)
+- [Turkey](travel/turkey.md)
+- [Tunisia](travel/tunisia.md)
+- [United Arab Emirates](travel/uae.md) (Dubai & Abu Dhabi) ⭐
+
+### North America
+
+- [USA](travel/usa.md)
+- [Canada](travel/canada.md)
+- [Mexico](travel/mexico.md) ⭐
+
+### Caribbean
+
+The Caribbean is expensive due to being heavily reliant on imports and not having economy of scale.
+
+The Caribbean is not good value for money compared to many other tourist destinations in the world.
+
+Apparently the smaller the island the worse this gets (less economy of scale).
+
+After a while I decided to skip many of the remaining islands and move on as there are much better places in the world
+for less cost.
+
+It is generally also not a foodie destination,
+as if you're willing to pay high western prices I can find good restaurants anywhere in the world,
+and have done as evidenced in the many country specific pages.
+
+- [Curacao](travel/curacao.md)
+- [Cuba](travel/cuba.md) (skipped for reasons listed in page)
+- [Dominican Republic](travel/dominican-republic.md)
+- [Haiti](travel/haiti.md) (skipped for reasons listed in page)
+- [Jamaica](travel/jamaica.md)
+- [Puerto Rico](travel/puerto-rico.md) ⭐
+
+### Central & South America
+
+Capital cities here are not the attraction, but more transit points - the attractions are usually the coasts, nature,
+volcanos, or historic archaeological sites.
+
+Has adopted the American tipping culture, so expect to add 10% service and often menus do not include taxes,
+which can be another 12-17%, so factor in an additional 25% on any menu prices if you're budget conscious.
+
+Because some of these countries are notoriously high crime, I had trackers in everything before I went.
+
+[Spanish Crash Course](travel/spanish.md) - you will need this for the following countries as most people do not speak English outside
+of the hotels and more expensive tourist trap restaurants, even many taxi drivers who are used to many American tourists
+surprisingly still do not speak English.
+
+#### Central America
+
+- [Mexico](travel/mexico.md) ⭐
+- [Costa Rica](travel/costa-rica.md)
+- [El Salvador](travel/elsalvador.md)
+- [Guatemala](travel/guatemala.md)
+- [Honduras](travel/honduras.md) (skipped for reasons on page)
+- [Nicaragua](travel/nicaragua.md) (skipped for reasons on page)
+- [Panama](travel/panama.md)
+
+#### South America
+
+- [Argentina](travel/argentina.md) ⭐
+- [Bolivia](travel/bolivia.md)
+- [Brazil](travel/brazil.md) ⭐
+- [Chile](travel/chile.md)
+- [Colombia](travel/colombia.md) ⭐
+- [Ecuador](travel/ecuador.md)
+- [Peru](travel/peru.md) ⭐
+- [Paraguay](travel/paraguay.md)
+- [Uruguay](travel/uruguay.md)
+
+<!--
+
+- [Venezuela](travel/venezuela.md) TODO
+
+-->
 
 ## Booking Sites
 
@@ -182,12 +339,18 @@ and beware that if you cancel the booking (eg. because you want to shorten the d
 your hostel to free up the bed on their system) you will lose both your deposit and access to the chat, and the customer
 service support cannot undo the cancellation for you either.
 
-[Kayak.com](https://www.kayak.com/) - usually cheaper than SkyScanner and had cheaper flights not found on Expedia.
-  lI prefer Kayak to SkyScanner because I can filter for flights including luggage in the price
+[Opodo](https://www.opodo.co.uk/) -
+recommended by a fellow traveller.
+They have a Prime yearly membership (paid monthly) that gives cheaper deals -
+useful for people that travel a lot
+
+[Kayak.com](https://www.kayak.com/) - sometimes cheaper than SkyScanner and had cheaper flights not found on Expedia.
+  I prefer Kayak to SkyScanner because I can filter for flights including luggage in the price
   and when following through to [eDreams](https://www.edreams.com/) or [Trip.com](https://trip.com/) flights I can
-  upgrade to 25kg luggage for ~£4, which is important because I got charged $30 for having 22kg checked luggage -
-  2kg over the 20kg default luggage allowance of many airlines.
-  Booking.com and Kiwi.com are bad for this only option of adding 20kg checked luggage
+  upgrade to 25kg luggage for ~£4, which is important because I got charged $30 for having 22kg checked luggage in
+  Asia - 2kg over the 20kg default luggage allowance of many airline flights there.
+  Booking.com and Kiwi.com are bad for this as they often only have an option to add 20kg checked luggage which wasn't
+  enough
 
 [SkyScanner.net](https://www.skyscanner.net/) - had cheaper flights that weren't even found on Expedia,
 and cheaper on the same flights too
@@ -218,25 +381,113 @@ less good for a digital nomad who is going one way and bouncing to the next plac
 [OnTheBeach.co.uk](https://www.onthebeach.co.uk/) - good prices but nothing available for same/next day for last minute
 travellers like me.
 
+## Travel Checklist
+
+### Important
+
+- Passport
+- Visa
+  - booked exit flight proof is required to enter in many Latin and Caribbean countries
+  - digital online immigration and customs declarations are required in many countries before going through immigration
+- Laptop (optional)
+- Chargers - phone, laptop, electric toothbrush, USB-to-USB-c cable or USB adapters for plane sockets
+- Travel Adapters for international plug formats
+- [Hostel Checklist](#hostel-tips) - padlock, towel, shower gel etc.
+- Clothes for climate (check your weather app for the destination, it might be hotter / colder /
+  more rainy than you expect - I got caught out a couple times!)
+
+### Optional
+
+- toiletries - you can buy toiletries almost anywhere, but you may prefer to take your favourite brands from home rather
+  than make do with whatever you find there -
+  western brands can be very expensive in some Latin countries due to import costs and tariffs
+- book or other entertainment for flight
+- reusable water bottle for water dispensers at airports (where available), for after the security scanners where they
+  take any liquids off you and you don't want to get price gouged for bottled water and waste plastic
+
+### Jumbo Passports
+
+Many countries in the world have an option to get a passport with many more pages for frequent travellers.
+
+Although this costs slightly more, this works out cheaper over the long run if you travel a lot compared to replacing
+your passport more frequently.
+
+Some countries require an entire clean passport page for their immigration stamp such as [Laos](travel/laos.md).
+
 ## Flights
+
+My friend has travelled to even more countries than I have and was always going where the cheap flights took him.
+
+This inspired me to eventually start cost optimizing my flights around the world.
+
+So here is what I've learnt about flights travelling around the world and back again and taking way too many flights.
+
+### Flight Tips
+
+#### Book Ahead
 
 Book ahead of time for better price comparisons.
 
 Same goes for ferries if driving.
+
+#### Cheaper Tickets via Transit Hubs
+
+For long-distance flights to/from Europe, it's cheaper to book one flight to a major transit hub such as London, Madrid
+or Barcelona which benefit from the economy of scale of passengers, and then buy a separate budget ticket
+(Ryanair / EasyJet) for the final leg once you're in the region such as Europe.
+
+In Latin America, Puerto Rico is a cheaper transit hub I found.
+Bogota is also a transit hub for South America in general but it was significantly more expensive to fly to Europe from
+Bogota than Puerto Rico.
+
+#### Cheaper Tickets via Date Shifting
+
+If you can be flexible about dates, check a few days either side of when you want to travel,
+as it's cheaper to travel on less busy days.
+
+For example, I spent 5 days in Madrid essentially for free by waiting for a cheaper long distance connecting flight
+from there to Cancun, Mexico.
+
+On the way back to Europe after touring Latin America,
+I flew to spend 8 days in Puerto Rico to wait to catch a cheap flight from there back to Europe.
+Even though Puerto Rico isn't that cheap for food or accommodation as its part of the US,
+the savings on the flight difference was several hundred which paid for most of the week there.
+
+#### Latin American Flights Are Expensive
+
+Flights between Latin American countries are not as cheap as between European countries or South East Asian countries,
+and this is something you should budget extra for if travelling around Latin America.
+
+#### Baggage Fees
+
+Watch out for hidden baggage fees where tickets do not include checked baggage, or the luggage allowance is too low
+eg. 10kg or 20kg instead of usual 23kg.
+Being just 2kg over has cost me $30 before, and having to add checked baggage can often cost an extra \$100.
+Sometimes a slightly more expensive flight with another airline actually works out significantly cheaper when factoring
+in luggage add-on costs.
+They do this to trick you on price comparison sites hoping you won't go back to click through to check the other
+airline options.
 
 Favourite Airline: Air Arabia because they didn't tell me to put my laptop away during takeoff. One less pointless rule
 enforced.
 
 ### Flight Booking Sites
 
-Ranked by my success in finding affordable flights
+Ranked by my success in finding affordable flights:
 
-- [Kayak.com](https://www.kayak.com/) - even cheaper than SkyScanner and had cheaper flights not found on Expedia
+- [Google Gemini AI](https://gemini.google.com/) - much easier to get it to find cheap flights including date shifting
+  since it's integrated with Google Flights
+  - [Google Flights](https://www.google.com/travel/flights) - don't bother using this directly, get Google AI to do the search work for you
+  - Update: the second time I tried using Gemini it didn't find the cheap flights on the dates I knew they were there
+    and I had to go back to comparison sites directly to pinpoint them homing in on the dates I already knew were the
+    cheapest from the previous AI analysis.
+    Even the same AI is super unreliable between runs and I would have lost £200 on the flight if just relying on AI
 - [SkyScanner.net](https://www.skyscanner.net/) - had cheaper flights that weren't even found on Expedia, and cheaper on the same flights too
+- [Kayak.com](https://www.kayak.com/) - even cheaper than SkyScanner and had cheaper flights not found on Expedia
 - [Booking.com](https://www.booking.com)
 - [Agoda.com](https://www.agoda.com/) - better for hotels than flights
 - [Expedia](https://expedia.co.uk) - fewer and more expensive flights
-- [Google Flights](https://www.google.com/travel/flights)
+- [Secret Flying](https://www.secretflying.com/) - powered by SkyScanner
 
 ### Flight Deals from the US
 
@@ -250,6 +501,36 @@ Unfortunately they do not serve airports outside the US at time of writing.
 
 ### Flight Gotchas
 
+#### Return / Onwards Flights Required for Check-In
+
+Some airlines / countries require proof of outbound flights,
+and refuse to check you in or even luggage drop without it,
+which can leave you scrambling to book an outbound flight from your destination country before the check-in closes.
+
+This has hit me travelling to:
+
+- [Mexico](travel/mexico.md) with Iberojet airline
+- [Costa Rica](travel/costarica.md) with Avianca airline
+- [Panama](travel/panama.md) with Copa airline
+- [Colombia](travel/colombia.md) with Avianca airline
+- [Bolivia](travel/bolivia.md) with Aviana airline
+
+In [Panama](travel/panama.md) and [Costa Rica](travel/costarica.md)
+the immigration officer did ask for my outbound flight and accommodation,
+whereas in [Mexico](travel/mexico.md), [Colombia](travel/colombia.md) and [Bolivia](travel/bolivia.md)
+they asked for my accommodation details but not my outbound flight.
+
+Regardless, the airlines will not let you check-in without an outbound flight when travelling to some countries.
+
+Check the country's immigration rules ahead of time and get to the airline at least 3-4 hours
+before take off to give yourself 30-60 minutes to scour and book outbound / onwards flights if you need to.
+
+Technically it could be outbound bus to a nearby country,
+or you could book a flexible flight that you could change the date later
+as it can be quite disruptive to force travel plans to specific dates when you don't know how long you want to explore
+a country
+(I've stayed longer than intended in several countries due to finding recommended holiday towns, seas, volcanos etc).
+
 #### Luggage
 
 Be careful with your luggage weight. I got charged $30 in Asia for being 2kg overweight.
@@ -262,6 +543,10 @@ you really only need a change of clothes and minimal toiletries.
 
 The real problem is if you have lots of toiletries for skincare routines etc,
 as it can be hard to get it through the airport security and need that checked luggage.
+
+If going away for longer, such as travelling South America, then ditch the carry-on luggage as they often charge a
+similar amount extra for it as for checked luggage, and just putting everything in one large checked-in suitcase works
+out cheaper.
 
 #### Transfer Flight Timings
 
@@ -306,14 +591,31 @@ and this makes it even more likely that you'll miss a connecting flight.
 
 It's even worse than the `Self Transfer`.
 
-## Hotels vs Hostels vs Airbnb
+#### Charging Your Devices on Flights
+
+Many planes have been around for a long time such that they only have classic old large USB ports to charge devices,
+whereas most modern smartphones and laptops have USB charging ports.
+
+Bring a USB-to-USB-c charging cable of at least medium length
+to be able to charge your smartphone - medium length to be able for it to reach to the pouch on the back of the seat in
+front of you where you may want to rest your phone.
+
+## Accommodation - Hotels vs Hostels vs Airbnb
+
+This is usually one of the biggest travel expenses,
+so check in advance and avoid places with high accommodation costs, or shorten your stays there.
 
 After a lot of travelling, I have come to the conclusion that you can judge a place by the cost of its accommodation.
 
-In Croatia for example, you can pay £30-50 per night for hostel,
+In Croatia for example, you can pay £30-50 per night for a hostel,
 which is ridiculous as you could stay in a full private hotel room in Dubai for £55.
 
-If a place has expensive accommodation, either consider travelling to somewhere else better value if holidaying,
+Also, manu European cities are price gouging on Friday and Saturday nights where the costs can multiply.
+
+Prices can get even more astronomical going as high as £100 per night during public holidays at the beginnging of May
+for a hostel that would otherwise be £20.
+
+If a place has expensive accommodation, either consider travelling to somewhere else with better value if holidaying,
 or shorten your trip there and then go somewhere better value for longer.
 
 **If you're travelling alone, don't waste your time & money on Hotels or Airbnbs, use hostels, they're more social and**
@@ -337,6 +639,88 @@ I have have private hosts cancel my accommodations the day before or even the sa
 (see [Morocco](#morocco)).
 
 It's annoying to be booking at the last minute because you'll get the least good places for the most expensive prices.
+
+Lastly, check Google Maps ratings, they will help you to avoid some landmine places that for some reason do not seem to
+be rated badly enough on booking sites.
+
+### Tourist Taxes
+
+Europe has an epidemic of taxes and low birth rates
+and they even extend this to tourist tax per night that you stay in their city.
+
+Often this adds €5 per night on top of your accommodation bill,
+which is annoyingly often requested at your check-in time and not included in the online booking price.
+
+This often varies by hotel category eg. hotels have a higher tourist tax than hostels.
+
+If you're on a budget, or just hate giving taxes to useless wasteful governments, then you might want
+to consider avoiding or minimizing time in places with high tourist taxes by checking the next section.
+
+#### Tourist Tax Hall of Shame
+
+[Barcelona](travel/spain.md#barcelona)'s tourist taxes were high at nearly €7 extra per night when I stayed, which prompted me to generate this
+section.
+
+Here is a table of the 50 worst tourist taxed cities in the world,
+in Euros because really this is mainly a European thing.
+
+I generated this with ChatGPT so it's almost certainly wrong (as well as out of date by the time you're reading this),
+but just to give you an idea as of 2025 / 2026:
+
+| Shame Ranking | Country              | City              | Hotel Tourist Tax / Day (EUR) | Hostel Tourist Tax / Day (EUR) |
+|--------------:| -------------------- | ----------------- | ----------------------------: | -----------------------------: |
+|             1 | Bhutan               | Thimphu           |                        100.00 |                         100.00 |
+|             2 | Netherlands          | Amsterdam         |                         18.45 |                          10.50 |
+|             3 | Spain                | Barcelona         |                         15.00 |                           7.50 |
+|             4 | Germany              | Berlin            |                         15.00 |                           7.50 |
+|             5 | Indonesia            | Bali              |                          9.00 |                           4.50 |
+|             6 | France               | Paris             |                          8.45 |                           1.95 |
+|             7 | Greece               | Athens            |                          8.17 |                           2.00 |
+|             8 | Greece               | Rhodes            |                          8.17 |                           2.00 |
+|             9 | Greece               | Heraklion         |                          8.17 |                           2.00 |
+|            10 | Greece               | Thessaloniki      |                          8.17 |                           2.00 |
+|            11 | Netherlands          | Rotterdam         |                          6.50 |                           3.25 |
+|            12 | Italy                | Milan             |                          6.44 |                           3.50 |
+|            13 | Italy                | Rome              |                          6.13 |                           3.50 |
+|            14 | Italy                | Florence          |                          6.13 |                           3.50 |
+|            15 | Japan                | Kyoto             |                          6.00 |                           2.50 |
+|            16 | Italy                | Bologna           |                          5.93 |                           3.00 |
+|            17 | Netherlands          | Utrecht           |                          5.50 |                           2.75 |
+|            18 | United States        | Las Vegas         |                          5.50 |                           3.00 |
+|            19 | France               | Cannes            |                          5.04 |                           1.90 |
+|            20 | Spain                | Palma de Mallorca |                          5.00 |                           2.00 |
+|            21 | Italy                | Naples            |                          5.00 |                           2.50 |
+|            22 | Germany              | Cologne           |                          5.00 |                           2.50 |
+|            23 | Germany              | Hamburg           |                          4.80 |                           2.40 |
+|            24 | France               | Nice              |                          4.69 |                           1.50 |
+|            25 | Germany              | Frankfurt         |                          4.50 |                           2.25 |
+|            26 | Belgium              | Brussels          |                          4.33 |                           2.15 |
+|            27 | United States        | New York City     |                          4.25 |                           2.50 |
+|            28 | Switzerland          | Bern              |                          4.20 |                           3.00 |
+|            29 | Portugal             | Lisbon            |                          4.00 |                           2.00 |
+|            30 | Italy                | Palermo           |                          4.00 |                           2.00 |
+|            31 | Greece               | Santorini         |                          4.00 |                           1.50 |
+|            32 | Greece               | Mykonos           |                          4.00 |                           1.50 |
+|            33 | United Arab Emirates | Dubai             |                          4.00 |                           2.00 |
+|            34 | Canada               | Toronto           |                          4.00 |                           2.00 |
+|            35 | Iceland              | Reykjavik         |                          4.00 |                           2.00 |
+|            36 | Switzerland          | Lucerne           |                          3.90 |                           2.90 |
+|            37 | Switzerland          | Zurich            |                          3.82 |                           2.52 |
+|            38 | Belgium              | Antwerp           |                          3.75 |                           2.00 |
+|            39 | Switzerland          | Geneva            |                          3.75 |                           2.75 |
+|            40 | Italy                | Turin             |                          3.70 |                           2.00 |
+|            41 | Austria              | Salzburg          |                          3.55 |                           1.80 |
+|            42 | Italy                | Venice            |                          3.57 |                           1.90 |
+|            43 | Austria              | Vienna            |                          3.53 |                           1.75 |
+|            44 | Slovakia             | Bratislava        |                          3.50 |                           1.75 |
+|            45 | Switzerland          | Basel             |                          3.50 |                           2.50 |
+|            46 | France               | Strasbourg        |                          3.30 |                           1.20 |
+|            47 | France               | Marseille         |                          3.25 |                           1.08 |
+|            48 | Slovenia             | Ljubljana         |                          3.13 |                           2.50 |
+|            49 | Portugal             | Porto             |                          3.00 |                           2.00 |
+|            50 | Japan                | Osaka             |                          3.00 |                           1.50 |
+
+<https://www.euronews.com/travel/2025/02/04/europe-tourist-taxes-bans-restrictions-explained>
 
 ### Internet - Hotel vs Airbnb
 
@@ -429,15 +813,18 @@ which is a great way of seeing the world when young on budget.
 Airport taxis are a rip off all over the world. Do not use them.
 
 Use the taxi apps for the specific country,
-which are listed below, underneath each country.
+as each country has a different selection of apps that work there,
+which are listed on each country's page.
 
 Compare the different apps to get the best price, it only takes 2 minutes.
 
-Taxis in some countries only accept cash,
+Among taxi apps InDrive is generally cheaper than Uber although often requires that you pay in cash.
+
+Taxis in some countries only accept cash anyway,
 even when ordering them using apps, such as in Albania,
 or the airport taxis in Moldova and Malaysia.
 
-Taxis in Thailand and Malaysia stopped at ATMs to get me to withdraw cash for them.
+Taxis in Thailand and Malaysia have stopped at ATMs to get me to withdraw cash for them.
 
 See the [ATM and Foreign Cash Withdrawals](#atms-and-foreign-cash-withdrawals) section below.
 
@@ -524,6 +911,11 @@ Prices fluctuate and alternate by country so compare the top 3 providers before 
 
 - [Nomad](https://www.getnomad.app/) - a bit cheaper than Airalo,, I've started using this the most
 - [Airalo](https://www.airalo.com/) - I used this a lot originally, second cheapest option
+- [Saily](https://saily.com/) - if the price is the same I prefer this one because you don't have to install a new e-Sim each time but
+  can actually just add data for a new country to your already loaded e-Sim.
+  My travel buddy who also travels all year has had issues with Saily, finding it to be
+  be unreliable and had to get refunds from them 3 times across different countries, but it worked ok for me, and
+  I've had such issues with the other providers...
 - [AloSim](https://alosim.com/) - took a punt and used this for Bosnia as it was the cheapest there
 
 Others:
@@ -532,8 +924,6 @@ Others:
   countries, but in my experience the price per GB is so much more experience that this isn't worth it
 - [Holafly](https://esim.holafly.com/) - offers unlimited data but very expensive, usually not worth it given you typically don't use more
   than 1-3GB unless you're watching lots of videos on 4G instead of hotel wifi
-- [Saily](https://saily.com/) - WARNING: I haven't use this one yet, but my travel buddy who also travels all year has found Saily to
-  be unreliable and had to get refunds from them 3 times across different countries, and warned me not to use it
 
 Not tried these:
 
@@ -618,7 +1008,10 @@ but some central places are great too.
 Restaurants that close earlier are usually better foodie places, often with more reasonable prices. You'll often pay a
 premium for places that are open later, because there are less rival choices open at that time.
 
-I leave a couple recommendations in each location listed below.
+Do not look at the menu pictures from 2+ years ago because the prices will be wrong with all the government inflationary
+money printing of fiat currency and you will get a surprise when you get there.
+
+I leave a couple recommendations in each location on the country specific pages.
 
 Some places don't have English menus -
 these are often the best places that aren't so spoilt by foreign money and tourist trap
@@ -647,17 +1040,48 @@ as well as by September.
 
 ## Mosquito Repellent
 
-Buy a good mosquito repellent if you're travelling anywhere near the Mediterranean, Asia or Africa -
-I even got eaten in Belgium in summer time!
-
-I find that cream works better than spray.
+Buy a good mosquito repellent if you're travelling anywhere near the Mediterranean, Asia, Africa or Latin America -
+I even got repeatedly bitten in Belgium during summer time!
 
 It is no fun being itchy all the time because these little bastards are biting you every day and night and leaving
 lumps all over you.
 
 And you can't feel them land to catch them and can never seem to kill enough of them.
 
-You *need* mosquito repellent. Don't miss it.
+**You _need_ mosquito repellent. Don't miss it.**
+
+**Use cream, NOT spray (same goes for deodorant)**
+
+You don't want to inhale any spray, especially if it has chemicals in it like DEET or some toxins, as we are not
+evolved to be resistant to that ourselves.
+A woman trying to be helpful sprayed me all over with mosquito repellent containing DEET in Paraguay and I got sick
+quickly afterwards from inhaling it and had to go to bed early.
+
+## Clothing
+
+Look up the weather and pack clothes appropriate for that country and time of year as weight matters
+and I had clothes in my suitcase I never wore.
+
+In hot countries I find tank tops and shorts are the coolest clothing to wear,
+but this also leaves you vulnerable to mosquitos.
+
+South East Asia got me into tank tops and they now populate most of my suitcase - you can buy them everywhere there
+for between \$2-\$8 -
+yes I actually paid \$2 for a Siem Reap branded tank top in the market in Cambodia in early 2025!
+
+My favourite tank tops are the ones in Thailand which have small air gaps throughout the material -
+they are the coolest material I've ever worn and I have been wearing them around the world ever since.
+
+I never want to shop at any of the malls around the world after buying clothes in South East Asia's markets.
+
+I am also thinking about trying those long white gowns
+they wear in the gulf countries as they look effective against both the sun, heat and my newfound enemy - mosquitos -
+but they must be difficult to keep clean?
+
+Keep 1 pair of jeans and a thin well insulated jacket as a backup for cold airplanes,
+heavily air conditioned venues, being caught out (such as not realizing the Andes countries of South
+America have cold parts due to altitude like near Macchu Pichu, Cusco etc) or freak weather such as the thunderstorms
+of Brazil in Rio and Sao Paulo that caught me in 2026, or the freak storm and flood that hit me in Dubai in 2024.
 
 ## Health Insurance
 
@@ -709,16 +1133,37 @@ you never know how they will treat you in a foreign place and it varies signific
 
 ## Driving
 
+EU countries have town symbols along routes which automatically drop the speed limit to 50 km/h whether they declare it
+explicitly or not.
+
+This is a local knowledge that will get you done and your license revoked if you hit 100km/h.
+
+### Land Border Delays
+
+Land borders often have significant queues and delays,
+both due to queues of cars and also due to long slow checks and questioning.
+
+### Ferries
+
+As per above, police extra questioning can make you miss your ferry (it's happened to me at Calais), so allow 1 hour
+extra for this.
+
 Ferries are surprisingly expensive, similar or more in price compared a plane ticket.
 
 This probably works out a little more economical if having more than one person in the car.
 
 You should book ahead of time due to limited slots, and for better pricing.
 
-EU countries have town symbols along routes which automatically drop the speed limit to 50kmph whether they declare it
-explicitly or not.
+Use ferry comparison sites:
 
-This is a local knowledge that will get you done and your license revoked if you hit 100kmph. See [Latvia](#latvia).
+<https://www.directferries.com/>
+
+<https://www.ferryscanner.com/en/ferry>
+
+<https://www.aferry.com/en-us/>
+
+but also compare prices directly on the ferry sites themselves as you can avoid a £6 service fee charged by
+directferries comparison site.
 
 ### Car Insurance
 
@@ -832,15 +1277,37 @@ In the Parkopedia app, once you've selected the car park you can, share it to Wa
 Do not use Waze to get to the city and then try to find parking, that's more difficult, and Waze will often send you to
 some random part of a city, which has little there.
 
-## EU Schengen Visa Calculator
+## Travel Days Planning
 
-I use a Google Sheets spreadsheet with formulas but this is also helpful.
+### Spreadsheet to Auto-Recalculate Dates
 
-This is easy to use as you just have to click your entry / exit dates:
+If you want to see how to create a spreadsheet to auto-recalculate your travel dates from just the number of days
+you want to spend there, see the [Spreadsheets](spreadsheets.md#auto-calculate-dates) page which has a section
+explaining how to do this.
+
+This is super useful to:
+
+- track how many days you intend to stay in each place
+- track your dates to book flights and accommodation for
+- sum the days per country or region such as EU Schengen for visa purposes (tourist visa doesn't reset across EU
+  countries!)
+
+### Digital Nomadding
+
+See also [Nomads.com](https://nomads.com/@harisekon) which has some overlap with the spreadsheet above as described in
+the [Remote Working & Digital Nomad](remote-working.md#digital-nomad) digital nomad section.
+
+### EU Schengen Visa Calculator
+
+The following basic EU visa days calculator sites are also useful, in addition to the above spreadsheet.
+
+This one is easy to use as you just have to click your entry / exit dates:
+
+**Do NOT reload the page as it clears the dates you input!**
 
 <https://schengenareacalculator.com/>
 
-This is less easy to use because you have to manually enter the dates:
+This one is less easy to use because you have to manually enter the dates:
 
 <https://www.visa-calculator.com/>
 
@@ -863,24 +1330,22 @@ Read this article on [my Medium](https://medium.com/@harisekhon) for more:
 Brits may want to [redirect their mail overseas](https://www.postoffice.co.uk/mail/redirection) or
 get a [PO Box](https://www.royalmail.com/receiving/po-box) to collect on return visits.
 
+### Car Migration
+
+You can often import a car with a waiver on the import duty if you gain a residency permit and have had the car for over
+a year.
+
 <!--
 
 Kosovo
+
+Kosovo has semi-independence and this is disputed by Serbia.
+
+It is breakaway due to a large Albanian population.
 
 Pristina
 
 - [Liburnia](https://maps.app.goo.gl/PAmycbRJ2gk2nTEJ9) - highly recommended by my travel buddy
 - [Bukë e Zemër](https://maps.app.goo.gl/DNi7sLHCn3PCmeEt9) - recommended by a frequent travel buddy of mine
-
--->
-
-<!--
-
-Luxembourg
-
-**Not Recommended**:
-
-- [Cyrano](https://www.tripadvisor.co.uk/Restaurant_Review-g190356-d950848-Reviews-Cyrano-Luxembourg_City.html) -
-  my travel bro said this was a waste of €30, could get better for half the price even back home in London
 
 -->

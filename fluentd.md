@@ -68,7 +68,7 @@ nmap -p 24224 -sU <host>
 
 ## Treasure Data distribution
 
-```
+```text
 td-agent
 ```
 
@@ -321,7 +321,6 @@ Common Params:
 | `@id`        | `plugin_id` field shown in `monitor_agent` Rest API |
 | `@label`     |                                                     |
 | `@log_level` | Per plugin log level                                |
-
 
 #### Install Plugins
 

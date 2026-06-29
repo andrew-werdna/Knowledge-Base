@@ -18,18 +18,28 @@ heavyweight IDEs like [IntelliJ](intellij.md).
   - [Do not let your Macbook Pro get hot it will destroy the battery!!](#do-not-let-your-macbook-pro-get-hot-it-will-destroy-the-battery)
   - [Performance Falls through the floor on last 5-10% of battery life](#performance-falls-through-the-floor-on-last-5-10-of-battery-life)
 - [Terminal](#terminal)
+- [BioMetrics](#biometrics)
 - [Homebrew - Package Management](#homebrew---package-management)
+- [Mas - App Store Apps Management](#mas---app-store-apps-management)
 - [Activity Monitor](#activity-monitor)
 - [Force Quit Applications](#force-quit-applications)
 - [Stats Bar](#stats-bar)
 - [Rearrange Status Bar Icons](#rearrange-status-bar-icons)
+- [Menu Bar Managers](#menu-bar-managers)
+  - [Ice](#ice)
+- [Pingr](#pingr)
+- [Flux](#flux)
+- [Blurred](#blurred)
 - [Reducing Desktop Workspaces](#reducing-desktop-workspaces)
 - [Sending Control-Alt-Delete to Windows through Remote Desktop](#sending-control-alt-delete-to-windows-through-remote-desktop)
 - [Virtualization](#virtualization)
 - [Anti-Virus](#anti-virus)
   - [ClamAV Setup](#clamav-setup)
 - [Raycast](#raycast)
+- [Alfred](#alfred)
 - [AppleScript](#applescript)
+- [Automator](#automator)
+  - [Drag Files onto App to execute a script against them](#drag-files-onto-app-to-execute-a-script-against-them)
 - [Commands](#commands)
   - [Spotlight - Search for or Open anything](#spotlight---search-for-or-open-anything)
   - [Open URL from Terminal output](#open-url-from-terminal-output)
@@ -38,30 +48,43 @@ heavyweight IDEs like [IntelliJ](intellij.md).
     - [Open current directory in Finder](#open-current-directory-in-finder)
     - [Open image in the default app (usually Preview)](#open-image-in-the-default-app-usually-preview)
     - [Show the File in Finder](#show-the-file-in-finder)
+    - [Open an Application from the command line](#open-an-application-from-the-command-line)
+    - [Useful Open Switches](#useful-open-switches)
     - [Check default Application for a given file type](#check-default-application-for-a-given-file-type)
     - [Change the default Application for a given file type](#change-the-default-application-for-a-given-file-type)
       - [Set VLC to open AVI files](#set-vlc-to-open-avi-files)
       - [Set Chrome to open SVG files](#set-chrome-to-open-svg-files)
-    - [Open an Application from the command line](#open-an-application-from-the-command-line)
+      - [Set Editor to open Shell Scripts](#set-editor-to-open-shell-scripts)
   - [Clipboard](#clipboard)
   - [System Information](#system-information)
   - [Screenshots](#screenshots)
     - [Set Screenshot Location](#set-screenshot-location)
     - [Screenshot the Whole Screen](#screenshot-the-whole-screen)
-    - [Screenshot a Selection - Drag a Rectangle](#screenshot-a-selection---drag-a-rectangle)
+    - [Screenshot an Application Window](#screenshot-an-application-window)
+    - [Screenshot a Rectangle Selection](#screenshot-a-rectangle-selection)
+      - [Drag Rectangle Screenshot](#drag-rectangle-screenshot)
+      - [Fine-Tuned Rectangle Screenshot](#fine-tuned-rectangle-screenshot)
     - [The Screenshot.app](#the-screenshotapp)
     - [The ScreenCapture CLI](#the-screencapture-cli)
   - [Screen Recording](#screen-recording)
-  - [DNS](#dns)
-    - [Show DNS Settings](#show-dns-settings)
-    - [Set DNS Servers](#set-dns-servers)
-    - [Set DNS Search Domain](#set-dns-search-domain)
+  - [Networking](#networking)
+    - [TCP/IP](#tcpip)
+      - [Set DHCP](#set-dhcp)
+      - [Set Manual IP Address](#set-manual-ip-address)
+    - [Routing](#routing)
+      - [Show Default Gateway](#show-default-gateway)
+      - [Set Manual Default Gateway](#set-manual-default-gateway)
+    - [DNS](#dns)
+      - [Show DNS Settings](#show-dns-settings)
+      - [Set DNS Servers](#set-dns-servers)
+      - [Set DNS Search Domain](#set-dns-search-domain)
     - [Set Hostname](#set-hostname)
-    - [Flush the DNS Cache](#flush-the-dns-cache)
-  - [Wifi](#wifi)
-    - [Get Current Wifi Network Name](#get-current-wifi-network-name)
-    - [Get Current Wifi Network Password](#get-current-wifi-network-password)
-    - [List all Configured Wifi Networks](#list-all-configured-wifi-networks)
+      - [Flush the DNS Cache](#flush-the-dns-cache)
+    - [Network Quality](#network-quality)
+    - [Wifi](#wifi)
+      - [Get Current Wifi Network Name](#get-current-wifi-network-name)
+      - [Get Current Wifi Network Password](#get-current-wifi-network-password)
+      - [List all Configured Wifi Networks](#list-all-configured-wifi-networks)
   - [Say - text-to-speech](#say---text-to-speech)
   - [Finding Files - Spotlight Search and Index Management](#finding-files---spotlight-search-and-index-management)
   - [Power Management](#power-management)
@@ -77,8 +100,16 @@ heavyweight IDEs like [IntelliJ](intellij.md).
     - [List Installed Packages](#list-installed-packages)
   - [Launchctl](#launchctl)
   - [Start At Login](#start-at-login)
+  - [Notifications](#notifications)
+    - [Temporary Pop-Up Banners](#temporary-pop-up-banners)
+    - [Persistent Alert Notifications](#persistent-alert-notifications)
+    - [Temporary Alert Notifications](#temporary-alert-notifications)
   - [Disk Management](#disk-management)
-    - [CLI Disk Management](#cli-disk-management)
+    - [Disk Utility](#disk-utility)
+    - [Disk Space Analysis](#disk-space-analysis)
+    - [Disk Space Commands](#disk-space-commands)
+    - [Check USB Bus Speed](#check-usb-bus-speed)
+    - [Disk Management Tutorials](#disk-management-tutorials)
     - [List disks](#list-disks)
     - [Mount a partition](#mount-a-partition)
     - [Partition and Format a disk](#partition-and-format-a-disk)
@@ -102,12 +133,15 @@ heavyweight IDEs like [IntelliJ](intellij.md).
 - [Asahi Linux on Apple Silicon](#asahi-linux-on-apple-silicon)
 - [XCode Mobile App Builds](#xcode-mobile-app-builds)
 - [Time Machine](#time-machine)
+  - [WARNING: Vendor Encrypted Drives Cannot Be Used to Restore Data in the macOS Recovery Mode](#warning-vendor-encrypted-drives-cannot-be-used-to-restore-data-in-the-macos-recovery-mode)
   - [Exclude Paths from Backups](#exclude-paths-from-backups)
     - [Add Path to Backup Exclusions](#add-path-to-backup-exclusions)
     - [Remove Path from Backup Exclusions](#remove-path-from-backup-exclusions)
   - [Trigger Backup](#trigger-backup)
   - [List Backups](#list-backups)
   - [Restore a file from latest backup](#restore-a-file-from-latest-backup)
+  - [Find Unexpected Big Files Going in to the Current Backup](#find-unexpected-big-files-going-in-to-the-current-backup)
+  - [Sharing a Time Machine disk with Data](#sharing-a-time-machine-disk-with-data)
 - [External Disk Management](#external-disk-management)
   - [Delete Large Directories](#delete-large-directories)
   - [Disable Indexing on the Disk](#disable-indexing-on-the-disk)
@@ -117,10 +151,21 @@ heavyweight IDEs like [IntelliJ](intellij.md).
   - [Restart `mds`, `mds_stores` and `revisiond`](#restart-mds-mds_stores-and-revisiond)
   - [Verify Free Space](#verify-free-space)
 - [Troubleshooting](#troubleshooting)
+  - [Wifi Capture Portal Not Loading](#wifi-capture-portal-not-loading)
+  - [Another Device Using Your IP](#another-device-using-your-ip)
+  - [DNS Servers Not Respected](#dns-servers-not-respected)
   - [Discrepancy Between `df` and `du`](#discrepancy-between-df-and-du)
   - [Spotlight Search failing to find App](#spotlight-search-failing-to-find-app)
   - [XCodeBuild error complaining XCode only has command line tools](#xcodebuild-error-complaining-xcode-only-has-command-line-tools)
-  - [Various Applications Fail to Open](#various-applications-fail-to-open)
+  - [Application Fails to Open](#application-fails-to-open)
+    - [Application Can't Be Opened](#application-cant-be-opened)
+    - [Application is Damaged and Can't Be Opened](#application-is-damaged-and-cant-be-opened)
+    - [Application Is Not Open Anymore](#application-is-not-open-anymore)
+  - [Cannot Delete - No Space Left on Device](#cannot-delete---no-space-left-on-device)
+  - [Emergency Backup](#emergency-backup)
+  - [Bootup Hangs on Black Screen after Full Data Disk](#bootup-hangs-on-black-screen-after-full-data-disk)
+  - [Emergency File Backup from Recovery Mode](#emergency-file-backup-from-recovery-mode)
+  - [Reinstall macOS & Restore Data](#reinstall-macos--restore-data)
 - [Relevant GitHub Repos](#relevant-github-repos)
 - [Memes](#memes)
   - [Headquarters](#headquarters)
@@ -173,11 +218,38 @@ This is where you should be spending your life if you're a techie, with a browse
   - 204 on my MacBook Pro Retina 15" terminal
   - 215 on my Macbook Pro M3 2023 terminal - resolution gets better over time
 
+## BioMetrics
+
+On newer Macs, ensure your have fingerprint login set up.
+
+Check current biometric settings:
+
+```shell
+bioutil -r
+```
+
+Enable biometrics:
+
+```shell
+sudo bioutil -w -s -u 1
+```
+
+Add your fingerprints in the GUI (this can't be done from the command line):
+
+`Apple menu` → `System Settings` → `Touch ID & Password` → `Add Fingerprint`
+
 ## Homebrew - Package Management
 
 The best most widely used package manager for Mac.
 
-See [brew.md](brew.md) for how to use it and great package lists I've spent years discovering and building up.
+See the [Homebrew.md](brew.md) page for how to use it and great package lists I've spent years discovering and
+building up.
+
+## Mas - App Store Apps Management
+
+Command line interface to the macOS App Store.
+
+See the [Mas](mas.md) page for how to install and use it.
 
 ## Activity Monitor
 
@@ -223,12 +295,18 @@ Battery even tells you:
 
 - time to discharge
 - time to charge
-- number of cycles (although this one I'm sure is only since installation of Stats)
+- number of charge cycles
 - battery health %
 - remaining charge / capacity in mAh (the capacity decreases as the battery health degrades - this is very useful to
   see)
 - which apps which are consuming a lot of energy for you to kill them if you're not needing them, helping your battery
   life when on the move
+
+Start `Stats.app` at login - configure this in its settings or run this command to do it automatically:
+
+```shell
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Stats.app", hidden:false}'
+```
 
 ## Rearrange Status Bar Icons
 
@@ -241,6 +319,131 @@ click on like Google Drive to the left to be pushed underneath the camera.
 To rearrange icons:
 
 `Cmd` + Click + drag each icon to where you want it
+
+## Menu Bar Managers
+
+Free menu bar managers because a 14" Macbook Pro has nowhere near enough space for all the icons I have.
+
+All 3 free options I tried
+(
+  [Ice](https://icemenubar.app/),
+  [Vanilla](https://matthewpalmer.net/vanilla/),
+  [iBar](https://apps.apple.com/gb/app/ibar-menubar-icon-control-tool/id6443843900)
+) require Accessibility and Screen Recording Permission to work properly, unfortunately.
+
+Ice is the best of the 3, so I only cover that one here.
+
+### Ice
+
+<https://icemenubar.app/>
+
+[:octocat: jordanbaird/Ice](https://github.com/jordanbaird/Ice)
+
+```shell
+brew install jordanbaird-ice
+```
+
+```shell
+open -a Ice
+```
+
+Start at login:
+
+```shell
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Ice.app", hidden:false}'
+```
+
+<!--
+
+### Vanilla
+
+<https://matthewpalmer.net/vanilla/>
+
+```shell
+brew install vanilla
+```
+
+```shell
+open -a Vanilla
+```
+
+Start at login:
+
+```shell
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Vanilla.app", hidden:false}'
+```
+
+### iBar
+
+[App Store - iBar](https://apps.apple.com/gb/app/ibar-menubar-icon-control-tool/id6443843900)
+
+-->
+
+## Pingr
+
+Another useful menu app for constant wifi network monitoring for those unreliable hotel wifis:
+
+<https://getpingr.app/>
+
+Better than leaving a ping running in a terminal.
+
+This isn't available in Homebrew unfortunately as of time of writing
+so you actually have to click through and install it manually
+and then click the menu bar drop down to have it start automatically at login.
+
+The Stats bar's network tool gives far more detailed info such as connectivity history graph,
+latency, bandwith usage and per app network breakdowns.
+I like the green dot item, but for the graph directly in menu bar, this app is nice.
+
+## Flux
+
+[Flux](https://justgetflux.com/) dims your display to remove blue light that keeps you awake.
+
+```shell
+brew install --cask flux-app
+```
+
+Start Flux:
+
+```shell
+open -a Flux
+```
+
+<!-- You don't need this, it automatically adds itself to the startup login items
+
+Start at login:
+
+```shell
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Flux.app", hidden:false}'
+```
+
+-->
+
+## Blurred
+
+[:octocat: dwarvesf/Blurred](https://github.com/dwarvesf/Blurred)
+
+Dims background windows - seems to not work consistently though.
+
+I don't use this any more, not worth the CPU cycles IMO.
+
+If you want to try it:
+
+```shell
+brew install blurred
+```
+
+Start Blurred:
+
+```shell
+open -a Blurred
+```
+
+Start at login:
+
+```shell
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Blurred.app", hidden:false}'
+```
 
 ## Reducing Desktop Workspaces
 
@@ -369,9 +572,47 @@ clamscan --recursive .
 
 ## Raycast
 
-Shortcut to everything - install and then hit `Option` + `Space` to bring it up.
+Shortcut to everything.
 
-<https://www.raycast.com/>
+Use as a drop in replacement for Spotlight which is full of garbage results like web pages in recent versions
+of Mac.
+
+macOS power users often switch to Raycast or Alfred to use as app launchers as they are more predictable
+and respect local app priority rather than Spotlight which has been ruined trying to be a universal search usually
+resulting in poor results not giving you the local app you want to launch.
+
+See [Raycast](raycast.md) page for installation and usage instructions as well as some useful extensions.
+
+## Alfred
+
+More mature app launcher replacement for Spotlight.
+
+More configurable and extensible than Raycast.
+
+The search bar looks simpler than Raycast,
+but has more options under the hood with workflows and powerpacks.
+
+Install Alfred:
+
+```shell
+brew install --cask alfred
+```
+
+Start Alfred in the background:
+
+```shell
+open -a "Alfred 5"
+```
+
+or in case the version number changes:
+
+```shell
+open -a "$(echo /Applications/Alfred\ *.app)"
+```
+
+Launch Alfred search bar:
+
+`Option` + `Space`
 
 ## AppleScript
 
@@ -390,7 +631,44 @@ Still, there are some macOS UI related things for which this is the native code,
 the `applescript/` directory in my [DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) repo which
 has many more Bash scripts that work on macOS and a bit of [Python](python.md) with the Quartz library for macOS:
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+
+## Automator
+
+Mac's Automator is awesome - it allows you to generate MacOS apps that look and work like real Mac applications
+using a custom workflow that can execute many native mac or external actions including running shell scripts.
+
+### Drag Files onto App to execute a script against them
+
+You can create an Automator app that you can drag any file onto in Finder to have it execute any program such as a
+shell script with that file as the first argument.
+
+Open Automator:
+
+```shell
+open -a Automator
+```
+
+If Automator prompts a small Finder window - click the `New Document` button.
+
+If Automator is already running and you want to create a new one, click the top menu `File` -> `New`.
+
+1. Choose `Application` for your document type
+2. Drag `Run Shell Script` from the list of actions to the right hand pane
+3. On the top right of the shell script box that appears on the canvass,
+  change the drop down for `Pass Input` to `as arguments`
+4. Paste the following script into the code box:
+
+```shell
+for file in "$@"; do
+    /path/to/your/script.sh "$file"
+done
+```
+
+The script will not inherit all your fancy `.bashrc` environment so ensure
+that `\$PATH` to tools and environment variables are set or sourced in the script itself for portability.
+
+5. Save this as some `<name>.app` and you will then be able to drag any file onto it in Finder to have it execute
 
 ## Commands
 
@@ -398,7 +676,8 @@ A list of commands is provided at <https://ss64.com/mac/>.
 
 ### Spotlight - Search for or Open anything
 
-`Cmd`-`Space` - opens Spotlight search to auto-complete and open anything quickly.
+`Cmd`-`Space` - opens Spotlight search (or preferably [Raycast](#raycast) if you followed the section above) to
+auto-complete and open anything quickly.
 
 If this doesn't find an app which you know is there such as typing `Spotify` only returns Google Chrome or other wrong
 results despite confirming that `/Applications/Spotify.app` exists, then see
@@ -410,8 +689,7 @@ results despite confirming that `/Applications/Spotify.app` exists, then see
 
 ### Open
 
-Open a file / folder / URL / Application. Use `-a` to select which app to use to open it.
-Use `-e` to edit the file in TextEdit.
+Open a file, folder, URL or Application.
 
 #### Open URL in the default web browser
 
@@ -444,13 +722,46 @@ open -R "$file"
 
 This will open Finder with the file highlighted.
 
+#### Open an Application from the command line
+
+Use the name as seen under `/Applications/` without the `.app` extension which is optional:
+
+```shell
+open -a "Google Chrome"
+```
+
+```shell
+open -a "SQLDeveloper"
+```
+
+```shell
+open -a "DBeaver"
+```
+
+#### Useful Open Switches
+
+| Switch                | Description                                                                                       |
+|-----------------------|---------------------------------------------------------------------------------------------------|
+| `-a` APP              | Select which app to use to open it eg `-a 'Google Chrome'`                                        |
+| `-e`                  | Edit the file in TextEdit                                                                         |
+| `-g` / `--background` | Opens the application in the background                                                           |
+| `-n` / `--new`        | Open a new instance of the application even if one is already running                             |
+| `-j` / `--hide`       | Launches the app hidden                                                                           |
+| `-u` / `--url` URL    | Open this URL, even if it exactly matches a filepath which would otherwise be preferred first     |
+| `--args`              | All remaining arguments are passed in argv to the application's main() function instead of opened |
+| `-R` / `--reveal`     | Selects the file in the Finder instead of opening it                                              |
+| `-W` / `--wait-apps`  | Blocks until the used applications are closed (even if they were already running)                 |
+| `--env` NAME=VALUE    | Adds an environment variable to be used by the application                                        |
+
 #### Check default Application for a given file type
+
+Install the duti app:
 
 ```shell
 brew install duti
 ```
 
-Check default Application for a given file type (eg `.avi` or `.svg`):
+Use duti to check the default application for a given file type (eg `.avi` or `.svg`):
 
 ```shell
 duti -x avi
@@ -491,20 +802,31 @@ editing application it is already set to (eg. Gimp or Inkscape):
 duti -s com.google.Chrome public.svg-image all
 ```
 
-#### Open an Application from the command line
+##### Set Editor to open Shell Scripts
 
-Use the name as seen under `/Applications/` without the `.app` extension which is optional:
+First find the ID of your favourite GUI [Editor or IDE](editors.md):
 
 ```shell
-open -a "Google Chrome"
+osascript -e 'id of app "IntelliJ IDEA CE"'
 ```
 
-```shell
-open -a "SQLDeveloper"
+outputs:
+
+```text
+com.jetbrains.intellij.ce
 ```
 
+The name of your IntelliJ app may be different depending on your version, you can use this one liner to find it:
+
 ```shell
-open -a "DBeaver"
+printf '%s\n' /Applications/IntelliJ*.app | sed 's|.*/||; s/\.app$//'
+```
+
+Then set the ID to be the default application for `.sh` extension files (instead of the Xcode.app editor which is the
+standard default):
+
+```shell
+duti -s com.jetbrains.intellij.ce sh all
 ```
 
 ### Clipboard
@@ -576,6 +898,12 @@ diskutil list
 system_profiler SPStorageDataType
 ```
 
+USB Info (for external USD backup disks):
+
+```shell
+system_profiler SPUSBDataType
+```
+
 Graphics card:
 
 ```shell
@@ -639,13 +967,36 @@ Drag the `Screenshots` directory to the left-hand Favourites panel for quick eas
 
 `Cmd` + `Shift` + `3`
 
-#### Screenshot a Selection - Drag a Rectangle
+#### Screenshot an Application Window
 
-Switches to a cross-hair to drag to what you want to screenshot.
+`Cmd` + `Shift` + `5`
+
+Ensure `Capture Selected Window` is selected in the screenshot bar that appears and then click on the application
+window.
+
+This is cleaner than dragging a rectangle which may catch some other cruft captured at mac's rounded corner application
+windows.
+
+#### Screenshot a Rectangle Selection
+
+##### Drag Rectangle Screenshot
+
+Switch mouse pointer to a cross-hair:
 
 `Cmd` + `Shift` + `4`
 
-More details on Mac's native Screen Capture tool is [here](https://support.apple.com/en-ae/guide/mac-help/mh26782/mac).
+Then press down and drag a rectangular selection, release to screenshot it.
+
+(press `Esc` to abort the press down without capturing if you need to start again)
+
+##### Fine-Tuned Rectangle Screenshot
+
+A slightly more precious method is to use the screenshot bar:
+
+`Cmd` + `Shift` + `5`
+
+Ensure `Capture Selected Portion` is selected in the screenshot bar and drag the edges of the rectangle until satisfied,
+and then click the `Capture` button on the right of the screenshot bar.
 
 #### The Screenshot.app
 
@@ -666,6 +1017,8 @@ or
 ```shell
 open -a Screenshot
 ```
+
+More details on Mac's native Screen Capture tool is [here](https://support.apple.com/en-ae/guide/mac-help/mh26782/mac).
 
 #### The ScreenCapture CLI
 
@@ -740,36 +1093,83 @@ open -a "QuickTime Player.app"
 
 And then select `File` -> `New Screen Recording` or use shortcut `Control` + `Command` +`N`.
 
-### DNS
+### Networking
 
-#### Show DNS Settings
+#### TCP/IP
+
+##### Set DHCP
+
+```shell
+sudo ipconfig set en0 DHCP
+```
+
+##### Set Manual IP Address
+
+```shell
+sudo ipconfig set en0 MANUAL 192.168.1.2 255.255.255.0
+```
+
+#### Routing
+
+##### Show Default Gateway
+
+```shell
+netstat -rn | grep default
+```
+
+Example output:
+
+```text
+default            192.168.1.1        UGScg                 en0
+```
+
+##### Set Manual Default Gateway
+
+```shell
+sudo route add default 192.168.1.1
+```
+
+#### DNS
+
+##### Show DNS Settings
 
 ```shell
 scutil --dns
 ```
 
-#### Set DNS Servers
+##### Set DNS Servers
 
-Sometimes you want to use public DNS servers for better performance than the local DHCP given ones:
+Sometimes you want to use public DNS servers for better performance than the local DHCP given ones.
+
+First you need to find the interface name, you cannot use the `en0` type notation.
+
+Find the network interfaces:
 
 ```shell
-sudo networksetup -setdnsservers en0 4.2.2.1 4.2.2.2
+networksetup -listallnetworkservices
+```
+
+The assign the IP addresses of the DNS servers to one of those named network interfaces,
+such as the Wi-Fi network interface:
+
+```shell
+sudo networksetup -setdnsservers Wi-Fi 4.2.2.1 4.2.2.2
 ```
 
 To set back to DHCP DNS servers, just clear the list:
 
 ```shell
-sudo networksetup -setdnsservers en0 "Empty"
+sudo networksetup -setdnsservers Wi-Fi "Empty"
 ```
 
 In [DevOps-Bash-tools](devops-bash-tools.md) the shell has a function `dhcpdns` to do this for all network
 interfaces and remove the DNS search domains since you should inherit them from DHCP and not leak those FQDN
 searches to the internet if on public networks.
 
-#### Set DNS Search Domain
+##### Set DNS Search Domain
 
 ```shell
-sudo networksetup -setsearchdomains en0 mydomain.com
+sudo networksetup -setsearchdomains Wi-Fi mydomain.com
 ```
 
 In [DevOps-Bash-tools](devops-bash-tools.md) the shell has a function `set_dns` to do this for all network interfaces to
@@ -780,7 +1180,7 @@ You should see these search domains appear in the class unix file `/etc/resolv.c
 To remove DNS search domains:
 
 ```shell
-sudo networksetup -setsearchdomains en0 "Empty"
+sudo networksetup -setsearchdomains Wi-Fi "Empty"
 ```
 
 or `clear_dns_search` function in [DevOps-Bash-tools](devops-bash-tools.md) to do this for all interfaces.
@@ -804,22 +1204,38 @@ scutil --get ComputerName
 scutil --get LocalHostName
 ```
 
-#### Flush the DNS Cache
+##### Flush the DNS Cache
 
 ```shell
 dscacheutil -flushcache
 sudo killall -HUP mDNSResponder
 ```
 
-### Wifi
+#### Network Quality
 
-#### Get Current Wifi Network Name
+Built-in available in macOS Monterey or later:
+
+```shell
+networkquality
+```
+
+```text
+==== SUMMARY ====
+Uplink capacity: 68.173 Mbps
+Downlink capacity: 77.023 Mbps
+Responsiveness: Low (322.581 milliseconds | 186 RPM)
+Idle Latency: 204.167 milliseconds | 294 RPM
+```
+
+#### Wifi
+
+##### Get Current Wifi Network Name
 
 ```shell
 networksetup -getairportnetwork en0 | awk -F': ' '{print $2}'
 ```
 
-#### Get Current Wifi Network Password
+##### Get Current Wifi Network Password
 
 Prompts with a UI pop-up for administrative access to the system's keychain (`sudo` doesn't prevent this unfortunately):
 
@@ -829,7 +1245,7 @@ security find-generic-password -g -w -D "AirPort network password" \
           awk -F': ' '{print $2}')"
 ```
 
-#### List all Configured Wifi Networks
+##### List all Configured Wifi Networks
 
 ```shell
 networksetup -listpreferredwirelessnetworks en0 |
@@ -875,16 +1291,42 @@ The equivalent of `locate` on Linux, uses the Spotlight index:
 mdfind [-onlyin /path/to/directory] [-name "$filename"] "$term"
 ```
 
+Check an app like Whatsapp is in the Spotlight index:
+
+```shell
+app=WhatsApp
+
+mdfind "kMDItemKind == 'Application' && kMDItemFSName == '$app.app'"
+```
+
 Erase and rebuild the Spotlight index:
 
 ```shell
 mdutil -E
 ```
 
-Enable / disable Spotlight indexing for a given volume or entirely:
+Disable Spotlight indexing:
 
 ```shell
-mdutil -i
+mdutil -a -i off
+```
+
+Enable Spotlight indexing:
+
+```shell
+mdutil -a -i on
+```
+
+Check indexing status:
+
+```shell
+mdutil -s /
+```
+
+Check indexing status for a specific folder (perhaps after disabling indexing on large or sensitive folders):
+
+```shell
+mdutil -s ~/Downloads
 ```
 
 ### Power Management
@@ -1168,17 +1610,166 @@ end tell
 EOF
 ```
 
+### Notifications
+
+#### Temporary Pop-Up Banners
+
+You can use native AppleScript to generate a temporary desktop pop-up notification in the top right corner of the
+screen like this:
+
+```shell
+osascript -e 'display notification "Your message here" with title "Automation" subtitle "Status Update"'
+```
+
+These notifications stay in your notification history until dismissed.
+You can see them if you click on the clock in the top right corner to open the notification centre.
+
+**WARNING: If user has `Do Not Disturb` set, then these notifications may be suppressed.**
+
+If it's important you can use an alert instead as shown below.
+
+#### Persistent Alert Notifications
+
+To generate a pop-up alert notification that requires manual dismissal:
+
+```shell
+osascript -e 'display alert "Important Message Title" message "Backup completed successfully" as informational'
+```
+
+#### Temporary Alert Notifications
+
+To generate a pop-up in the middle of the screen that disappears after 5 seconds:
+
+```shell
+osascript -e 'display dialog "This will vanish in 5 seconds..." with title "Self-Destructing Pop-up" buttons {"OK"} default button "OK" giving up after 5'
+```
+
+If it expires, the command outputs this text:
+
+```text
+button returned:, gave up:true
+```
+
+If you click the `OK` button to dismiss it, returns this text:
+
+```text
+button returned:OK, gave up:false
+```
+
+This allows you to capture the output in a script and then take some fallback action.
+
 ### Disk Management
+
+#### Disk Utility
 
 Using graphical Disk Utility is easiest:
 
 ```shell
-open /System/Applications/Utilities/Disk\ Utility.app
+open -a 'Disk Utility'
 ```
 
-#### CLI Disk Management
+#### Disk Space Analysis
 
-Great tutorial:
+Mac built in `System Settings` -> `General` -> `Storage` will give a good high-level overview of what
+is taking up your disk space:
+
+```shell
+open "x-apple.systempreferences:com.apple.settings.Storage"
+```
+
+You can see this [Apple support article](https://support.apple.com/en-us/102624) on optimizing space.
+
+My favourite of all time is [Disk Inventory X](https://www.derlien.com/):
+
+```shell
+brew install disk-inventory-x
+```
+
+```shell
+open -a 'Disk Inventory X' /
+```
+
+[GrandPerspective](https://grandperspectiv.sourceforge.net/) is another similar GUI disk space analysis app:
+
+```shell
+brew install --cask grandperspective
+```
+
+```shell
+open -a GrandPerspective /
+```
+
+[OmniDiskSweeper](https://www.omnigroup.com/more) is another option:
+
+```shell
+brew install --cask omnidisksweeper
+```
+
+```shell
+open -a OmniDiskSweeper /
+```
+
+[BaoBab](https://apps.gnome.org/Baobab/) is available on both Linux & Mac:
+
+```shell
+brew install baobab
+```
+
+```shell
+baobab /
+```
+
+But for CLI junkies there is also ...
+
+#### Disk Space Commands
+
+Aside from the classic portable unix `df` and `du` commands...
+
+... there is this cool interactive 'ncurses du'
+which allows you
+to easily drill down to find the biggest directories and files:
+
+```shell
+brew install ncdu
+```
+
+```shell
+sudo ncdu /
+```
+
+The biggest directories and files are automatically sorted to the top for convenience at each level you drill in to.
+
+Type `?` for the interactive help menu.
+
+#### Check USB Bus Speed
+
+USB bus makes a huge difference between USB 2 and USB 3.
+
+On a Time Machine restore of my hosed mac,
+this was the difference between 80-90 hour s and 2-3 hours projected completion time.
+
+```shell
+system_profiler SPUSBDataType
+```
+
+Even among USB 3.1 look at the speed difference different cables can make with identical model SanDisk Extreme Pro SSD
+disks:
+
+```shell
+system_profiler SPUSBDataType | grep -e Bus -e Speed -e Manufacturer
+```
+
+```text
+    USB 3.1 Bus:
+          Speed: Up to 480 Mb/s
+          Manufacturer: SanDisk
+    USB 3.1 Bus:
+          Speed: Up to 10 Gb/s
+          Manufacturer: SanDisk
+    USB 3.1 Bus:
+```
+
+#### Disk Management Tutorials
 
 [Part 1](http://www.theinstructional.com/guides/disk-management-from-the-command-line-part-1) -
 List, Verify, Repair, Rename, Erase volumes
@@ -1545,21 +2136,30 @@ brew install hammerspoon --cask
 
 Then create a `~/.hammerspoon/init.lua` to register your event handlers.
 
-Mine is found at
-[:octocat: HariSekhon/DevOps-Bash-tools - configs/.hammerspoon/init.lua](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/configs/.hammerspoon/init.lua).
-
-As documented on the Audio page section
-[Automatically Switch to Using Multi-Output Device when Connecting Headphones](audio.md#automatically-switch-to-using-multi-output-device-when-connecting-headphones),
-I use this to be able to Shazam songs from movies or TV shows while watching them on AirPods.
+My code is found at
+[:octocat: HariSekhon/Hammerspoon](https://github.com/HariSekhon/Hammerspoon).
 
 ```shell
-mkdir ~/.hammerspoon
+mkdir -p -v ~/github
 ```
 
 ```shell
-wget -O ~/.hammerspoon/init.lua \
-  https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/configs/.hammerspoon/init.lua
+git clone https://github.com/HariSekhon/Hammerspoon ~/github/hammerspoon
 ```
+
+```shell
+ln -svFhw ~/github/hammerspoon ~/.hammerspoon
+```
+
+Output:
+
+```text
+/Users/hari/.hammerspoon -> /Users/hari/github/hammerspoon
+```
+
+As documented on this [Audio page section](https://github.com/HariSekhon/Knowledge-Base/blob/main/audio.md#shazam-songs-while-using-headphones-on-mac)
+I use this to be able to Shazam songs from movies or TV shows while watching them on AirPods,
+and used this code to automatically switch to the multi-output audio device to be able to do so.
 
 Finally, start Hammerspoon, you should see its icon in the menu bar.
 
@@ -1667,6 +2267,19 @@ See [Mobile Builds](mobile-builds.md) doc.
 
 ## Time Machine
 
+### WARNING: Vendor Encrypted Drives Cannot Be Used to Restore Data in the macOS Recovery Mode
+
+If you choose to use the device vendor's encryption on your external drive, this usually requires an app provided by
+the vendor, it may seem fine at first as you'll be unable to back up and restore in normal full macOS installation but
+if you've hit a [bootup problem](#bootup-hangs-on-black-screen-after-full-data-disk) and need to work in recovery mode,
+then you'll be unable to unlock and access the vendor encrypted disk as the vendor software will not work in macOS
+recovery mode which is a very cut down version.
+
+In that case, your options will be to use another disk or do an emergency file backup & recovery.
+
+See the [Emergency File Backup from Recovery Mode](#emergency-file-backup-from-recovery-mode)
+and [Reinstall macOS & Restore Data](#reinstall-macos--restore-data) sections under Troubleshooting further down.
+
 ### Exclude Paths from Backups
 
 #### Add Path to Backup Exclusions
@@ -1699,32 +2312,15 @@ If you have played around with this and want to do a deep search, use this scrip
 [DevOps-Bash-tools](devops-bash-tools.md):
 
 ```shell
-mac_find_excluded_backup_paths.sh
+mac_backup_find_excluded_paths.sh
 ```
 
-eg. exclude Downloads and some common space wasting caches from your backups:
+The following script in [DevOps-Bash-tools](devops-bash-tools.md) adds the common cache paths to the exclusion list in the correct way
+that you can see in the UI.
+You can quickly add your local repo's `build` and `Pods` directories as args too:
 
 ```shell
-for path in ~/Downloads \
-         ~/VirtualBox\ VMs \
-         ~/Library/Caches/Homebrew \
-         ~/.docker/machine/machines \
-         ~/Library/Developer/Xcode/DerivedData \
-         ~/github/$REPO/build \
-         ~/github/$REPO/Pods \
-         ~/.cpanm \
-         ~/Library/Caches/pip \
-         ~/go/pkg/mod \
-         ~/.m2/wrapper \
-         ~/.m2/repository \
-         ~/.ivy2/cache \
-         ~/.gradle/caches \
-         ~/.gradle/wrapper \
-    ; do
-    path="${path/~/$HOME}"
-    echo "Added path to backup exclusions: $path"
-    sudo tmutil addexclusion -p "$path"
-done
+mac_backup_exclude_paths.sh "$PWD/build" "$PWD/Pods"
 ```
 
 #### Remove Path from Backup Exclusions
@@ -1851,6 +2447,59 @@ from [DevOps-Bash-tools](devops-bash-tools.md):
 mac_restore_file.sh "$filename"
 ```
 
+### Find Unexpected Big Files Going in to the Current Backup
+
+Sometimes it's perplexing
+why Time Machine is taking so long or backing up large volume of hundreds of GB
+when you know nothing much has changed in your data or applications since the last backup:
+
+After trying many crappy `tmutil` commands that don't work any more and random things off the internet,
+it turns out this old skool method is the most reliable to find out what is going in there:
+
+```shell
+sudo du -max /Volumes/*/$(date '+%F')-*.inprogress/ | sort -k1n | tail -n 1000
+```
+
+This is scripted more easily in `mac_backup_du_in_progress.sh` in [DevOps-Bash-tools](devops-bash-tools.md)
+which will try for an `inprogress` dir for today or yesterday if today's one is not found,
+as if you're a night owl like me the backup might have started before midnight.
+
+If the backup has finished, then just find the latest backup and do the same:
+
+```shell
+sudo du -max /Volumes/*/$(date '+%F')-*.previous/ | sort -k1n | tail -n 1000
+```
+
+I found out this unexpected culprit:
+
+```shell
+1660 2025-12-08-224300.inprogress//Macintosh HD - Data/System/Library/AssetsV2/com_apple_MobileAsset_MacSoftwareUpdate
+```
+
+macOS was wasting my time backing up the software update download 😒.
+
+I've added this to:
+
+```shell
+mac_backup_exclude_paths.sh
+```
+
+in the [Exclude Paths From Backups](#exclude-paths-from-backups) section above.
+
+### Sharing a Time Machine disk with Data
+
+Time Machine requires formatting a complete disk to structure it correctly.
+
+Do not copy data to your Time Machine volume,
+disk snapshots may prevent space reclamation when you try to delete your files.
+
+Instead, create an additional volume using Disk Utility or the command line and store your files on the second Data
+volume.
+
+Both the Time Machine volume and the Data volume on the disk will share the overall disk space dynamically
+as they fill up, but this way, removing files from the Data volume will actually reclaim the space from the overall disk
+as it it will not be affected by time machine snapshots.
+
 ## External Disk Management
 
 To reclaim space on the external disk...
@@ -1907,6 +2556,250 @@ df -h "/Volumes/$NAME"
 
 ## Troubleshooting
 
+### Wifi Capture Portal Not Loading
+
+Try forcing it by opening this site which doesn't use SSL,
+therefore allowing the captcha portal to intercept and redirect to itself:
+
+<http://neverssl.com>
+
+Check you haven't set explicit hardcoded DNS servers in your network settings
+(eg. public DNS) as that may prevent the captcha portal address from resolving.
+
+This is because some environments rely on resolving the captcha portal address using the local DNS server
+(configured by DHCP, which you aren't using if you hardcode static IP DNS)
+if the gateway firewall is not configured to intercept public DNS requests
+to redirect them to the local DNS which can return the captcha portal IP.
+
+You can quickly set the DNS back to DHCP using this command (en0 is your wifi network card):
+
+```shell
+sudo networksetup -setdnsservers en0 "Empty"
+```
+
+Once I did that, and checking the DNS:
+
+```shell
+cat /etc/resolv.conf
+```
+
+The output looked like this:
+
+```text
+#
+# macOS Notice
+#
+# This file is not consulted for DNS hostname resolution, address
+# resolution, or the DNS query routing mechanism used by most
+# processes on this system.
+#
+# To view the DNS configuration used by this system, use:
+#   scutil --dns
+#
+# SEE ALSO
+#   dns-sd(1), scutil(8)
+#
+# This file is automatically generated.
+#
+nameserver 10.4.0.1
+```
+
+After this the captcha portal loaded correctly using the local network's DNS.
+
+You can also see your DNS settings in the UI or using this more native mac command, but the output is long and messy:
+
+```shell
+scutil --dns
+```
+
+### Another Device Using Your IP
+
+If you get this IP address conflict message pop-up:
+
+![Another Device Using Your IP](images/another_device_using_your_IP.png)
+
+```text
+Another device on the network is using your computer’s IP address (192.168.1.14).
+
+Try connecting again later. If you continue to have problems, change the IP address of this computer or the IP address of the other device. Contact the network administrator if you need more information.
+```
+
+This is usually caused by either a static IP address misconfiguration,
+or possibly switching between 2.4GHz and 5GHz wifi networks on the same network (although this is rare).
+
+If you're using static IP addresses,
+configure a different static IP on your device or the other device to avoid the conflict.
+
+If you're using DHCP on a Wifi network, refresh to using another IP address lease.
+
+You can try to disconnect and reconnect to the network, or release and request using the command line.
+
+Unfortunately the DHCP server (usually the wifi router) will usually re-issue you the same IP,
+resulting in the same problem.
+Rebooting the wifi router or if it's an actual DHCP server,
+restarting the DHCP service or flushing its DHCP memory would be required.
+
+Release current IP:
+
+```shell
+sudo ipconfig set en0 none
+```
+
+DHCP request new IP:
+
+```shell
+sudo ipconfig set en0 DHCP
+```
+
+If you are allocated the same IP again you may get the same pop-up error, in which case:
+
+A late ditch hack would be to simply set a different unused static IP (guess one at the end of the network block range)
+on the same DHCP network to bypass the issue and then unset it later.
+
+```shell
+sudo ipconfig set en0 MANUAL 192.168.1.15 255.255.255.0
+```
+
+You then also need to add a default route:
+
+```shell
+sudo route add default 192.168.1.1
+```
+
+and set the DNS to use both the router and a public DNS in case the router doesn't permit DNS egress traffic
+(this happened to me even on a residential router in Novi Sad, Serbia):
+
+```shell
+sudo networksetup -setdnsservers Wi-Fi 192.168.1.1 8.8.8.8
+```
+
+If the DNS set doesn't appear in `/etc/resolve.conf`, see the next section.
+
+### DNS Servers Not Respected
+
+**Symptom**: no outbound DNS packets being sent when doing a simple DNS lookup command,
+it turned out the DNS servers were not being respected.
+
+Trace DNS packets in one terminal:
+
+```shell
+sudo tcpdump -i en0 -n port 53
+```
+
+Run DNS lookup in another terminal:
+
+```shell
+host google.com
+```
+
+No output from `tcpdump` in the first terminal showed nothing was being sent.
+
+Checked the contents of `/etc/resolv.conf`:
+
+```shell
+cat /etc/resolv.conf
+```
+
+The file contents did not show any DNS servers set from the command in the above section
+(`sudo networksetup -setdnsservers ...`):
+
+You can run the more native mac command:
+
+```shell
+scutil --dns
+```
+
+and will see tha the mac resorts to the internet root DNS servers (which are not reachable due to egress filtering):
+
+```text
+DNS configuration
+
+resolver #1
+  flags    :
+  reach    : 0x00000000 (Not Reachable)
+
+resolver #2
+  domain   : local
+  options  : mdns
+  timeout  : 5
+  flags    :
+  reach    : 0x00000000 (Not Reachable)
+  order    : 300000
+
+resolver #3
+  domain   : 254.169.in-addr.arpa
+  options  : mdns
+  timeout  : 5
+  flags    :
+  reach    : 0x00000000 (Not Reachable)
+  order    : 300200
+
+resolver #4
+  domain   : 8.e.f.ip6.arpa
+  options  : mdns
+  timeout  : 5
+  flags    :
+  reach    : 0x00000000 (Not Reachable)
+  order    : 300400
+
+resolver #5
+  domain   : 9.e.f.ip6.arpa
+  options  : mdns
+  timeout  : 5
+  flags    :
+  reach    : 0x00000000 (Not Reachable)
+  order    : 300600
+
+resolver #6
+  domain   : a.e.f.ip6.arpa
+  options  : mdns
+  timeout  : 5
+  flags    :
+  reach    : 0x00000000 (Not Reachable)
+  order    : 300800
+
+resolver #7
+  domain   : b.e.f.ip6.arpa
+  options  : mdns
+  timeout  : 5
+  flags    :
+  reach    : 0x00000000 (Not Reachable)
+  order    : 301000
+```
+
+**Diagnosis**: it was an ordering problem on network interfaces.
+
+**Solution**: I put the wifi network first in the ordering.
+
+This is easiest done in the UI: `System Settings` -> `Network` -> `...` drop down (near the bottom right)
+-> `Set Service Order` -> Drag `Wi-Fi` to the top of the list.
+
+On the command line, you first need to find the names of the all the network services:
+
+```shell
+sudo networksetup -listnetworkserviceorder
+```
+
+and then list all of them in the ordered you want (the command fails if you only put some).
+
+To get just the clean list:
+
+```shell
+sudo networksetup -listnetworkserviceorder | awk '/^\([[:digit:]]*\)/ { $1=""; print}' | sed 's/^[[:space:]]*//'
+```
+
+Then order them as you want with the `Wi-Fi` network at the front so it uses the DNS servers from there.
+
+```shell
+sudo networksetup -ordernetworkservices "Wi-Fi" "Display Ethernet" "Thunderbolt Bridge" "iPhone USB" "ProtonVPN"
+```
+
+After that the DNS servers appeared in `/etc/resolv.conf` and `scutil --dns` output and DNS started working again.
+
+On another occasion the above didn't work,
+nor did removing the Wi-Fi profile from en0 (had to create a temp one to do this) and going back through the whole
+thing, in which case it can be a corruption of configuration registry, try a reboot.
+
 ### Discrepancy Between `df` and `du`
 
 ```shell
@@ -1939,9 +2832,41 @@ Or in my case Time Machine APFS snapshots which are counted by `df` but not by `
 tmutil listlocalsnapshots "/Volumes/$NAME"
 ```
 
+or if it's the root disk:
+
+```shell
+tmutil listlocalsnapshots /
+```
+
+You can either tell macOS to try to delete enough snapshots to free 100GB (number is in bytes),
+and on level from 1 - 4 of aggressiveness, ie. you need the space reclaimed urgently:
+
+```shell
+sudo tmutil thinlocalsnapshots / 100000000000 4
+```
+
+Or you can try to delete snapshots explicitly or delete iterate to delete all the snapshots
+(OS update snapshots do not get deleted even when ordered to):
+
+```shell
+for snapshot in $(tmutil listlocalsnapshots / | command ggrep -oP '\d{4}-\d\d-\d\d-\d+'); do
+    sudo tmutil deletelocalsnapshots "$snapshot"
+done
+```
+
+There is a script in [DevOps-Bash-tools](devops-bash-tools.md) for this called:
+
+```shell
+mac_delete_local_snapshots.sh
+```
+
+If you get this error:
+
 ```text
 /Volumes/NAME is an APFS backup disk. Use 'tmutil listbackups' to list APFS backup snapshots.
 ```
+
+then:
 
 ```shell
 tmutil listbackups
@@ -1959,6 +2884,13 @@ sudo tmutil delete -d "/Volumes/$NAME" -t 2025-03-28-015336
 
 ```text
 1 backups deleted
+```
+
+Another thing to check is for `.interrupted` and `.incomplete` directories of backups that failed to complete, such as
+the machine sleeping and disconnecting the external disk.
+
+```shell
+cd "/Volumes/$NAME" && rm -fr *.previous *.interrupted
 ```
 
 After this `du` and `df` reconciled.
@@ -2009,7 +2941,123 @@ Accept license if you have to:
 sudo xcodebuild -license
 ```
 
-### Various Applications Fail to Open
+### Application Fails to Open
+
+#### Application Can't Be Opened
+
+Clicking the App icon results in this error pop-up:
+
+```text
+The application “Spotify.app” can’t be opened.
+```
+
+![Application Spotify Can't Be Opened](images/application_spotify_cant_be_opened.png)
+
+Trying to open it via the command line:
+
+```shell
+open -a Spotify
+```
+
+results in this error:
+
+```text
+The application /Applications/Spotify.app cannot be opened for an unexpected reason, error=Error Domain=RBSRequestErrorDomain Code=5 "Launch failed." UserInfo={NSLocalizedFailureReason=Launch failed., NSUnderlyingError=0x6000039a33c0 {Error Domain=NSPOSIXErrorDomain Code=153 "Unknown error: 153" UserInfo={NSLocalizedDescription=Launchd job spawn failed}}}
+```
+
+Checking its digital signature:
+
+```shell
+spctl --assess --verbose /Applications/Spotify.app
+```
+
+Output:
+
+```shell
+/Applications/Spotify.app: invalid Info.plist (plist or signature have been modified)
+```
+
+Open the logging console to debug:
+
+```shell
+open -a Console
+```
+
+Start streaming and then enter a filter in the top right box eg. `spotify`.
+
+I saw logs like these:
+
+```text
+default	11:24:53.815483-0500	amfid	/Applications/Spotify.app/Contents/MacOS/Spotify not valid: Error Domain=AppleMobileFileIntegrityError Code=-420 "The signature on the file is invalid" UserInfo={NSURL=file:///Applications/Spotify.app/Contents/MacOS/Spotify, NSLocalizedDescription=The signature on the file is invalid}
+default	11:24:53.822324-0500	kernel	mac_vnode_check_signature: /Applications/Spotify.app/Contents/MacOS/Spotify: code signature validation failed fatally: When validating /Applications/Spotify.app/Contents/MacOS/Spotify:
+  The code contains a Team ID, but validating its signature failed.
+Please check your system log.
+default	11:24:53.822376-0500	kernel	proc 41565: load code signature error 4 for file "Spotify"
+default	11:24:53.822927-0500	kernel	ASP: Security policy would not allow process: 41565, /Applications/Spotify.app/Contents/MacOS/Spotify
+```
+
+It is not clear how this application developed this signature error,
+perhaps it tried to auto-update and was interrupted and failed, leaving a broken signature.
+
+Solution: Reinstall or Upgrade the app to get the signature to be verified again.
+
+If you have installed via [Homebrew](brew.md) (even if you haven't, brew casks can replace manually installed
+apps under `/Applications`):
+
+```shell
+brew reinstall spotify
+```
+
+Or if there is a newer version just upgrade to that:
+
+```shell
+brew upgrade spotify
+```
+
+Afterwards the signature verification should succeed:
+
+```shell
+spctl --assess --verbose /Applications/Spotify.app
+```
+
+Output:
+
+```text
+/Applications/Spotify.app: accepted
+source=Notarized Developer ID
+```
+
+or for more details:
+
+```shell
+codesign -dv --verbose=4 /Applications/Spotify.app
+```
+
+I got the next error when trying to reopen it, but it was an easy fix in this next section:
+
+#### Application is Damaged and Can't Be Opened
+
+If when opening you get this error:
+
+```text
+"Spotify.app" is damaged and can't be opened. You should move it to the Bin.
+```
+
+![Spotify App Damaged](images/spotify_app_is_damaged_and_cant_be_opened_should_move_to_bin.png)
+
+Just accept to move it to the bin and then reinstall it again:
+
+```shell
+brew reinstall spotify
+```
+
+and then it will open normally:
+
+```shell
+open -a Spotify
+```
+
+#### Application Is Not Open Anymore
 
 Often with this pop-up error:
 
@@ -2064,9 +3112,124 @@ open -a "Finder"
 and when your Terminal window gets closed and you get the same error trying to re-open another one, it's game over.
 Reboot.
 
+### Cannot Delete - No Space Left on Device
+
+APFS requires a small amount of space to even be able to delete files.
+
+Workarounds:
+
+- Empty Trash
+- try `echo > "$filename"` or `truncate -s 0 "$filename"` instead of `rm`
+- delete the `VM` apfs volume containing the sleep image and give enough space for APFS to maneuvre again
+
+If even after freeing a bit of space from an adjacent volume like `VM` you still get the `no space left on device` error
+from `rm` then it's possible you have catastrophic APFS corruption of the metadata.
+
+This has happened to me under heavy writes and deletes at the same time, and in that case the only way to recover is to
+reinstall macOS to recreate the special Data linked partition and then restore from Time Machine Backup.
+
+See the [Reinstall macOS & Restore Data](#reinstall-macos--restore-data) section below, but first, do your backups!
+
+### Emergency Backup
+
+If you hit the above APFS catastrophic metadata corruption and are unable to delete anything from a drive to recover and
+start using it again, then your only choice is to reinstall macOS and then restore your data from your latest time
+machine backup.
+
+If you are able to plug your Time Machine backup disk in, take a full backup.
+
+If you cannot take a time machine backup or your machine no longer boots then follow the next section.
+
+### Bootup Hangs on Black Screen after Full Data Disk
+
+If your macOS fails to boot due to the full Data disk then you will need to enter Recovery Mode and do your
+emergency backup and recovery from there.
+
+On newer Apple Silicon Macs hold the power button for 5-10 seconds to start up to the Options menu.
+
+In the menu, click `Options` to the right, and then Recovery Mode.
+
+If your existing backups are not completely up to date (as is often the case if you're on a laptop and therefore not
+leaving your backup disk plugged in to for hourly backups due to moving moving around), then you will need to do an
+emergency time machine backup from recovery mode and then restore that.
+
+Once you've taken a backup in recovery mode you'll then need to reinstall macOS and restore your data using the
+latest Time Machine backup as per the section below.
+
+If instead you want to a potentially more selective emergency file level backup, if you are able to boot macOS normally
+then run rsync to copy your files off to the backup disk.
+
+If you're not able to boot macOS though, you'll need to do an emergency file backup as per the next section.
+
+If you have made the
+[mistake of using vendor encryption](#warning-vendor-encrypted-drives-cannot-be-used-to-restore-data-in-the-macos-recovery-mode)
+on your external disk then you will not be able to unlock it in macOS recovery mode to take a time machine backup and
+must use another disk to do either a time machine backup or a file level backup.
+
+### Emergency File Backup from Recovery Mode
+
+If you can't access your time machine backup disk from recovery mode due to it being vendor encrypted,
+then you'll have to get another disk and either do a time machine backup to that or do a file level backup.
+
+The file level backup has the benefit of giving you the option of only backing up a few key paths such as your latest
+work directories (be careful you don't miss anything important though).
+For this, the trusty old `rsync` command is recommended.
+
+Recovery Mode is extremely limited though, it doesn't even have `rsync`,
+so you'll need to download the right `rsync` binary using your phone or another computer from here:
+
+<https://download.samba.org/pub/rsync/binaries/>
+
+For macOS specifically:
+
+<https://download.samba.org/pub/rsync/binaries/macos-12.6-arm64/latest.tar.gz>
+
+and then transfer it to the portable disk to use it in recovery mode.
+
+```shell
+tar zxvf latest.tar.gz
+```
+
+```shell
+rsync -av ...
+```
+
+### Reinstall macOS & Restore Data
+
+You cannot just delete and recreate the internal home Data APFS volume because it is a special volume.
+
+It must be paired with the installation at install time.
+
+This means that under catastrophic APFS corruption failure scenario you need to reinstall macOS
+and then restore your Time Machine backup.
+
+On newer Apple Silicon Macs hold the power button for 5-10 seconds to start up to the options menu.
+
+Under `Options` there is a hidden partition that allows you to reinstall macOS and recreate the Data partition.
+
+First, however, you need to erase the entire `Macintosh HD` container, not the volume, but the container itself.
+
+Using `Disk Utility` in Recovery Mode, `Erase` the Container holding `Macintosh HD` with the following options:
+
+| Field  | Value                                        |
+|--------|----------------------------------------------|
+| Name   | Macintosh HD                                 |
+| Format | APFS                                         |
+| Scheme | GUID Partition Map (if it shows this option) |
+
+Then exit Disk Utility and from the Options menu click the option to Reinstall macOS.
+
+The reinstall will probably take 1-2 hours.
+
+After that, restore your latest Time Machine backup,
+which if you've got a good fast SSD and USB 3 cable took me 2-3 hours for 4TB.
+
+If you've had to do an [Emergency File Backup from Recovery Mode](#emergency-file-backup-from-recovery-mode),
+then rsync the newer files that changed since your last Time Machine backup.
+
 ## Relevant GitHub Repos
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
 
 ## Memes
 

@@ -14,6 +14,7 @@ It's not as amazing for one-liners as [Perl](perl.md) is though, which can boost
 - [Shell scripts with Python](#shell-scripts-with-python)
 - [Nagios Plugins in Python](#nagios-plugins-in-python)
 - [Python Library with Unit Tests](#python-library-with-unit-tests)
+- [Python HTTP Server](#python-http-server)
 - [VirtualEnv](#virtualenv)
 - [Pipenv](#pipenv)
 - [Poetry](#poetry)
@@ -61,7 +62,7 @@ It's not as amazing for one-liners as [Perl](perl.md) is though, which can boost
 
 [HariSekhon/DevOps-Python-tools](https://github.com/HariSekhon/DevOps-Python-tools)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Python-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Python-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Python-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Python-tools)
 
 ## Shell scripts with Python
 
@@ -69,17 +70,30 @@ Shell scripts using Python and making it easier to install Python pip libraries 
 
 [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
 
 ## Nagios Plugins in Python
 
 [HariSekhon/Nagios-Plugins](https://github.com/HariSekhon/Nagios-Plugins)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugins)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugins)
 
 ## Python Library with Unit Tests
 
 [HariSekhon/pylib](https://github.com/HariSekhon/pylib)
+
+## Python HTTP Server
+
+When you need a quick HTTP server to serve out local files at:
+
+<http://$HOSTNAME:8000/>
+
+```shell
+python -m SimpleHTTPServer
+```
+
+This is useful for temporary file sharing for things like making automated installer configurations available, such as
+for [Redhat](redhat.md) Kickstart, [Debian](debian.md) Preseeding or [Ubuntu](ubuntu.md) Autoinstall.
 
 ## VirtualEnv
 

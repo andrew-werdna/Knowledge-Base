@@ -2,26 +2,26 @@
 
 <!-- INDEX_START -->
 
-- [List](#list)
-- [Fish](#fish)
-- [Shell Tricks](#shell-tricks)
-  - [Find disowned processes owned by the init PID 1](#find-disowned-processes-owned-by-the-init-pid-1)
+- [Shells](#shells)
+  - [Fish](#fish)
+- [Shell One Liners](#shell-one-liners)
+- [More Resources](#more-resources)
 - [Memes](#memes)
   - [Opening a Shell, Non-Programmers](#opening-a-shell-non-programmers)
   - [Bash Scripting: Essential DevOps](#bash-scripting-essential-devops)
 
 <!-- INDEX_END -->
 
-## List
+## Shells
 
-- Bash - the gold standard in shell scripting - see [bash.md](bash.md)
+- [Bash](bash.md) - the gold standard in shell scripting
 - Bourne - the original unix shell - Bash is the Bourne Again Shell - next generation Bourne shell
 - Ksh - Korn shell - another old unix shell
 - Tcsh - BSD shell - just use Bash
 - Zsh - slightly more feature rich shell than Bash. Not sure it's worth the hassle aside from `**` directory recursion globbing
 - Fish - friendly interactive shell - meaning user friendly
 
-## Fish
+### Fish
 
 Friendly Interactive Shell
 
@@ -39,21 +39,26 @@ Friendly Interactive Shell
 - Spacefish - awesome prompt, rich git info
 - superceded by Spaceship
 - `brew install spaceship` - available for each shell Bash/Zsh/Fish
+- amazing website built-in
+- fish_config
 
-amazing website built-in
-fish_config
+## Shell One Liners
 
-## Shell Tricks
+See the [Shell One Liners](shell-one-liners.md) page.
 
-### Find disowned processes owned by the init PID 1
+## More Resources
 
-```shell
- ps -ef | awk '$3 == 1 {print}'
-```
+- [DevOps-Bash-tools](devops-bash-tools.md)
+- [ANSI Terminal Escape Codes](ansi.md)
+- [CommandLineFu](https://www.commandlinefu.com/)
+- [ShellDorado](http://www.shelldorado.com/)
+- [Bash Guide](https://mywiki.wooledge.org/BashGuide)
 
 ## Memes
 
 ### Opening a Shell, Non-Programmers
+
+This has literally happened to me when Apple Store staff saw me open a shell 😂:
 
 ![Opening a shell, Non-Programmers](images/opening_a_shell_non_programmers.jpeg)
 

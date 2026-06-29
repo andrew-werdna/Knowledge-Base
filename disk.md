@@ -2,6 +2,7 @@
 
 <!-- INDEX_START -->
 
+- [Mac](#mac)
 - [Linux](#linux)
   - [Detect New Disk](#detect-new-disk)
   - [Create Partitions](#create-partitions)
@@ -9,11 +10,19 @@
   - [Verify the new formatting](#verify-the-new-formatting)
   - [Mount the new volume by unchanging UUID for maximum stability](#mount-the-new-volume-by-unchanging-uuid-for-maximum-stability)
   - [/tmp permissions](#tmp-permissions)
-- [Mac](#mac)
+- [Analyzing Disk Space](#analyzing-disk-space)
+  - [Windows GUI Disk Space Analyzer](#windows-gui-disk-space-analyzer)
+  - [Mac GUI Disk Space Analyzers](#mac-gui-disk-space-analyzers)
+  - [Linux GUI Disk Space Analyzers](#linux-gui-disk-space-analyzers)
+  - [Linux / Mac Command Line Disk Space Analyzers](#linux--mac-command-line-disk-space-analyzers)
 - [Meme](#meme)
   - [Backing Up Data](#backing-up-data)
 
 <!-- INDEX_END -->
+
+## Mac
+
+See [Mac - Disk Management](mac.md#disk-management)
 
 ## Linux
 
@@ -195,9 +204,32 @@ to be able to use it:
 sudo chmod 1777 /tmp
 ```
 
-## Mac
+## Analyzing Disk Space
 
-See [Mac - Disk Management](mac.md#disk-management)
+### Windows GUI Disk Space Analyzer
+
+- [WinDirStat](https://windirstat.net/) - Windows GUI app showing block representations of files and directories by size
+
+### Mac GUI Disk Space Analyzers
+
+- [Disk Inventory X](https://www.derlien.com/) - Mac GUI version of WinDirStat
+- [GrandPerspective](https://grandperspectiv.sourceforge.net/) - similar to Disk Inventory X for Mac
+- [OmniDiskSweeper](https://www.omnigroup.com/more)
+- [BaoBab](https://apps.gnome.org/Baobab/)
+
+### Linux GUI Disk Space Analyzers
+
+- [KDirStat](https://github.com/jeromerobert/k4dirstat) - Linux KDE version of WinDirStat
+- [QDirStat](https://github.com/shundhammer/qdirstat) - similar to KDirStat without needing KDE
+- [BaoBab](https://apps.gnome.org/Baobab/)
+
+### Linux / Mac Command Line Disk Space Analyzers
+
+- [df](https://linux.die.net/man/1/df)
+- [du](https://linux.die.net/man/1/du)
+- [ncdu](https://dev.yorhel.nl/ncdu) - interactive 'ncurses du' that allows you to easily drill down into the biggest
+  directories
+- [:octocat: taylorwilsdon/reclaimed](https://github.com/taylorwilsdon/reclaimed)
 
 ## Meme
 

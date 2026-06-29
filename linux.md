@@ -7,6 +7,7 @@
   - [Distribution Version](#distribution-version)
 - [Cron](#cron)
   - [User Crons](#user-crons)
+- [At](#at)
 - [Timezone](#timezone)
 - [Networking](#networking)
   - [IPtables](#iptables)
@@ -16,6 +17,7 @@
 - [Disk Management](#disk-management)
   - [/etc/fstab](#etcfstab)
   - [Disable tmpfs](#disable-tmpfs)
+- [RamDisk](#ramdisk)
 - [DRBD](#drbd)
 - [Binaries Debugging](#binaries-debugging)
 - [Linux Boot Process](#linux-boot-process)
@@ -43,7 +45,8 @@ Start with [Bash](bash.md) which is the standard open source Linux shell.
 ## Distributions & Lineage
 
 - [Debian](debian.md) - the standard open source distribution
-  - [Ubuntu](ubuntu.md) - more updated distro, originally Desktop focused then expanded into cloud distro focus too
+  - [Ubuntu](ubuntu.md) - more updated distro, originally Desktop focused then expanded into cloud server focus too -
+    now the most widely used cloud distro
 
 - [Redhat](redhat.md) - Redhat Enterprise Linux (RHEL) and its clone CentOS used to the standard enterprise distro but
   has killed its open source credentials by strangling CentOS and consequently become legacy
@@ -113,6 +116,68 @@ Opens the crontab in `$EDITOR` (default `vi` if `$EDITOR` environment variable i
 ```shell
 crontab -e
 ```
+
+Reference:
+
+```shell
+man 5 crontab
+```
+
+Put this at the top of your user crontab file for easy reference:
+
+```text
+# ┌──────── minute (0 - 59)
+# │ ┌────── hour (0 - 23)
+# │ │ ┌──── day of month (1 - 31)
+# │ │ │ ┌── month (1 - 12)
+# │ │ │ │ ┌─ day of week (0 - 7) (Sun=0 or 7)
+# │ │ │ │ │
+# * * * * * command
+```
+
+You can also use one of these timing shorthands:
+
+```text
+@reboot
+@yearly
+@monthly
+@weekly
+@daily
+@hourly
+```
+
+You may also find this site useful:
+
+<https://crontab.guru>
+
+## At
+
+For quick one off jobs, use `at`.
+
+```shell
+at 03:44 make
+```
+
+List scheduled jobs:
+
+```shell
+atq
+```
+
+```text
+1       Fri Jan  9 03:44:00 2026
+```
+
+See the job command, environment variables and directory it will execute in.
+
+By default at will `cd` to the directory you invoked `at` in and then run the given command.
+
+This is useful when you hit things like HTTP 429 Too Many Requests errors
+and need to back off for a long period and re-run your command later.
+
+I use this when downloading my [Spotify-Playlists](https://github.com/HariSekhon/Spotify-Playlists) if I hit Spotify
+HTTP 429 Too Many Requests errors, despite my best efforts to throttle my code reasonably (`export DEBUG` mode catches
+the `retry-after` header and calculates the human time to retry at).
 
 ## Timezone
 
@@ -356,6 +421,14 @@ Output:
 
 ```text
 Created symlink /etc/systemd/system/tmp.mount → /dev/null.
+```
+
+## RamDisk
+
+Create a RamDisk:
+
+```shell
+mount -t tmpfs tmpfs /mnt/ramdisk -o size=1024m
 ```
 
 ## DRBD

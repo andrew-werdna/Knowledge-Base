@@ -3,6 +3,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/HariSekhon/Knowledge-Base?logo=github)](https://github.com/HariSekhon/Knowledge-Base/network)
 [![LineCount](https://sloc.xyz/github/HariSekhon/Knowledge-Base/?badge-bg-color=2081C2)](https://github.com/boyter/scc/)
+[![Total Commits](https://img.shields.io/github/commit-activity/t/HariSekhon/Knowledge-Base)](https://github.com/HariSekhon/Knowledge-Base/commits/main/)
 [![Cocomo](https://sloc.xyz/github/HariSekhon/Knowledge-Base/?badge-bg-color=2081C2&category=cocomo)](https://github.com/boyter/scc/)
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/HariSekhon/Knowledge-Base/blob/master/LICENSE)
 [![My LinkedIn](https://img.shields.io/badge/LinkedIn%20Profile-HariSekhon-blue?logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIGZpbGw9IiNmZmZmZmYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TGlua2VkSW48L3RpdGxlPjxwYXRoIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2MtMS4xNDQgMC0yLjA2My0uOTI2LTIuMDYzLTIuMDY1IDAtMS4xMzguOTItMi4wNjMgMi4wNjMtMi4wNjMgMS4xNCAwIDIuMDY0LjkyNSAyLjA2NCAyLjA2MyAwIDEuMTM5LS45MjUgMi4wNjUtMi4wNjQgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPgo=)](https://www.linkedin.com/in/HariSekhon/)
@@ -24,6 +25,7 @@
 
 [![Index](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/index.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/index.yaml)
 [![Markdown](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown.yaml)
+[![Markdown Links](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown_links.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown_links.yaml)
 [![Markdown References](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown_references.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/markdown_references.yaml)
 [![Images](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/images.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/images.yaml)
 [![Gist Sync](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/gist-sync.yaml/badge.svg)](https://github.com/HariSekhon/Knowledge-Base/actions/workflows/gist-sync.yaml)
@@ -49,7 +51,37 @@ Even more deep advanced knowledge is captured in well commented code - reference
 [GitHub Repos](https://github.com/HariSekhon?tab=repositories&q=&type=&language=&sort=stargazers)
 are provided throughout where relevant.
 
-## Index
+## Highlights
+
+A few highlight pages:
+
+- [![AI](https://img.shields.io/badge/Artificial-Intelligence-029F00?logo=chatbot)](ai.md)
+- [![Travel](https://img.shields.io/badge/Travel%20Tips-60%2B%20countries%20%2F%20200%2B%20cities-029F00?logo=nordvpn&logoColor=white)](travel.md)
+- [![Remote](https://img.shields.io/badge/Remote%20Working-Digital%20Nomad-blue?logo=nordvpn&logoColor=white)](remote-working.md)
+- [![IT Best Practices](https://img.shields.io/badge/Tech-Best--Practices-029F00?logo=techcrunch)](best-practices.md)
+- [![macOS](https://img.shields.io/badge/mac-OS-blue?logo=apple)](mac.md)
+  - [![iOS](https://img.shields.io/badge/iOS-builds-blue?logo=apple)](ios.md) /
+    [![Android](https://img.shields.io/badge/Android-builds-blue?logo=android&logoColor=white)](android.md)
+- [![Linux](https://img.shields.io/badge/GNU-Linux-blue?logo=linux&logoColor=white)](linux.md)
+- [![Bash](https://img.shields.io/badge/Bash-Shell-blue?logo=gnubash&logoColor=white)](bash.md)
+- [![Git](https://img.shields.io/badge/Git-Revision%20Control-blue?logo=git&logoColor=white)](git.md)
+  - [![GitHub](https://img.shields.io/badge/GitHub-management-blue?logo=github)](github.md)
+    - [![GitHub Workflows](https://img.shields.io/badge/CI/CD-GitHub%20Workflows-blue?logo=github)](git.md)
+- [![IntelliJ](https://img.shields.io/badge/IntelliJ-IDE-purple?logo=intellijidea)](intellij.md) /
+  [![Vim](https://img.shields.io/badge/ViM-Editor-purple?logo=vim)](vim.md)
+- [![AWS](https://img.shields.io/badge/Cloud-AWS-blue?logo=googlecloud&logoColor=white)](aws.md)
+- [![Python](https://img.shields.io/badge/Programming-Python-blue?logo=python&logoColor=white)](python.md)
+- [![Docker](https://img.shields.io/badge/Containerization-Docker-blue?logo=docker&logoColor=white)](docker.md)
+- [![Kubernetes](https://img.shields.io/badge/Containerization-Kubernetes-blue?logo=kubernetes&logoColor=white)](kubernetes.md)
+- [![Documentation](https://img.shields.io/badge/Documentation-Tips-blue?logo=googledocs&logoColor=white)](documentation.md)
+  - [![Markdown](https://img.shields.io/badge/Documentation-Markdown-blue?logo=markdown&logoColor=white)](markdown.md)
+  - [![Diagrams-as-Code](https://img.shields.io/badge/Documentation-Diagrams--as--Code-blue?logo=diagrams.net&logoColor=white)](diagrams.md)
+
+You can find the other more specialist stuff below in the full index.
+
+## Summary Index
+
+The full index is further down.
 
 <!-- INDEX_START -->
 
@@ -115,6 +147,7 @@ are provided throughout where relevant.
   - [Vendors](#vendors)
   - [Multimedia](#multimedia)
   - [Marketing](#marketing)
+  - [Blogging](#blogging)
   - [Crypto](#crypto)
   - [Old Docs](#old-docs)
 - [Star History](#star-history)
@@ -128,14 +161,14 @@ are provided throughout where relevant.
   - [DBA - SQL](#dba---sql)
   - [DevOps Reloaded](#devops-reloaded)
   - [Templates](#templates)
-  - [Misc](#misc)
+  - [Spotify](#spotify)
 - [Other Resources](#other-resources)
 
 <!-- INDEX_END -->
 
 ## Travel
 
-- [Travel Knowledge](travel.md) - tips from travelling the world extensively for both fun and profit - consulted on 4
+- [⭐ Travel Knowledge](travel.md) - tips from travelling the world extensively for both fun and profit - consulted on 4
   continents, worked as a digital nomad and travel the world 52 weeks a year - life is short, take it:
   - my favourite restaurants
   - flights & accommodation
@@ -144,40 +177,43 @@ are provided throughout where relevant.
   - driving around Europe on road trips each summer
   - various other travel tips specific to each of 40+ countries and 100+ towns and cities across 4 continents
 - [Remote Working & Digital Nomad](remote-working.md) - specific notes on remote working and as a digital nomad
+- [Blogging](blogging.md) - because sharing is caring...
 
 ## GitHub Repos
 
 Full of open source tools and scripts used throughout the rest of these docs to make it easier to install and operate these technologies:
 
-- [DevOps-Bash-tools](devops-bash-tools.md) - 1000+ Bash scripts, advanced shell environment customizations, quick installation scripts and dot configs
+- [⭐ DevOps-Bash-tools](devops-bash-tools.md) - 1000+ Bash scripts, advanced shell environment customizations, quick installation scripts and dot configs
 - [DevOps-Python-tools](devops-python-tools.md) - 80+ Python programs for DevOps & Data
 - [DevOps-Perl-tools](devops-perl-tools.md) - 25+ Perl programs for DevOps
 - [DevOps-Golang-tools](devops-golang-tools.md) - a handful of Golang programs
-- [Kubernetes-configs](https://github.com/HariSekhon/Kubernetes-configs) -
+- [⭐ Kubernetes-configs](https://github.com/HariSekhon/Kubernetes-configs) -
   many Kubernetes applications and advanced templates with Tips & Tricks from production environments
-- [SQL-scripts](https://github.com/HariSekhon/SQL-scripts) - 100+ database scripts
-- [Templates](https://github.com/HariSekhon/Templates) - templates for many common file formats for programming languages, build systems and DevOps configs
-- [Diagrams-as-Code](https://github.com/HariSekhon/Diagrams-as-Code.md) - Cloud & Open Source architecture diagrams
+- [⭐ SQL-scripts](https://github.com/HariSekhon/SQL-scripts) - 100+ database scripts
+- [⭐ Templates](https://github.com/HariSekhon/Templates) - templates for many common file formats for programming languages, build systems and DevOps configs
+- [⭐ Diagrams-as-Code](https://github.com/HariSekhon/Diagrams-as-Code.md) - Cloud & Open Source architecture diagrams
 
 This one is used widely throughout these pages:
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
 
 ## Systems
 
 ### Operating Systems
 
-- [Linux](linux.md)
+- [⭐ Linux](linux.md)
   - [Debian](debian.md)
   - [Ubuntu](ubuntu.md)
   - [Redhat](redhat.md)
   - [Alpine](alpine.md)
   - [Gentoo](gentoo.md)
 - [Windows](windows.md)
-- [Mac](mac.md)
+- [⭐ Mac](mac.md)
   - [Homebrew](brew.md)
+  - [Raycast](raycast.md)
 - [Shell](shell.md)
-  - [Bash](bash.md)
+  - [⭐ Bash Scripting](bash.md)
+    - [Sudo](sudo.md)
   - [direnv / `.envrc`](direnv.md)
   - [Shell One Liners](shell-one-liners.md)
   - [Advanced & Third Party Commands](commands.md)
@@ -210,24 +246,24 @@ This one is used widely throughout these pages:
 ## Architecture & Documentation
 
 - [Architecture](architecture.md) TODO
-- [Best Practices](best-practices.md)
+- [⭐ Best Practices](best-practices.md)
 - [Product Selection](product-selection.md) TODO
-- [Diagrams-as-Code](diagrams.md)
+- [⭐ Diagrams-as-Code](diagrams.md)
   - [D2 lang](d2.md)
   - [MermaidJS](mermaidjs.md)
-- [Documentation](documentation.md)
+- [⭐ Documentation](documentation.md)
   - [Markdown](markdown.md)
   - [MkDocs](mkdocs.md)
 - [Microservices](microservices.md) TODO
 - [Medium.com](medium.md) (blog)
 - [System Design](system-design.md)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Diagrams-as-Code&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Diagrams-as-Code)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Diagrams-as-Code&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Diagrams-as-Code)
 
 ## Git
 
-- [Git](git.md)
-  - [Git Workflow Branching Strategies](git-workflow-branching-strategies.md)
+- [⭐ Git](git.md)
+  - [⭐ Git Workflow Branching Strategies](git-workflow-branching-strategies.md)
 - Git Repo Hosting Providers:
   - [GitHub](github.md) (TODO: partially ported)
   - [GitLab](gitlab.md)
@@ -239,7 +275,7 @@ This one is used widely throughout these pages:
 
 - [Cloud](cloud.md)
 - Cloud Platforms:
-  - [AWS](aws.md)
+  - [⭐ AWS](aws.md)
     - [AMI Scanning](ami-scanning.md)
   - [GCP](gcp.md)
     - [Firebase](firebase.md)
@@ -255,20 +291,20 @@ This one is used widely throughout these pages:
 
 ### Docker
 
-- [Docker](docker.md)
+- [⭐ Docker](docker.md)
   - [Dockerfile](dockerfile.md) TODO
   - [Docker Compose](docker-compose.md)
   - [Docker Swarm](docker-swarm.md)
 - [Podman](podman.md)
 - [Dockerfiles](https://github.com/HariSekhon/Dockerfiles) for many technologies:
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Dockerfiles&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Dockerfiles)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Dockerfiles&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Dockerfiles)
 
 ### Kubernetes
 
 #### Kubernetes Core
 
-- [Kubernetes](kubernetes.md)
+- [⭐ Kubernetes](kubernetes.md)
 - [Kubernetes Upgrades](kubernetes-upgrades.md)
 - [Kubernetes Configs](https://github.com/HariSekhon/Kubernetes-configs)
 - [Kubernetes Production Ready Checklist](kubernetes-production-ready-checklist.md)
@@ -310,7 +346,7 @@ This one is used widely throughout these pages:
 - [Cert Manager](cert-manager.md)
 - [Kubernetes Configs](https://github.com/HariSekhon/Kubernetes-configs):
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Kubernetes-configs&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Kubernetes-configs)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Kubernetes-configs&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Kubernetes-configs)
 
 ### Container Registries
 
@@ -341,15 +377,15 @@ This one is used widely throughout these pages:
 ### Languages
 
 - [Perl](perl.md)
-- [Python](python.md)
+- [⭐ Python](python.md)
   - [Anaconda](anaconda.md)
-- [Golang](golang.md) TODO
+- [Golang](golang.md) TODO partial
 - [Rust](rust.md)
 - [Ruby](ruby.md)
 - [R](r.md) TODO
 - [TCL / Expect](programming.md#expect)
 - JVM:
-  - [Java](java.md) TODO
+  - [Java](java.md) TODO partial
   - [JDBC](jdbc.md)
   - [JVM Performance Tuning](java-jvm-performance-tuning.md)
   - [Groovy](groovy.md)
@@ -359,6 +395,7 @@ This one is used widely throughout these pages:
   - [SDKman](sdkman.md)
   - [log4j](log4j.md)
 - [JavaScript / NodeJS](javascript.md)
+- [Lua](lua.md)
 - [APIs](api.md)
 - [Regular Expressions](regex.md)
 - [Testing](testing.md)
@@ -406,8 +443,8 @@ This one is used widely throughout these pages:
 - [Pulumi](pulumi.md)
 - [Packer](packer.md)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Terraform&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Terraform)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Packer-templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Packer-templates)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Terraform&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Terraform)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Packer-templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Packer-templates)
 
 ## Configuration Management
 
@@ -422,17 +459,17 @@ This one is used widely throughout these pages:
 
 -->
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Ansible&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Ansible)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Ansible&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Ansible)
 
 ## CI/CD
 
-- [CI/CD](cicd.md)
+- [⭐ CI/CD](cicd.md)
 - [Mobile CI/CD](cicd-mobile.md)
   - [Mobile Builds](mobile-builds.md)
   - [Fastlane](fastlane.md)
   - [Firebase](firebase.md)
 - Self-Hosted CI/CD:
-  - [Jenkins](jenkins.md)
+  - [⭐ Jenkins](jenkins.md)
     - [Jenkins-on-Kubernetes](jenkins-on-kubernetes.md)
     - [HariSekhon/Jenkins](https://github.<br/>com/HariSekhon/Jenkins) - master `Jenkinsfile` template and Groovy Shared Library functions
   - [TeamCity](teamcity.md) TODO
@@ -440,7 +477,7 @@ This one is used widely throughout these pages:
   - [Concourse](concourse.md)
   - [GoCD](gocd.md) TODO
 - Git Repo Providers hosted CI/CD:
-  - [GitHub Actions](github-actions.md)
+  - [⭐ GitHub Actions](github-actions.md)
   - [GitLab CI](gitlab-ci.md) TODO
   - [Azure DevOps](azure-devops.md) TODO
   - [Bitbucket Pipelines](bitbucket.md) TODO
@@ -450,8 +487,8 @@ This one is used widely throughout these pages:
   - [Codefresh](codefresh.md)
   - [Drone.io](drone.io.md)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Actions&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Actions)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Jenkins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Jenkins)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Actions&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Actions)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Jenkins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Jenkins)
 
 ## Internet Services
 
@@ -467,9 +504,10 @@ This one is used widely throughout these pages:
 - [SQL scripts](https://github.com/HariSekhon/SQL-scripts)
 - [Databases](databases.md)
 - [Data Warehousing](data-warehousing.md) TODO
-- [MySQL](mysql.md) TODO
-- [PostgreSQL](postgres.md) TODO
+- [MySQL](mysql.md) TODO partial
+- [PostgreSQL](postgres.md) TODO partial
 - [Oracle](oracle.md)
+- [SQLite](sqlite.md)
 - [CloudBeaver](cloudbeaver.md)
 
 ### MPP Databases
@@ -497,7 +535,7 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 - [AtlasGo](atlasgo.md)
 - [ByteBase](bytebase.md) TODO
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=SQL-scripts&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/SQL-scripts)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=SQL-scripts&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/SQL-scripts)
 
 ## NoSQL
 
@@ -579,7 +617,7 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 
 - [Data Science](data-science.md) TODO
 - [Machine Learning](machine-learning.md) TODO
-- [Python](python.md)
+- [⭐ Python](python.md)
   - [Anaconda](anaconda.md)
 - [DVC](dvc.md)
 - [R](r.md) TODO
@@ -629,7 +667,7 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 - [OpenStack](openstack.md) TODO
 - [KVM](kvm.md)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Packer-templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Packer-templates)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Packer-templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Packer-templates)
 
 ## Hardware
 
@@ -664,9 +702,9 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
   - [PagerDuty](pagerduty.md) TODO
 - [Fluentd](fluentd.md)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugins)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugin-Kafka&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugin-Kafka)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Prometheus&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Prometheus)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugins)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugin-Kafka&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugin-Kafka)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Prometheus&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Prometheus)
 
 ### Performance Engineering
 
@@ -675,15 +713,15 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 
 ## AI & Automation
 
-- [AI](ai.md)
+- [⭐ AI](ai.md)
 - [Automation](automation.md)
 
 ## Work
 
 ### Remote Working & Digital Nomad
 
-- [Remote Working & Digital Nomad](remote-working.md)
-  - [Travel](travel.md)
+- [⭐ Travel](travel.md)
+- [⭐ Remote Working & Digital Nomad](remote-working.md)
 
 ### Training & Interview Materials
 
@@ -701,10 +739,12 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 - [DevOps Misc](devops.md)
 - [Dev Misc](dev.md)
 - [Open Source](open-source.md)
+- [Science & Gadgets](science-gadgets.md)
 - [Internet Miscellaneous](internet-misc.md)
 - [TamperMonkey](tampermonkey.md)
 - [Jira](jira.md)
 - [Agile](agile.md)
+- [Google Drive](google-drive.md)
 - [Spreadsheets](spreadsheets.md)
 - [IRC](irc.md)
 - [Communications - Chat & Video Conferencing](comms.md)
@@ -722,7 +762,11 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
   - [PDF](pdf.md)
   - [Image](image.md)
   - [Video](video.md)
+    - [MPV](mpv.md)
+    - [YouTube Downloader](yt-dlp.md)
   - [Audio](audio.md)
+    - [Spotify](spotify.md)
+    - [Shazam](shazam.md)
 - [Download Tools](downloads.md)
 - [File Upload & Code Pastebin Sites](upload-sites.md)
 - [Memes](memes.md)
@@ -731,6 +775,11 @@ See also the [Hadoop Ecosystem](#hadoop-ecosystem) section further down for more
 ### Marketing
 
 - [Marketing](marketing.md)
+
+### Blogging
+
+- [Blogging](blogging.md)
+- [Wordpress](wordpress.md)
 
 ### Crypto
 
@@ -801,8 +850,8 @@ I've been both the bottom and top of this meme:
 
 ### Knowledge
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Knowledge-Base&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Knowledge-Base)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Diagrams-as-Code&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Diagrams-as-Code)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Knowledge-Base&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Knowledge-Base)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Diagrams-as-Code&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Diagrams-as-Code)
 
 <!--
 
@@ -818,46 +867,46 @@ Does nothing:
 
 ### DevOps Code
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Python-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Python-tools)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Perl-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Perl-tools)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Golang-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Golang-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Python-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Python-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Perl-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Perl-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Golang-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Golang-tools)
 
 <!--
-[![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=f8f551332440f1ca8897ff010e363e03)](https://gist.github.com/HariSekhon/f8f551332440f1ca8897ff010e363e03)
+[![Gist Card](https://github-readme-stats-fast.vercel.app/api/gist?id=f8f551332440f1ca8897ff010e363e03)](https://gist.github.com/HariSekhon/f8f551332440f1ca8897ff010e363e03)
 -->
 
 ### Containerization Repos
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Kubernetes-configs&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Kubernetes-configs)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Dockerfiles&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Dockerfiles)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Kubernetes-configs&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Kubernetes-configs)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Dockerfiles&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Dockerfiles)
 
 ### CI/CD Repos
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Actions&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Actions)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Jenkins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Jenkins)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=GitHub-Actions&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/GitHub-Actions)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Jenkins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Jenkins)
 
 ### DBA - SQL
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=SQL-scripts&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/SQL-scripts)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=SQL-scripts&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/SQL-scripts)
 
 ### DevOps Reloaded
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugins)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=HAProxy-configs&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/HAProxy-configs)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Terraform&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Terraform)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Packer-templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Packer-templates)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugin-Kafka&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugin-Kafka)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugins&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugins)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=HAProxy-configs&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/HAProxy-configs)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Terraform&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Terraform)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Packer-templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Packer-templates)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Nagios-Plugin-Kafka&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Nagios-Plugin-Kafka)
 
 ### Templates
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Templates)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Template-repo&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Template-repo)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Templates&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Templates)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Template-repo&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Template-repo)
 
-### Misc
+### Spotify
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Spotify-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Spotify-tools)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Spotify-playlists&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Spotify-playlists)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Spotify-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Spotify-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Spotify-playlists&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Spotify-playlists)
 
 The rest of my original source repos are
 [here](https://github.com/HariSekhon?tab=repositories&q=&type=source&language=&sort=stargazers).

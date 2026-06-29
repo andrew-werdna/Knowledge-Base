@@ -3,15 +3,20 @@
 <!-- INDEX_START -->
 
 - [Spotify](#spotify)
-  - [Clear Local Spotify Desktop Cache](#clear-local-spotify-desktop-cache)
+- [Shazam](#shazam)
+- [Migrate Playlists Between Music Platforms](#migrate-playlists-between-music-platforms)
 - [Shazam Songs while using Headphones on Mac](#shazam-songs-while-using-headphones-on-mac)
   - [Automatically Switch to Using Multi-Output Device when Connecting Headphones](#automatically-switch-to-using-multi-output-device-when-connecting-headphones)
-- [MP3 metadata editing](#mp3-metadata-editing)
+- [MP3 Metadata Editing](#mp3-metadata-editing)
   - [Setting Author and Album metadata](#setting-author-and-album-metadata)
   - [Setting Track Number metadata](#setting-track-number-metadata)
   - [Recursively Set Metadata](#recursively-set-metadata)
     - [Recursively Set Artist and Album](#recursively-set-artist-and-album)
     - [Recursively Set Track Order](#recursively-set-track-order)
+- [Metadata Tools](#metadata-tools)
+  - [MusicBrainz](#musicbrainz)
+    - [MusicBrainz API](#musicbrainz-api)
+    - [Picard](#picard)
 - [Memes](#memes)
   - [Marketing Matters](#marketing-matters)
 
@@ -19,21 +24,21 @@
 
 ## Spotify
 
-### Clear Local Spotify Desktop Cache
+Popular streaming music service.
 
-Close Spotify, delete the cache and then re-open the app.
+See the [Spotify](spotify.md) page for more Spotify tips.
 
-On Mac:
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=Spotify-Playlists&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Spotify-Playlists)
 
-```shell
-rm -rf ~/Library/"Application Support"/Spotify/PersistentCache/Storage
-```
+## Shazam
 
-On Linux:
+Listens to a song and matches its name using an online database.
 
-```shell
-rm -rf ~/.cache/spotify/Storage
-```
+See the [Shazam](shazam.md) page.
+
+## Migrate Playlists Between Music Platforms
+
+See the [Spotify](spotify.md) page.
 
 ## Shazam Songs while using Headphones on Mac
 
@@ -84,6 +89,11 @@ SwitchAudioSource -t input -s "BlackHole 2ch"
 open -a Shazam
 ```
 
+If you want to set the system sound effects, such as moving files,
+to go to the multi-output audio device into the headphones too
+(to not disturb somebody sleeping next to you) then you may want to go to `System Settings` ->
+`Sound` -> `Sound Effects` and set `Play sound effects through` near the top to the Multi-Output audio device.
+
 ### Automatically Switch to Using Multi-Output Device when Connecting Headphones
 
 When I connect my AirPods they become the sound input and output device,
@@ -98,9 +108,9 @@ See the Mac page's [Hammerspoon - System Event Handler](mac.md#hammerspoon---sys
 setting up Hammerspoon with the exact Hammerspoon Lua code
 I use to trigger this automated switch back to the first Multi-Output and BlackHole input devices found.
 
-[:octocat: HariSekhon/DevOps-Bash-tools - configs/.hammerspoon/init.lua](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/configs/.hammerspoon/init.lua)
+[:octocat: HariSekhon/Hammerspoon](https://github.com/HariSekhon/Hammerspoon)
 
-## MP3 metadata editing
+## MP3 Metadata Editing
 
 Use the `id3v2` program to set metadata on mp3 files.
 
@@ -131,6 +141,8 @@ done
 
 The scripts `mp3_set_track_order.sh` and `mp3_set_track_name.sh` in the [DevOps-Bash-tools](devops-bash-tools.md) repo's `media/`
 directory make this slightly easier.
+
+[![DevOps-Bash-tools](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
 
 ### Recursively Set Metadata
 
@@ -165,6 +177,37 @@ find . -maxdepth 2 -iname '*.mp3' |
   done
 }
 ```
+
+## Metadata Tools
+
+### MusicBrainz
+
+Public database of music metadata with a free to use API:
+
+<https://musicbrainz.org/>
+
+#### MusicBrainz API
+
+<https://musicbrainz.org/doc/MusicBrainz_API>
+
+There are MusicBrainz API scripts in [HariSekhon/DevOps-Bash-tools](devops-bash-tools.md):
+
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+
+Unfortunately the API rate limiting is quite bad at 1 request per second per source IP,
+and 300 requests per second globally across everybody before they start denying requests with HTTP 503 errors.
+
+This makes the API potentially impractical for large scale programmatic refinement of my extensive
+[HariSekhon/Spotify-Playlists](https://github.com/HariSekhon/Spotify-Playlists) repo which has tens of thousands of
+tracks that may be queried.
+
+#### Picard
+
+<https://picard.musicbrainz.org/>
+
+[:octocat: metabrainz/picard](https://github.com/metabrainz/picard)
+
+Open source database that can be used to auto-tag music files.
 
 ## Memes
 

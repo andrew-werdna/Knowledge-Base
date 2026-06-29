@@ -174,9 +174,35 @@ or prevent it from hanging temporarily trying to reverse resolve IP addresses to
 
 ### I/O
 
+Monitoring ongoing disk I/O stats in real-time:
+
 ```shell
 iostat -c 5
 ```
+
+Write I/O test using `dd` and bypassing the filesystem cache:
+
+```shell
+dd if=/dev/zero of="/path/to/dir/file" bs=64m count=64 oflag=direct
+```
+
+From [DevOps-Bash-tools](devops-bash-tools.md):
+
+```shell
+disk_write_speed_sequential_dd.sh "$directory"
+```
+
+This is useful for testing:
+
+- different disks' speeds
+- different cables' speeds with the same disk
+- different ports' speeds on Macs (right ports may be slower)
+
+I wrote this because I discovered a huge performance and estimated time to restore speed difference using
+[macOS Time Machine recovery](mac.md#reinstall-macos--restore-data) while using USB 2 vs USB 3 cables with the same
+SanDisk Extreme Pro SSD external backup disk.
+
+**WARNING: Don't re-run this on SSDs frequently as they have a limited number of writes and you'll wear the disk out prematurely**
 
 ## Network
 

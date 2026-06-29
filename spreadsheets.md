@@ -4,18 +4,82 @@ Excel and Google Sheets tips.
 
 <!-- INDEX_START -->
 
+- [Use Google Sheets Offline](#use-google-sheets-offline)
+- [Move Rows](#move-rows)
+- [Reference a Relative Cell in an Equation](#reference-a-relative-cell-in-an-equation)
 - [Auto-Calculate Dates](#auto-calculate-dates)
+  - [Explanation of Date Chaining Formula Magic](#explanation-of-date-chaining-formula-magic)
+- [Calculate Eggs Usage Over The Next Few Days - Mornings & Evenings](#calculate-eggs-usage-over-the-next-few-days---mornings--evenings)
+  - [Explanation of Date Morning & Evening Header Generation Formula Magic](#explanation-of-date-morning--evening-header-generation-formula-magic)
 - [Memes](#memes)
   - [CPU, RAM](#cpu-ram)
 
 <!-- INDEX_END -->
 
+## Use Google Sheets Offline
+
+Being on unstable wifi when travelling can be frustrating if you cannot edit your Google Sheets.
+
+Configure offline access, follow these instructions:
+
+<https://support.google.com/docs/answer/6388102>
+
+## Move Rows
+
+I often need to move rows to juggle countries around on my Travel Dates spreadsheet.
+
+1. Click on the row number to the left to select the whole row
+1. Hover the mouse cursor on the row number to the left until it shows a hand
+1. Drag it up or down the rows
+
+Make sure you use formulae for the dates so everything auto adjusts... see next tip.
+
+## Reference a Relative Cell in an Equation
+
+When using an equation referencing another cell,
+it will often auto-update correctly if you insert some rows in the middle,
+but it happened to me several times in Google Sheets when adding rows to the end that that the formula didn't
+auto-update correctly, resulting in a wrong total that didn't include the rows added at the end.
+
+The solution is to change your equation to reference the starting cell all the way down to the cell just above the
+Totals line that the equation is in.
+
+Instead of this:
+
+```text
+=SUM(C200:C250)
+```
+
+Replace the ending cell explicit `C250` reference with a relative cell location one above the current line using this
+code:
+
+```text
+INDIRECT( ADDRESS( ROW() - 1, COLUMN() )
+```
+
+So the equation changes to:
+
+```text
+=SUM(C200: INDIRECT( ADDRESS( ROW() - 1, COLUMN() ) ) )
+```
+
 ## Auto-Calculate Dates
 
-I've used a Google Sheets spreadsheet to calculate my number of EU days and their dates on my European Summer Tour 2025.
+You can add a number of integer days to a date field to automatically calculate the end date.
 
-This is an upgrade to the previous year and allowed me to plan my exact travel dates and accommodation bookings,
-as well as how many EU visa days I was using up, which I did last year too using the basic `SUM()` operator.
+You can then have the next row automatically reference the cell which contains the calculated end date
+as the start date of the next row, to cascade the entire calculation of start and end dates all the way down a
+spreadsheet.
+
+I use this around the world to auto-calculate the dates I need to book flights and accommodation for easily based on
+how many days I intend to spend in each place.
+
+I've also used this to calculate my number days spent in a country by summing all the towns `Days` cells, or a region such
+as EU Schengen (where visa days are cumulative across all EU member countries)
+by summing all the EU countries towns and cities `Days` cells.
+
+See Also: [Remote Working & Digital Nomad](remote-working.md#digital-nomad) page's Digital Nomad section for a useful
+related website called Nomads which I also use.
 
 To auto-calculate dates:
 
@@ -23,23 +87,24 @@ To auto-calculate dates:
 2. Format the cell as a Date format
 3. Enter the number of days spent at that location in an adjacent column
 4. Use a formula to add the number of days from one cell to the date in the other cell
-5. For the next row, enter a forumla to reference the calculated end date as the start date for the next location
+5. For the next row, enter a formula to reference the calculated end date in the row above as the start date for the
+   next location
 
 Example:
 
-| Country   | City      | Days | Start Date                                                     | End Date                   |
-|-----------|-----------|------|----------------------------------------------------------------|----------------------------|
-| Bulgaria  | Sofia     | 7    | `2025-05-02` <br/> then in menu <br/> Format -> Number -> Date | Enter formula `=C32 + D32` |
-| Romania   | Bucharest | 7    | Enter formula `=E32`                                           | Enter formula `=C33 + D33` |
+| Country   | City      | Days | Start Date                                                                                                                                                  | End Date                                                                                                                      |
+|-----------|-----------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Bulgaria  | Sofia     | 7    | Enter an initial start date literally eg. `2025-05-02` <br/> then in menu <br/> Format -> Number -> Date                                                    | Enter this formula to add the left two cells together: <br /> `=SUM(OFFSET(INDIRECT(ADDRESS(ROW(),COLUMN())), 0, -2, 1, 2))`  |
+| Romania   | Bucharest | 7    | Enter formula to reference the value one cell up and to the right (the previous end date cell): <br /> `=OFFSET(INDIRECT(ADDRESS(ROW(), COLUMN())), -1, 1)` | Enter this formula to add the left two cells together: <br /> `=SUM(OFFSET(INDIRECT(ADDRESS(ROW(),COLUMN())), 0, -2, 1, 2))`  |
+
+The rest of the rows use these exact same formulae copied down their same columns.
 
 Results in:
 
-| Country   | City      | Days | Start Date             | End Date             |
-|-----------|-----------|------|------------------------|----------------------|
-| Bulgaria  | Sofia     | 7    | Friday, May 2, 2025    | Friday, May 9, 2025  |
-| Romania   | Bucharest | 7    | Friday, May 9, 2025`   | Friday, May 16, 2025 |
-
-The rest of the rows follow this same format.
+| Country   | City      | Days | Start Date          | End Date             |
+|-----------|-----------|------|---------------------|----------------------|
+| Bulgaria  | Sofia     | 7    | Friday, May 2, 2025 | Friday, May 9, 2025  |
+| Romania   | Bucharest | 7    | Friday, May 9, 2025 | Friday, May 16, 2025 |
 
 At the end, add a `Total` line, with a cell containing the formula:
 
@@ -49,7 +114,81 @@ At the end, add a `Total` line, with a cell containing the formula:
 
 to figure out how many EU days you've used to make sure you don't go over the visa.
 
-Adjust the line numbers to match your real world table.
+Adjust the row cell coordinates to match your real world table's days column.
+
+### Explanation of Date Chaining Formula Magic
+
+- `ROW()` - returns the row number of the current cell
+- `COLUMN()` - returns the column number of the current cell
+- `ADDRESS(ROW(), COLUMN())` - gets the cell coordinates of the current cell
+- `INDIRECT(ADDRESS(...))` - returns a cell reference object we can operate on from the current cell's calculated `ADDRESS(...)`
+- `OFFSET(reference, 0, -2, 1, 2)` - starting from the reference cell calculated by `INDIRECT(ADDRESS(...))`:
+  - `0` - move 0 rows (stay in the same row)
+  - `-2` - move 2 columns to the left
+  - `1` - height of the range = 1 row
+  - `2` - width of the range = 2 columns
+  - Result: returns a 1×2 horizontal range, two cells to the left of the current cell
+- `SUM()` - adds the two cells together that were returned by `OFFSET(...)`
+
+For the next row's `Start Date` it's similar to the above, except
+
+- `=OFFSET(reference, -1, 1)`:
+  - `-1` - moves one row up
+  - `1` - moves one cell to the right
+  - Returns the single cell's value at that offset ie. the previous row's end date cell
+
+## Calculate Eggs Usage Over The Next Few Days - Mornings & Evenings
+
+You can see my exact spreadsheet and its formulae here:
+
+[Google Sheets - Eggs Planner](https://docs.google.com/spreadsheets/d/1196PJDLPIcc1l4kkTcapM8-uFkAyKMwRv2IajK1LgTU/edit?usp=sharing)
+
+The Total Remaining Eggs field is manually updated based on how many eggs I have in the fridge after a shop or using some up.
+
+The Unallocated Eggs field is a simple formula or deducting the eggs each day's morning and evening from the total.
+I manually allocate the numbers of eggs I intend to use on different mornings and evenings
+(I front load my eggs in the mornings as breakfast and only have few to no eggs in the evenings depending on the
+heaviness of my dinners vs workouts and recovery needed).
+
+The important formula to auto-generate the date headers for the next 5 days Mornings and Evenings based on today's date
+and time is this:
+
+```text
+=ARRAYFORMULA(
+    LET(
+        current_hour, HOUR(NOW()),
+        start_offset, IF(current_hour >= 14, 0.5, 0),
+        intervals, SEQUENCE(1, 10, start_offset, 0.5),
+        TEXT(
+            TODAY() + QUOTIENT(intervals, 1), "ddd, mmmm, yyyy"
+        )
+        & CHAR(10)
+        & IF(
+            MOD(intervals, 1) = 0, "Morning", "Evening"
+        )
+    )
+)
+```
+
+### Explanation of Date Morning & Evening Header Generation Formula Magic
+
+- `ARRAYFORMULA` - small factory that builds `intervals` number of following cells as defined by the number of
+  `SEQUENCE` returned
+- `current_hour, HOUR(NOW())` - gets the hour of the current time
+- `start_offset, IF(current_hour >= 14, 0.5, 0)` - generate start offset as either 0.5 or 0 representing evening or
+  morning respectively.
+  If the current time is after 2pm (14:00 - current_hour is greater than 14),
+  then add 0.5 to represent that the next starting column should be an evening one
+- `SEQUENCE(rows, columns, start, step)`
+  - `SEQUENCE(1, 10, start_offset, 0.5)` - stay on this same row, create 10 columns, use a starting offset,
+    increment by 0.5 each time
+  - whole numbers represent days from today, while the 0.5 additions represent the evenings in those days
+- `TEXT` - formulates the date into the Day of Week, Month, Year format from the date calculation from `TODAY()`
+  - `QUOTIENT` - does integer division on the interval and discards the remainder (the 0.5), giving us just a day
+    integer to add to `TODAY()`
+- `CHAR(10)` - is just the newline (`\n`) character and `&` is just a string append operator
+- `IF(MOD(intervals, 1) = 0, "Morning", "Evening")` - checks the interval number - if it's whole as determined by the
+  modulus giving a remainder equalling 0, it returns "Morning", otherwise "Evening"
 
 ## Memes
 

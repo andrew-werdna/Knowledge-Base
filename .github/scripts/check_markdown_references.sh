@@ -22,7 +22,7 @@ git_root="$srcdir/../.."
 
 # shellcheck disable=SC2034,SC2154
 usage_description="
-Checks all .md file references in README.md exist
+Checks all .md file references in markdown files exist relative to the path of the original markdown file
 "
 
 # used by usage() in lib/utils.sh
@@ -38,32 +38,49 @@ cd "$git_root"
 exitcode=0
 
 while read -r file_md; do
-    # most files are present so the -f "$file_md" test is faster than forking for every file
-    #if git grep -q "($file_md).*TODO"; then
-    #    continue
-    #fi
-    if ! [ -f "$file_md" ]; then
-        if git grep -q "($file_md).*TODO"; then
+    expected_markdowns="$(
+        {
+            # there might be no other markdown files referenced in a markdown file
+            # and we don't want to exit 1 from no matches, so suppress the grep error
+            git grep -Eo --color=never --max-depth 1 '\([[:alnum:]/_-]+\.md.*' "$file_md" || :
+        } |
+        sed 's/[^(]*(//' |
+        { grep -Fv 'TODO' || : ; } |
+        sed 's/\.md.*/.md/' |
+        sort -u
+    )"
+    while read -r expected_md; do
+        if is_blank "$expected_md"; then
             continue
         fi
-        echo "referenced but file not found: $file_md"
-        git grep -F "($file_md)"
-        echo
-        exitcode=1
-    elif ! git ls-files --error-unmatch "$file_md" &>/dev/null; then
-        if git grep -q "($file_md).*TODO"; then
-            continue
+        # change to dir of markdown file because paths are often relative
+        pushd "$(dirname "$file_md")" &>/dev/null
+        if ! [ -f "$expected_md" ]; then
+            if git grep -q "($expected_md).*TODO"; then
+                popd &>/dev/null
+                continue
+            fi
+            echo "referenced but file not found: $expected_md"
+            git grep -F "($expected_md)"
+            echo
+            exitcode=1
+        elif ! git ls-files --error-unmatch "$expected_md" &>/dev/null; then
+            if git grep -q "($expected_md).*TODO"; then
+                popd &>/dev/null
+                continue
+            fi
+            echo "referenced file found but not committed to git: $expected_md"
+            echo
+            exitcode=1
         fi
-        echo "referenced file found but not committed to git: $file_md"
-        echo
-        exitcode=1
-    fi
+        popd &>/dev/null
+    done <<< "$expected_markdowns"
 done < <(
-    git grep -Eoh --max-depth 1 '\([[:alnum:]_-]+\.md.*' |
-    sed 's/^(//' |
-    { grep -Fv 'TODO' || : ; } |
-    sed 's/\.md.*/.md/' |
-    sort -u
+    git ls-files |
+    grep '\.md$'
 )
 
+if [ "$exitcode" = 0 ]; then
+    echo "OK - no missing markdown references found"
+fi
 exit $exitcode

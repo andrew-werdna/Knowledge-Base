@@ -17,6 +17,9 @@
 - [Basic Tips](#basic-tips)
 - [Advanced Tips & Tricks](#advanced-tips--tricks)
   - [Debug Mode](#debug-mode)
+  - [Get Current Hashref](#get-current-hashref)
+  - [Get Current Branch](#get-current-branch)
+  - [Get the Default Branch](#get-the-default-branch)
   - [Delete Remote branch](#delete-remote-branch)
   - [Git Clone using a specific SSH Key](#git-clone-using-a-specific-ssh-key)
   - [Show files not being tracked due to global & local `.gitignore` files](#show-files-not-being-tracked-due-to-global--local-gitignore-files)
@@ -42,8 +45,6 @@
   - [Erase Leaked Credential in Git History](#erase-leaked-credential-in-git-history)
   - [Merge a branch from another repo into the current repo](#merge-a-branch-from-another-repo-into-the-current-repo)
   - [Reset and Re-download Git Submodule](#reset-and-re-download-git-submodule)
-  - [Get the Default Branch](#get-the-default-branch)
-  - [Get Current Branch](#get-current-branch)
   - [Find which upstream `<remote>/<branch>` the current branch is set to track](#find-which-upstream-remotebranch-the-current-branch-is-set-to-track)
   - [List files changed on current branch vs default branch](#list-files-changed-on-current-branch-vs-default-branch)
   - [List files added on current branch vs default branch](#list-files-added-on-current-branch-vs-default-branch)
@@ -88,7 +89,7 @@ cd bash-tools
 make link
 ```
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
 
 ## Fast Diff Review Commits & Pushes
 
@@ -258,6 +259,34 @@ export GIT_TRACE=1
 
 ```shell
 export GIT_CURL_VERBOSE=1
+```
+
+### Get Current Hashref
+
+```shell
+git rev-parse HEAD
+```
+
+```shell
+git rev-parse --short HEAD
+```
+
+### Get Current Branch
+
+```shell
+git rev-parse --abbrev-ref HEAD
+```
+
+In newer versions of Git version 2.22 (Q2 2019+):
+
+```shell
+git branch --show-current
+```
+
+### Get the Default Branch
+
+```shell
+git symbolic-ref refs/remotes/origin/HEAD | sed 's|.*/||'
 ```
 
 ### Delete Remote branch
@@ -738,24 +767,6 @@ rm -fr ".git/modules/$name"
 
 ```shell
 git submodule update --init --recursive
-```
-
-### Get the Default Branch
-
-```shell
-git symbolic-ref refs/remotes/origin/HEAD | sed 's|.*/||'
-```
-
-### Get Current Branch
-
-```shell
-git rev-parse --abbrev-ref HEAD
-```
-
-In newer versions of Git version 2.22 (Q2 2019+):
-
-```shell
-git branch --show-current
 ```
 
 ### Find which upstream `<remote>/<branch>` the current branch is set to track

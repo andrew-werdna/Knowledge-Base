@@ -8,7 +8,8 @@
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
+#  If you're using my code you're welcome to connect with me on LinkedIn
+#  and optionally send me feedback to help steer this or other code I publish
 #
 #  https://www.linkedin.com/in/HariSekhon
 #
@@ -45,19 +46,32 @@ if [[ "$USER" =~ hari|sekhon ]]; then
     if type -P curl_with_cookies.sh &>/dev/null &&
        type -P pycookiecheat &>/dev/null; then
         timestamp "Downloading Nomads CSV"
-        nomads_csv=~/Downloads/"$(date '+%F')-harisekhon-trips-on-nomad-list.csv"
+        nomads_csv=~/Downloads/nomads-harisekhon-"$(date '+%F').csv"
         curl_with_cookies.sh https://nomads.com/@harisekhon.csv > "$nomads_csv"
+        if [ -n "${nomads_dir:-}" ] &&
+           [ -d "$nomads_dir" ]; then
+            timestamp "Copying Nomads CSV"
+            mv -fv "$nomads_csv" "$nomads_dir/nomads.csv"
+            git_diff_commit.sh "$nomads_dir/nomads.csv"
+            nomads_csv="$nomads_dir/nomads.csv"
+        fi
         echo "Stripping first line header"
         csv="$(tail -n +2 "$nomads_csv")"
         timestamp "Parsing Countries from CSV"
         total_countries="$(
-            awk -F, "{print \$5}" <<< "$csv" |
+            # breaks on commas within a quoted field
+            #awk -F, "{print \$5}" <<< "$csv" |
+            awk -F'"' '{print $10}' <<< "$csv" |
             sed 's/"//g' |
+            # normalize as there is a record listing UK instead of United Kingdom throwing off the number by one
+            # not needed, this was caused by "Folkestone, UK" breaking the field early, fixed above by
+            # awk splitting by " instead of , above
+            #sed 's/^UK$/United Kingdom/g' |
             sort -u
         )"
         timestamp "Parsing Cities from CSV"
         total_cities="$(
-            awk -F, "{print \$5\"-\"\$4}" <<< "$csv" |
+            awk -F'"' "{print \$10\"-\"\$8}" <<< "$csv" |
             sed 's/"//g' |
             sort -u
         )"
@@ -76,21 +90,21 @@ if [[ "$USER" =~ hari|sekhon ]]; then
         )"
         timestamp "City Count from Nomads: $num_total_cities"
         sed -i "
-            s/\(Countries: \).*/\\1$num_total_countries/;
-            s/\(Cities: \).*/\\1$num_total_cities/;
+            s/^\(Countries: \).*/\\1$num_total_countries/;
+            s/^\(Cities: \).*/\\1$num_total_cities/;
             s|\(Total%20Countries-\)[[:digit:]]*|\\1$num_total_countries|;
             s|\(Total%20Cities-\)[[:digit:]]*|\\1$num_total_cities|;
         " "$travel_md"
         for year in {2024..2099}; do
             timestamp "Parsing Countries for year: $year"
             countries="$(
-                awk -F, "/\"$year/{print \$5}" <<< "$csv" |
+                awk -F'"' "/\"$year/{print \$10}" <<< "$csv" |
                 sed 's/"//g' |
                 sort -u
             )"
             timestamp "Parsing Cities for year: $year"
             cities="$(
-                awk -F, "/\"$year/{print \$5\"-\"\$4}" <<< "$csv" |
+                awk -F'"' "/\"$year/{print \$10\"-\"\$8}" <<< "$csv" |
                 sed 's/"//g' |
                 sort -u
             )"

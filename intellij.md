@@ -161,7 +161,7 @@ install_intellij_plugins.sh
 
 You can add / comment / uncomment which plugins to install in the adjacent `setup/intellij-plugins.txt` config file in that same repo.
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
 
 ### Manual Plugin Installation
 
@@ -314,7 +314,7 @@ idea installPlugins \
   org.sonarlint.idea  # use with SonarQube / SonarCloud
 ```
 
-See [SonarCloud](sonarcloud.md) doc to generate `sonar-project.properties ` and
+See [SonarCloud](sonarcloud.md) doc to generate `sonar-project.properties` and
 `.sonarlint/connectedMode.json` configs.
 
 ### Optional - Nice to Haves
